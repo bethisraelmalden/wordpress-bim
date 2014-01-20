@@ -1,0 +1,16 @@
+/*
+Theme Name: BIM
+Theme URI: http://github.com/bethisraelmalden/wordpress-bim
+Author: Metaist
+Author URI: http://metaist.com/
+Description:
+Version: 0.0.1
+License: MIT License
+License URI: http://opensource.org/licenses/MIT
+Tags: white, light, two-columns, responsive-layout, custom-menu, sticky-post
+Text Domain: bim
+*/
+
+.stop-fouc { display: none; }
+
+/* Additional styles in app/bim.less */

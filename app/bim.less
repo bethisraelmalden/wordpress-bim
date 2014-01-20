@@ -1,0 +1,289 @@
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
+
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+.stop-fouc { display: none; }
+
+/* Tablets */
+@media screen and (min-width: @screen-sm) {}
+
+/* Desktops */
+@media screen and (min-width: @screen-md) {}
+
+/* Large Desktops */
+@media screen and (min-width: @screen-lg) {}
+
+/* Print */
+@media print {
+  .site-content {
+    .entry-header {
+      .entry-date { display: none; }
+    }
+
+    .entry-content {
+      font-size: 14px;
+    }
+  }
+}
+
+
+.single-row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.alignright {
+  float: right;
+  padding-left: 1em;
+}
+
+
+.site-header {
+  .primary-navigation {
+    .navbar-brand {
+      padding: 0 0 0 5px;
+
+      img {
+        height: 2em;
+        margin-top: 0.3em;
+      }
+    }
+
+    .menu-item {}
+  }
+}
+
+.site-content {
+  .entry-header {
+    .entry-title {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .entry-meta {
+      a { color: #999; }
+      .entry-date {
+        &:before { content: '('; }
+        &:after { content: ')'; }
+      }
+    }
+  }//.entry-header
+
+  .entry-summary,
+  .entry-content {
+    margin-top: 0.2em;
+    margin-bottom: 2em;
+    font-size: 22px;
+    font-family: Georgia,Cambria,"Times New Roma",Times,serif;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+
+    p {
+      margin-bottom: 1.2em;
+      text-align: justify;
+    }
+  }
+}
+
+.site-footer {
+  margin-top: 2em;
+  border-top: 4px solid #333;
+  background-color: #eee;
+  padding: 1em 15px 2em 15px;
+}
+
+.btn-donate {
+  background-color: #e85c41;
+  border-color: #e85c41;
+  color: #fff;
+  font-weight: bold;
+
+  &:hover { color: #fff; }
+  &:active { color: #fff; }
+}
+
+.more-link, .more-link:hover {
+  text-decoration: none;
+  background-color: #3276b1;
+  border-color: #285e8e;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.home {
+  .background {
+    border-top: 1px solid #ccc;
+    background: url('../img/inauguration-crowd.jpg');
+    background-size: cover;
+    padding: 2em;
+    margin-top: -20px;
+    opacity: 0.8;
+    min-height: 15em;
+  }
+
+  .sticky-posts {
+    background-color: #ccc;
+    padding: 0.1em 1em 0 1em;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+  }
+
+  .schedule {
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; }
+    ul { padding-left: 1em; }
+
+    .upcoming-events,
+    .page-numbers,
+    .kiddush { display: none; }
+    .sidebar {
+      margin-left: 0.2em;
+      float: right;
+      width: 45%;
+    }
+  }
+
+  .event {
+    overflow: auto;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+    h1, h2 { font-size: 14pt; }
+    img {
+      max-width: 100%;
+      height: auto;
+      width: 15em;
+      float: right;
+    }
+  }
+}
+
+.page-id-25 { // Mikvah
+  .background {
+    background: url('../img/mikvah-pool.jpg');
+    background-size: cover;
+    padding: 2em;
+    margin-top: -20px;
+    opacity: 0.8;
+  }
+
+  #content  {
+    background-color: #ccc;
+    border-radius: 0.5em;
+    max-width: 750px;
+  }
+
+  .mikvah-name { font-family: 'Calligraffitti', cursive; }
+
+  #facts {
+    margin: 0 auto;
+    max-width: 20em;
+  }
+
+  dl { margin-left: 3em; }
+  dd { margin-bottom: 1em; }
+
+  footer { margin-top: 0; }
+}
+
+
+
+/// Old Bulletin Style ///
+.category-bulletin {
+  .entry-content { font-size: 14px; }
+  h1, h2, h3, h4 { margin-bottom: 0 !important; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.3em; }
+
+  .schedule {
+    .sidebar {
+      font-size: 85%;
+      float: right;
+      width: 22em;
+      margin-left: 5em;
+
+      section.page-numbers {
+        h3 { text-align: center; }
+        table {
+          width: 100%;
+          margin-bottom: 1em;
+          thead {
+            th {
+              text-align: right;
+              padding: 0 !important;
+            }
+          }
+          tr {
+            td {
+              border-bottom: 1px solid #ccc;
+              padding-right: 0.2em !important;
+              padding-bottom: 0.2em !important;
+              text-align: right;
+            }//end td
+          }//end tr
+        }//end table
+      }//end page numbers
+
+      .kiddush {
+        @color-kiddush: #5B83AD;
+
+        padding: 0.5em;
+        border: 0.1em solid @color-kiddush;
+        color: @color-kiddush;
+        text-align: center;
+        margin-bottom: 1em;
+
+        h3 { 
+          color: @color-kiddush !important; 
+          margin-top: 0;
+        }
+        p { margin-bottom: 0.1em !important; }
+      }
+    }
+  }
+
+  .dvar-torah {
+    page-break-before: always;
+    page-break-inside: avoid;
+  }
+}
+
+@media print {
+  .no-print { display: none; }
+
+  .category-bulletin {
+
+    .entry-content { font-size: 14px; }
+    .entry-utility { .no-print; }
+
+    .dvar-torah {
+      &.long {
+        p { font-size: 0.8em; }
+      }//end long
+    }//end dvar torah
+  }//end bulletin
+
+  #footer { .no-print; }
+}//@media print
