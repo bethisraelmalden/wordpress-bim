@@ -1,16 +1,16 @@
 define(function (require) {
   'use strict';
-  require('moment');
-  var app = require('app/app'),
-    //eruv_url = 'http://bethisraelmalden.org/api/eruv/status.php';
-    eruv_url = 'http://localhost/repos/bethisraelmalden.org/api/eruv/status.php';
+  var $ = require('jquery'),
+    app = require('app/app'),
+    moment = require('moment'),
+    eruv_url = 'http://bethisraelmalden.org/api/eruv/status.php?callback=?';
 
   $.getJSON(eruv_url).done(function(tweets) {
     var
       tweet = tweets[0],
-      dtNow = momen(),
+      dtNow = moment(),
       dtPost = moment(tweet.created_at),
-      text = tweet.text,
+      text = tweet.text.replace('\u00a0', ' '),
       status = text.slice(0, text.indexOf(' '));
 
     if(dtNow.diff(dtPost, 'days') > 1) {
