@@ -9,26 +9,29 @@ requirejs.config({
     /** jQuery */
     'jquery': '//code.jquery.com/jquery.min',
     'jquery-ui': '//code.jquery.com/ui/1.10.3/jquery-ui',
-
-    'moment': '//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min',
+    'jquery-chosen': '//cdnjs.cloudflare.com/ajax/libs/chosen/1.0/chosen.jquery.min',
 
     /** requireJS */
-    'text': '//cdnjs.cloudflare.com/ajax/libs/require-text/2.0.10/text'
+    'text': '//cdnjs.cloudflare.com/ajax/libs/require-text/2.0.10/text',
+
+    /** Vanilla JS */
+    'moment': '//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min'
   },
 
   shim: {
     'bootstrap': ['jquery'],
     'boostrap-datepicker': ['bootstrap'],
-    'jquery-ui': ['jquery']
+    'jquery-ui': ['jquery'],
+    'jquery-chosen': ['jquery']
   }
 });
 
 define(function (require) {
   'use strict';
   require('bootstrap');
-  require('moment');
   var $ = require('jquery'),
-    app = { version: '0.0.1pre' };
+    app = { version: '0.0.2' },
+    moment = require('moment');
 
   $('html').removeClass('no-js');
 

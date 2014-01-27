@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
-
 @screen-sm: 768px;
 @screen-md: 992px;
 @screen-lg: 1200px;
@@ -28,17 +26,10 @@
   }
 }
 
-
 .single-row {
   margin-left: 15px;
   margin-right: 15px;
 }
-
-.alignright {
-  float: right;
-  padding-left: 1em;
-}
-
 
 .site-header {
   .primary-navigation {
@@ -151,20 +142,20 @@
     font-size: 1.2em;
   }
 
-  .schedule {
-    h2 { font-size: 1.5em; }
-    h3 { font-size: 1.2em; }
-    ul { padding-left: 1em; }
-
-    .upcoming-events,
-    .page-numbers,
-    .kiddush { display: none; }
-    .sidebar {
-      margin-left: 0.2em;
-      float: right;
-      width: 45%;
-    }
-  }
+  //.schedule {
+  //  h2 { font-size: 1.5em; }
+  //  h3 { font-size: 1.2em; }
+  //  ul { padding-left: 1em; }
+  //
+  //  .upcoming-events,
+  //  .page-numbers,
+  //  .kiddush { display: none; }
+  //  .sidebar {
+  //    margin-left: 0.2em;
+  //    float: right;
+  //    width: 45%;
+  //  }
+  //}
 
   .event {
     overflow: auto;
@@ -180,7 +171,25 @@
   }
 }
 
-.page-id-25 { // Mikvah
+.page-donate {
+  .donate-cash-check {
+    address { font-size: 1.2em; }
+  }
+  
+  #amount { text-align: right; }
+
+  #dedications {
+    .taken { color: #999; }
+    .status { float: right; }
+    .price {
+      width: 5em;
+      text-align: right;
+      display: inline-block;
+    }
+  }
+}
+
+.page-mikvah {
   .background {
     background: url('../img/mikvah-pool.jpg');
     background-size: cover;
@@ -208,7 +217,11 @@
   footer { margin-top: 0; }
 }
 
-
+/// WordPress Hacks ///
+.alignright {
+  float: right;
+  padding-left: 1em;
+}
 
 /// Old Bulletin Style ///
 .category-bulletin {
@@ -255,8 +268,8 @@
         text-align: center;
         margin-bottom: 1em;
 
-        h3 { 
-          color: @color-kiddush !important; 
+        h3 {
+          color: @color-kiddush !important;
           margin-top: 0;
         }
         p { margin-bottom: 0.1em !important; }

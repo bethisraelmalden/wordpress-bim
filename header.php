@@ -30,7 +30,10 @@ ga('send', 'pageview');
 <?php endif;
 
 wp_head();
-?></head><body <?php body_class(); ?>>
+
+global $post;
+$slug = (is_page($post) ? 'page-' : 'post-') . get_post($post)->post_name;
+?></head><body <?php body_class($slug); ?>>
 <a href="#content" class="sr-only skip-link">Skip to content</a>
 <header class="site-header" role="banner">
   <nav role="navigation" class="primary-navigation navbar navbar-default">

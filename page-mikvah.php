@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php 
+wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraffitti');
+get_header(); ?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <div class="background">
   <div id="content" class="container">
@@ -127,9 +129,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/lib/requirejs-2.1.9/require.js"></script>
 <script>
 requirejs.config({baseUrl: '<?php echo get_template_directory_uri(); ?>'});
-require(['app/app'], function (app) {
-  require(['app/mikvah']);
-});
+require(['app/app'], function (app) { require(['app/mikvah']); });
 </script>
 <?php
 get_footer();
