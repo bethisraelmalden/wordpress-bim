@@ -2,30 +2,36 @@ define(function (require) {
   'use strict';
   require('jquery-chosen');
   var $ = require('jquery'),
-    app = require('app/app');
+    app = require('app/app'),
+    readhash = function (option) {
+      option = option || location.hash.substring(1);
+      if (option) {
+        $('#item')
+          .val(option)
+          .change()
+          .trigger('chosen:updated');
+      }//end if
+      return option;
+    };
 
-  $('.chosen').chosen({width: '100%', search_contains: true});
+  $('#item')
+    .change(function () { // Update amount when the item changes.
+      $('#amount').val($('#item').find(':selected').data('price'));
+    }).chosen({
+      width: '100%',
+      search_contains: true
+    });
 
-  // Update amount when the item changes.
-  $('#item').change(function () {
-    $('#amount').val($(this).find(':selected').data('price'));
-  });//end .change
-
+  if (readhash()) { $('#first').focus(); }
 
   // Update item and amount when clicking on a dedication item.
   $('#dedications a').click(function (e) {
-    var $this = $(this),
-      itemName = $this.text(),
-      itemPrice = $this.prevAll('.price')
-                       .text()
-                       .substring(1)
-                       .replace(',', '');
-
-    e.preventDefault();
-    $('#item').val(itemName).trigger('chosen:updated');
-    $('#amount')
-      .val(itemPrice)
-      .focus();
+    readhash($(this).text());
   });
 
+  $('form').on('reset', function () {
+    $('#item')
+      .val('General Donation')
+      .trigger('chosen:updated');
+    });
 });
