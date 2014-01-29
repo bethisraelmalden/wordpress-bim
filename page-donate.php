@@ -73,44 +73,44 @@ get_header(); ?>
         </div>
 
         <div class="form-group">
-          <label for="amount" class="col-sm-3 control-label">Amount</label>
+          <label for="amount_1" class="col-sm-3 control-label">Amount</label>
           <div class="col-sm-5">
             <div class="input-group">
               <span class="input-group-addon" title="USD">$</span>
-              <input id="amount" name="amount_1" type="number" class="form-control" value="0" />
+              <input id="amount_1" name="amount_1" type="number" class="form-control" value="0" />
             </div>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="first" class="col-sm-3 control-label">First Name</label>
+          <label for="first_name" class="col-sm-3 control-label">First Name</label>
           <div class="col-sm-9">
-            <input id="first" name="first_name" type="text" class="form-control" placeholder="First Name" />
+            <input id="first_name" name="first_name" type="text" class="form-control" />
           </div>
         </div>
         <div class="form-group">
           <label for="last" class="col-sm-3 control-label">Last Name</label>
           <div class="col-sm-9">
-            <input id="last" name="last_name" type="text" class="form-control" placeholder="Last Name" />
+            <input id="last_name" name="last_name" type="text" class="form-control" />
           </div>
         </div>
 
         <div class="form-group">
-          <label for="address" class="col-sm-3 control-label">Address</label>
+          <label for="address1" class="col-sm-3 control-label">Address</label>
           <div class="col-sm-9">
-            <input id="address" name="address1" type="text" class="form-control" placeholder="Address" />
+            <input id="address1" name="address1" type="text" class="form-control" />
           </div>
         </div>
 
         <div class="form-group">
           <label for="city" class="col-sm-3 control-label">City</label>
           <div class="col-sm-5">
-            <input id="city" name="city" type="text" class="form-control" placeholder="City" />
+            <input id="city" name="city" type="text" class="form-control" />
           </div>
           <label for="state" class="col-sm-1 control-label">State</label>
           <div class="col-sm-3">
             <select id="state" name="state" value="" class="form-control">
-              <option value="" disabled selected>State</option><option value="AA">AA</option><option value="AE">AE</option><option value="AK">AK</option><option value="AL">AL</option><option value="AP">AP</option><option value="AR">AR</option><option value="AS">AS</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="FM">FM</option><option value="GA">GA</option><option value="GU">GU</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MH">MH</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MP">MP</option><option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="PR">PR</option><option value="PW">PW</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VI">VI</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option>
+              <option value=""></option><option value="AA">AA</option><option value="AE">AE</option><option value="AK">AK</option><option value="AL">AL</option><option value="AP">AP</option><option value="AR">AR</option><option value="AS">AS</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="FM">FM</option><option value="GA">GA</option><option value="GU">GU</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MH">MH</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MP">MP</option><option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="PR">PR</option><option value="PW">PW</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VI">VI</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option>
             </select>
           </div>
         </div>
@@ -118,21 +118,21 @@ get_header(); ?>
         <div class="form-group">
           <label for="zip" class="col-sm-3 control-label">Zip</label>
           <div class="col-sm-9">
-            <input id="zip" name="zip" type="text" class="form-control" placeholder="Zip" />
+            <input id="zip" name="zip" type="text" class="form-control" />
           </div>
         </div>
 
         <div class="form-group">
           <label for="night_phone_a" class="col-sm-3 control-label">Phone</label>
           <div class="col-sm-9">
-            <input id="night_phone_a" name="night_phone_a" type="text" class="form-control" placeholder="Phone" />
+            <input id="night_phone_a" name="night_phone_a" type="text" class="form-control" />
           </div>
         </div>
 
         <div class="form-group">
           <label for="email" class="col-sm-3 control-label">Email</label>
           <div class="col-sm-9">
-            <input id="email" name="email" type="email" class="form-control" placeholder="Email" />
+            <input id="email" name="email" type="email" class="form-control" />
           </div>
         </div>
 
