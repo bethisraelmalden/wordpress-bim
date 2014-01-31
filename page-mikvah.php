@@ -1,4 +1,4 @@
-<?php 
+<?php
 wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraffitti');
 get_header(); ?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
@@ -8,7 +8,7 @@ get_header(); ?>
       <div class="col-xs-12 col-sm-7 text-center">
         <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
         <p class="lead">The new mikvah in Malden is now open for business!</p>
-        <p><strong>All visits by appointment only.</strong></p>
+        <p><strong>Open 7pm - 8:30pm.<br />All visits by appointment 24 hours in advance.</strong></p>
         <p>
           <a href="#make-appointment" class="btn btn-primary btn-lg"
              data-toggle="modal">Request Appointment</a>
@@ -22,7 +22,10 @@ get_header(); ?>
           <h3 class="text-center">What you need to know</h3>
           <dl class="center-block">
             <dt>Cost</dt>
-            <dd>$25 per visit</dd>
+            <dd>
+              $25 per visit<br />
+              $35 for special arrangements
+            </dd>
 
             <dt>Address</dt>
             <dd>
@@ -45,8 +48,8 @@ get_header(); ?>
 </div>
 
 <div id="make-appointment" class="modal fade">
-  <form class="modal-dialog form-horizontal" action="<?php echo get_template_directory_uri(); ?>/php/mikvah/appointment.php"
-        method="post" role="form">
+  <form class="modal-dialog form-horizontal" action="/api/mikvah/appointment.php"
+        method="POST" role="form">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -60,10 +63,17 @@ get_header(); ?>
                    class="form-control" placeholder="Your Name" />
           </div>
         </div><div class="form-group">
-          <label for="appt-email" class="col-sm-4 control-label">Email</label>
+          <label for="appt-email" class="col-sm-4 control-label">Your Email</label>
           <div class="col-sm-8">
             <input type="email" id="appt-email" name="appt-email"
                    class="form-control" placeholder="Email Address" />
+          </div>
+        </div><div class="form-group hidden">
+          <label for="email" class="col-sm-4 control-label">Email</label>
+          <div class="col-sm-8">
+            <input type="text" id="email" name="email" class="form-control"
+                   value="" placeholder="Leave Blank" />
+            <p class="help-block">Please leave this field blank.</p>
           </div>
         </div><div class="form-group">
           <label for="appt-phone" class="col-sm-4 control-label">
@@ -81,12 +91,31 @@ get_header(); ?>
             <input type="text" id="appt-date" name="appt-date"
                    class="form-control date" value="" />
           </div>
-        </div><div class="form-group hidden">
-          <label for="email" class="col-sm-4 control-label">Leave Blank</label>
+        </div><div class="form-group">
+          <label for="appt-time" class="col-sm-4 control-label">
+            Requested Time
+          </label>
           <div class="col-sm-8">
-            <input type="email" id="email" name="email" class="form-control" />
+            <label class="radio-inline">
+              <input type="radio" name="appt-time" value="07:00pm" checked> 7:00pm
+            </label><label class="radio-inline">
+              <input type="radio" name="appt-time" value="07:30pm"> 7:30pm
+            </label><label class="radio-inline">
+              <input type="radio" name="appt-time" value="08:00pm"> 8:00pm
+            </label><label class="radio-inline">
+              <input type="radio" name="appt-time" value="08:30pm"> 8:30pm
+            </label>
+
+            <p class="help-block">
+              Please contact <a href="mailto:mikvah@bethisraelmalden.org">mikvah@bethisraelmalden.org</a>
+              for other times (costs $10 more).
+            </p>
           </div>
-        </div<div class="form-group">
+        </div><div class="form-group">
+          <div class="col-sm-8 col-sm-offset-4">
+
+          </div>
+        </div><div class="form-group">
           <p class="help-block text-center">
             A mikvah attendant will contact you to make final arrangements.
           </p>

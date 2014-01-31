@@ -44,11 +44,11 @@ define(function (require) {
 
     $this.find('.form-group').removeClass('has-error');
     $this.find('input').each(function () {
-      if ('' === $(this).val().trim()) {
-        $(this)
-          .closest('.form-group')
-            .addClass('has-error')
-          .end();
+      var $this = $(this),
+        $group = $this.closest('.form-group');
+
+      if (!$group.hasClass('hidden') && '' === $this.val().trim()) {
+        $group.addClass('has-error');
       }//end if
     });//end .each
 
