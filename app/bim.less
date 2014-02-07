@@ -81,6 +81,45 @@
   }
 }
 
+.home-content {
+  .entry-header {
+    .entry-title {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      font-weight: bold;
+    }
+
+    .entry-meta {
+      a { color: #999; }
+      .entry-date {
+        &:before { content: '('; }
+        &:after { content: ')'; }
+      }
+    }
+  }//.entry-header
+
+  .entry-summary,
+  .entry-content {
+    margin-top: 0.2em;
+    margin-bottom: 2em;
+    font-size: 18px;
+    font-family: Georgia,Cambria,"Times New Roma",Times,serif;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    p {
+      //margin-bottom: 1.2em;
+      //text-align: justify;
+    }
+  }
+}
+
 .site-footer {
   margin-top: 2em;
   border-top: 4px solid #333;
