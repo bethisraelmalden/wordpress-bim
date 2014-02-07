@@ -57,8 +57,7 @@ get_header(); ?>
               <optgroup label="Mikvah Dedications">
                 <option data-price="36000" value="Beit HaTevillah (Mikvah Room)">$36,000 - Beit HaTevillah (Mikvah Room)</option>
                 <option data-price="25000" value="Preparation Room">$25,000 - Preparation Room</option>
-                <option data-price="12000" value="Bor HaZeria">$12,000 - Bor HaZeria</option>
-                <option data-price="12000" value="Bor HaShaka">$12,000 - Bor HaShaka</option>
+                <option data-price="5000" value="Utility Room">$5,000 - Utility Room</option>
                 <option data-price="5000" value="Door">$5,000 - Door</option>
                 <option data-price="3600" value="Mezuzah">$3,600 - Mezuzah</option>
                 <option data-price="2500" value="Plaque ($2,500)">$2,500 - Plaque</option>
@@ -153,15 +152,15 @@ get_header(); ?>
         <li class="taken"><span class="price">$20,000</span> &ndash; Reception <span class="status">Taken</span></li>
         <li class="taken"><span class="price">$18,000</span> &ndash; Preparation Room <span class="status">Taken</span></li>
         <li class="taken"><span class="price">$12,000</span> &ndash; Bor HaTachton <span class="status">Taken</span></li>
-        <li><span class="price">$12,000</span> &ndash; <a href="#Bor HaZeria">Bor HaZeria</a></li>
-        <li><span class="price">$12,000</span> &ndash; <a href="#Bor HaShaka">Bor HaShaka</a></li>
+        <li class="taken"><span class="price">$12,000</span> &ndash; Bor HaZeria <span class="status">Taken</a></li>
+        <li class="taken"><span class="price">$12,000</span> &ndash; Bor HaShaka <span class="status">Taken</a></li>
         <li class="taken"><span class="price">$10,000</span> &ndash; Entrance <span class="status">Taken</span></li>
         <li class="taken"><span class="price">$10,000</span> &ndash; Entrance Hallway <span class="status">Taken</span></li>
         <li class="taken"><span class="price">$10,000</span> &ndash; Inner Hallway <span class="status">Taken</span></li>
         <li class="taken"><span class="price">$10,000</span> &ndash; Dish Mikvah <span class="status">Taken</span></li>
         <li class="taken"><span class="price">$7,200</span> &ndash; Washing Stations <span class="status">Taken</span></li>
-        <li class="taken"><span class="price">$5,000</span> &ndash; Laundry Room <span class="status">Taken</span></li>
-        <li><span class="price">$5,000</span> &ndash; <a href="#Door">Door</a> (9) <span class="status">4 Taken</span></li>
+        <li><span class="price">$5,000</span> &ndash; <a href="#Utility Room">Utility Room</a></li>
+        <li><span class="price">$5,000</span> &ndash; <a href="#Door">Door</a> (9) <span class="status">5 Taken</span></li>
         <li><span class="price">$3,600</span> &ndash; <a href="#Mezuzah">Mezuzah</a> (4) <span class="status">1 Taken</span></li>
         <li><span class="price">$2,500</span> &ndash; <a href="#Plaque ($2,500)">Plaque ($2,500)</a></li>
         <li><span class="price">$1,800</span> &ndash; <a href="#Plaque ($1,800)">Plaque ($1,800)</a></li>
