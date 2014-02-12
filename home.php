@@ -31,10 +31,11 @@
       <div class="pull-right text-muted">
         <div class="hebrew-date"><?php echo bim_get_hebrew_date(); ?></div>
         <span class="eruv-status">
-          <strong>Eruv</strong> <span id="eruv-status">Checking...</span>
-          <span id="eruv-info">
+          <strong>Eruv</strong>
+          <span id="eruv-status">Loading...</span>
+          <small id="eruv-info">
             <a href="https://twitter.com/maldeneruv/status/">twitter</a>
-          </span>
+          </small>
         </span>
       </div>
     </div>
@@ -52,7 +53,7 @@
       <h4></h4>
       <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;wkst=1&amp;src=0iae4k1ocotleoitkqpbee7ui4%40group.calendar.google.com&amp;ctz=America%2FNew_York" style=" border-width:0 " width="100%" height="350" frameborder="0" scrolling="no"></iframe>
       <p class="text-center">
-        <a href="<?php echo $link; ?>" class="btn btn-default">Full Bulletin</a> 
+        <a href="<?php echo $link; ?>" class="btn btn-default">Full Bulletin</a>
         <a href="<?php echo get_category_link(get_cat_ID('Bulletin'))?>" class="btn btn-default">Past Bulletins</a>
       </p>
       <?php
