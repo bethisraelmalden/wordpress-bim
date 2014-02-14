@@ -28,11 +28,10 @@ ga('create', 'UA-12157214-1', 'bethisraelmalden.org');
 ga('send', 'pageview');
 </script>
 <?php endif;
-
 wp_head();
 
 global $post;
-$slug = (is_page($post) ? 'page-' : 'post-') . get_post($post)->post_name;
+$slug = (is_page($post) ? 'page-' . get_post($post)->post_name : '');
 ?></head><body <?php body_class($slug); ?>>
 <a href="#content" class="sr-only skip-link">Skip to content</a>
 <header class="site-header" role="banner">
@@ -66,12 +65,13 @@ $slug = (is_page($post) ? 'page-' : 'post-') . get_post($post)->post_name;
     </form -->
 
     <div class="navbar-right">
-    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="<?php echo home_url('/move'); ?>">Move to Malden</a></li>
-        <li><a href="<?php echo home_url('/incentives'); ?>" class="text-muted">Incentives</a></li>
-        <li><a href="<?php echo home_url('/contact'); ?>" class="text-muted">Contact Us</a></li>
-      </ul>
+      <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="<?php echo home_url('/move'); ?>">Move to Malden</a></li>
+          <li><a href="<?php echo home_url('/incentives'); ?>" class="text-muted">Incentives</a></li>
+          <li><a href="<?php echo home_url('/contact'); ?>" class="text-muted">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
 
     <a href="<?php echo esc_url(home_url('/donate')); ?>"

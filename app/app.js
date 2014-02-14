@@ -4,6 +4,7 @@ requirejs.config({
   paths: {
     /** Bootstrap */
     'bootstrap': '//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min',
+    //'bootstrap': '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
     'bootstrap-datepicker': '//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min',
 
     /** jQuery */
@@ -15,14 +16,16 @@ requirejs.config({
     'text': '//cdnjs.cloudflare.com/ajax/libs/require-text/2.0.10/text',
 
     /** Vanilla JS */
-    'moment': '//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min'
+    'moment': '//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min',
+    'transparency': 'lib/transparency-0.9.14/transparency.min'
   },
 
   shim: {
     'bootstrap': ['jquery'],
     'boostrap-datepicker': ['bootstrap'],
     'jquery-ui': ['jquery'],
-    'jquery-chosen': ['jquery']
+    'jquery-chosen': ['jquery'],
+    'transparency': ['jquery']
   }
 });
 

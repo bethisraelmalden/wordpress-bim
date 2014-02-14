@@ -86,7 +86,8 @@
     .entry-title {
       margin-top: 0;
       margin-bottom: 0;
-
+      
+      font-size: 25px;
       font-weight: bold;
     }
 
@@ -103,13 +104,13 @@
   .entry-content {
     margin-top: 0.2em;
     margin-bottom: 2em;
-    font-size: 18px;
+    font-size: 14px;
     font-family: Georgia,Cambria,"Times New Roma",Times,serif;
     letter-spacing: 0.01rem;
     line-height: 1.5;
 
     h1 {
-      font-size: 20px;
+      font-size: 14px;
       font-weight: bold;
     }
     
@@ -166,23 +167,26 @@
 }
 
 .home {
-  .background {
-    border-top: 1px solid #ccc;
-    background: url('../img/inauguration-crowd.jpg');
-    background-size: cover;
-    padding: 2em;
-    margin-top: -20px;
-    opacity: 0.8;
-    min-height: 15em;
+  #upcoming {
+    font-size: 16px;
+    .day { font-size: 20px; }
   }
 
-  .sticky-posts {
-    background-color: #ccc;
-    padding: 0.1em 1em 0 1em;
-    border-radius: 0.5em;
-    font-size: 1.2em;
+  #recent-posts {
+    .carousel-caption.no-image {
+      top: 25%;
+      bottom: 50%;
+      background-color: #ddd;
+      opacity: 0.9;
+      border-radius: 0.5em;
+      
+      h3, p { text-shadow: none; }
+      p { color: #000; }
+    }
   }
-
+  
+  
+  
   //.schedule {
   //  h2 { font-size: 1.5em; }
   //  h3 { font-size: 1.2em; }
