@@ -50,7 +50,7 @@
       //'post__in' => $sticky
     );
 
-    query_posts("cat=-$catBulletin&showposts=4");
+    query_posts("cat=-$catBulletin&showposts=3");
     if (have_posts()):
     ?>
       <div id="recent-posts" class="carousel slide" data-ride="carousel">

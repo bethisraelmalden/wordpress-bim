@@ -6,7 +6,7 @@ define(function (require) {
     moment = require('moment'),
     url = {
       eruv: 'http://bethisraelmalden.org/api/eruv/status.php?callback=?',
-      calendar: 'http://localhost/repos/bethisraelmalden.org/api/calendar/upcoming.php?callback=?'
+      calendar: 'http://bethisraelmalden.org/api/calendar/upcoming.php?callback=?'
     };
 
   $.getJSON(url.calendar).done(function(data) {
