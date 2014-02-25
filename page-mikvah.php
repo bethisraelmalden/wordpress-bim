@@ -14,7 +14,7 @@ get_header(); ?>
              data-toggle="modal">Request Appointment</a>
         </p><p>
           <a href="mailto:mikvah@bethisraelmalden.org">mikvah@bethisraelmalden.org</a>
-          <span class="hidden">&bull; <a href="tel:+17813333202">781-333-3202</a></span>
+          <span>&bull; <a href="tel:+17813333202">781-333-3202</a></span>
         </p>
       </div><div class="col-xs-12 col-sm-5">
         <hr class="visible-xs" />
