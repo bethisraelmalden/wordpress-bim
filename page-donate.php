@@ -54,6 +54,9 @@ get_header(); ?>
                 <option data-price="54" value="Kiddush">$54 - Kiddush</option>
                 <option data-price="144" value="Luncheon">$144 - Luncheon</option>
               </optgroup>
+              <optgroup label="Seasonal">
+                <option data-price="0" value="Matanot l'Evyonim">Matanot l'Evyonim (Purim)</option>
+              </optgroup>
               <optgroup label="Mikvah Dedications">
                 <option data-price="36000" value="Beit HaTevillah (Mikvah Room)">$36,000 - Beit HaTevillah (Mikvah Room)</option>
                 <option data-price="25000" value="Preparation Room">$25,000 - Preparation Room</option>
