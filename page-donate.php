@@ -55,6 +55,9 @@ get_header(); ?>
                 <option data-price="144" value="Luncheon">$144 - Luncheon</option>
               </optgroup>
               <optgroup label="Seasonal">
+                <option data-price="0" value="Event Attendance">Event Attendance</option>
+                <option data-price="0" value="Ma'ot Chitim">Ma'ot Chitim (Pesach)</option>
+                <option data-price="0" value="Lulav/Etrog Set">Lulav/Etrog Set (Sukkot)</option>
                 <option data-price="0" value="Matanot l'Evyonim">Matanot l'Evyonim (Purim)</option>
               </optgroup>
               <optgroup label="Mikvah Dedications">
