@@ -81,7 +81,7 @@ get_header(); ?>
           <div class="col-sm-5">
             <div class="input-group">
               <span class="input-group-addon" title="USD">$</span>
-              <input id="amount_1" name="amount_1" type="number" class="form-control" value="0" />
+              <input id="amount_1" name="amount_1" type="number" class="form-control" value="0.00" min="0" step="0.01" />
             </div>
           </div>
         </div>
