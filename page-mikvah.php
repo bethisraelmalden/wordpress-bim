@@ -45,6 +45,45 @@ get_header(); ?>
       </div>
     </div>
   </div>
+  <div class="container" style="padding: 2em; max-width: 50em">
+    <div id="photo-gallery" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/mikvah/waiting-room.jpg"></a>
+          <div class="carousel-caption">
+            <h3>Waiting Room</h3>
+            <p>Welcome to Mikvah Mayanei Tovah.</p>
+          </div>
+        </div><div class="item">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/mikvah/prep-room.jpg"></a>
+          <div class="carousel-caption">
+            <h3>Preparation Room</h3>
+            <p>Featuring a jacuzzi tub and standing shower.</p>
+          </div>
+        </div><div class="item">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/mikvah/handicap-prep-room.jpg"></a>
+          <div class="carousel-caption">
+            <h3>Handicap Preparation Room</h3>
+            <p>Your comfort is our highest priority.</p>
+          </div>
+        </div><div class="item">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/mikvah/mikvah-pool.jpg"></a>
+          <div class="carousel-caption">
+            <h3>Mikvah Pool</h3>
+            <p>Our mikvah features Bor HaShakah, Bor HaZeriyah, Bor HaTachton.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#photo-gallery" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a><a class="right carousel-control" href="#photo-gallery" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
 </div>
 
 <div id="make-appointment" class="modal fade">
