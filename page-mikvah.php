@@ -8,7 +8,7 @@ get_header(); ?>
       <div class="col-xs-12 col-sm-7 text-center">
         <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
         <p class="lead">The new mikvah in Malden is now open for business!</p>
-        <p><strong>Open 7:30pm - 9:30pm.<br />All visits by appointment 24 hours in advance.</strong></p>
+        <p><strong>Open 8:30pm - 10:15pm.<br />All visits by appointment 24 hours in advance.</strong></p>
         <p>
           <a href="#make-appointment" class="btn btn-primary btn-lg"
              data-toggle="modal">Request Appointment</a>
@@ -136,13 +136,13 @@ get_header(); ?>
           </label>
           <div class="col-sm-8">
             <label class="radio-inline">
-              <input type="radio" name="appt-time" value="07:30pm" checked> 7:30pm
+              <input type="radio" name="appt-time" value="08:15pm" checked> 8:15pm
             </label><label class="radio-inline">
-              <input type="radio" name="appt-time" value="08:00pm"> 8:00pm
+              <input type="radio" name="appt-time" value="08:45pm"> 8:45pm
             </label><label class="radio-inline">
-              <input type="radio" name="appt-time" value="08:30pm"> 8:30pm
+              <input type="radio" name="appt-time" value="09:15pm"> 9:15pm
             </label><label class="radio-inline">
-              <input type="radio" name="appt-time" value="09:00pm"> 9:00pm
+              <input type="radio" name="appt-time" value="09:45pm"> 9:45pm
             </label>
 
             <p class="help-block">
