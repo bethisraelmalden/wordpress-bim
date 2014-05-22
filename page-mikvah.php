@@ -3,6 +3,10 @@ wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraff
 get_header(); ?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <div class="background">
+  <div id="flash" class="text-center alert hidden">
+    <button type="button" class="close">&times;</button>
+    <div class="msg"></div>
+  </div>
   <div id="content" class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-7 text-center">
@@ -152,13 +156,14 @@ get_header(); ?>
           </div>
         </div><div class="form-group">
           <div class="col-sm-8 col-sm-offset-4">
-
+            <p class="help-block">
+              Your appointment is <strong>not confirmed</strong> until a mikvah attendant contacts you
+              to make final arrangements.
+            </p><p class="help-block">
+              If you need to talk to a mikvah attendent, you can call Tova Rabinowitz at
+              <a href="tel:+17812231470">781-223-1470</a>.
+            </p>
           </div>
-        </div><div class="form-group">
-          <p class="help-block text-center">
-            Your appointment is <strong>not confirmed</strong> until a mikvah attendant contacts you
-            to make final arrangements.
-          </p>
         </div>
       </div>
       <div class="modal-footer">
