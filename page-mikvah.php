@@ -25,6 +25,12 @@ get_header(); ?>
         <div id="facts" class="center-block">
           <h3 class="text-center">What you need to know</h3>
           <dl class="center-block">
+            <dt>Preparation</dt>
+            <dd>
+              <i class="glyphicon glyphicon-download"></i>
+              <a href="http://bethisraelmalden.org/media/2014/mikvah/mikvah-prep.pdf" target="_blank">Download Preparation Sheet</a>
+            </dd>
+            
             <dt>Cost</dt>
             <dd>
               $25 per visit<br />
