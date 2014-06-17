@@ -78,3 +78,17 @@ $slug = (is_page($post) ? 'page-' . get_post($post)->post_name : '');
        class="navbar-btn navbar-right btn btn-donate">Donate</a>
   </nav>
 </header>
+<div class="container visible-print" style="border-bottom: 4px solid #333; margin-bottom: 2em; padding-bottom: 1em; ">
+  <div class="row">
+    <div class="col-xs-6">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/bim-logo-full.png"
+             alt="<?php bloginfo('name'); ?>" />
+    </div>
+    <div class="col-xs-6 text-right">
+      <strong>Congregation Beth Israel</strong><br />
+      10 Dexter Street,
+      Malden, MA 02148<br />
+      781-322-5686   
+    </div>
+  </div>
+</div>
