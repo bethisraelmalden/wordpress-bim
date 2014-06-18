@@ -50,7 +50,7 @@ get_header(); ?>
               <optgroup label="Sponsorships">
                 <option data-price="5" value="Breakfast">$5 - Breakfast</option>
                 <option data-price="18" value="Week of Breakfast">$18 - Week of Breakfast</option>
-                <option data-price="18" value="School-Year Kiddush">$18 - End of School Year Kiddush</option>
+                <option data-price="18" value="School-Year-Kiddush">$18 - End of School Year Kiddush</option>
                 <option data-price="36" value="Seudah Shelishit">$36 - Seudah Shelishit</option>
                 <option data-price="54" value="Kiddush">$54 - Kiddush</option>
                 <option data-price="144" value="Luncheon">$144 - Luncheon</option>
