@@ -1,12 +1,6 @@
 <?php get_header(); ?>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <div class="alert alert-warning">
-        Mincha/Ma'ariv today (6/18): Please contact Rabbi Rabinowitz at 781-223-1471.
-      </div>
-    </div>
-  
     <div class="col-xs-12 col-sm-9">
       <p class="lead"><em>Serving the Jewish community in Malden since 1904.</em></p>
     </div>
