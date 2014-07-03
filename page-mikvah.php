@@ -157,7 +157,7 @@ get_header(); ?>
 
             <p class="help-block">
               Please contact <a href="mailto:mikvah@bethisraelmalden.org">mikvah@bethisraelmalden.org</a>
-              for other times (costs $10 more).
+              for other times.
             </p>
           </div>
         </div><div class="form-group">
