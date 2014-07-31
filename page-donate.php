@@ -42,11 +42,21 @@ get_header(); ?>
                 <option data-price="0" value="Pulpit Fund">Rabbi's Pulpit Fund</option>
                 <option data-price="0" value="Mikvah Fund">Mikvah Fund</option>
               </optgroup>
-              <optgroup label="Learning">
+              <optgroup label="SEED Program">
+                <option data-price="18" value="Chai (SEED)">$18 - Chai (SEED)</option>
+                <option data-price="36" value="Double Chai (SEED)">$36 - Double Chai (SEED)</option>
+                <option data-price="54" value="Triple Chai (SEED)">$54 - Triple Chai (SEED)</option>
+                <option data-price="72" value="Donor (SEED)">$72 - Donor (SEED)</option>
+                <option data-price="108" value="Benefactor (SEED)">$108 - Benefactor (SEED)</option>
+                <option data-price="144" value="Luncheon (SEED)">$144 - Luncheon (SEED)</option>
+                <option data-price="180" value="Day of Learning (SEED)">$180 - Day of Learning (SEED)</option>
+                <option data-price="540" value="Week of Learning (SEED)">$540 - Week of Learning (SEED)</option>
+              </optgroup>
+              <!--optgroup label="Learning">
                 <option data-price="18" value="Day of Learning">$18 - Day of Learning</option>
                 <option data-price="72" value="Book Dedication">$72 - Sefer / Book Dedication</option>
-                <option data-price="100" value="Week of Learning">$100 - Day of Learning</option>
-              </optgroup>
+                <option data-price="100" value="Week of Learning">$100 - Week of Learning</option>
+              </optgroup-->
               <optgroup label="Sponsorships">
                 <option data-price="5" value="Breakfast">$5 - Breakfast</option>
                 <option data-price="18" value="Week of Breakfast">$18 - Week of Breakfast</option>
@@ -141,6 +151,12 @@ get_header(); ?>
           </div>
         </div>
 
+        <div class="form-group">
+          <label for="noteToSeller" class="col-sm-3 control-label">Note</label>
+          <div class="col-sm-9">
+            <input id="noteToSeller" name="noteToSeller" type="text" class="form-control" />
+          </div>
+        </div>
 
         <div class="form-group">
           <div class="col-sm-10 col-sm-offset-3">
@@ -150,9 +166,21 @@ get_header(); ?>
         </div>
       </form>
 
-    </div><div class="col-sm-4">
+    </div><div id="dedications" class="col-sm-4">
+      <h3 class="text-center">SEED Program <br /><small>Dedication Opportunities</small></h3>
+      <ul class="list-unstyled">
+        <li><span class="price">$18</span> &ndash; <a href="#Chai (SEED)">Chai (SEED)</a></li>
+        <li><span class="price">$36</span> &ndash; <a href="#Double Chai (SEED)">Double Chai (SEED)</a></li>
+        <li><span class="price">$54</span> &ndash; <a href="#Triple Chai (SEED)">Triple Chai (SEED)</a></li>
+        <li><span class="price">$72</span> &ndash; <a href="#Donor (SEED)">Donor (SEED)</a></li>
+        <li><span class="price">$108</span> &ndash; <a href="#Benefactor (SEED)">Benefactor (SEED)</a></li>
+        <li><span class="price">$144</span> &ndash; <a href="#Luncheon (SEED)">Luncheon (SEED)</a></li>
+        <li><span class="price">$180</span> &ndash; <a href="#Day of Learning (SEED)">Day of Learning (SEED)</a></li>
+        <li><span class="price">$540</span> &ndash; <a href="#Week of Learning (SEED)">Week of Learning (SEED)</a></li>
+      </ul>
+      <hr />
       <h3 class="text-center">Mikvah Mayanei Tovah<br /><small>Dedication Opportunities</small></h3>
-      <ul id="dedications" class="list-unstyled">
+      <ul class="list-unstyled">
         <li class="taken"><span class="price">$72,000</span> &ndash; Building <span class="status">Taken</span></li>
         <li><span class="price">$36,000</span> &ndash; <a href="#Beit HaTevillah (Mikvah Room)">Beit HaTevillah (Mikvah Room)</a></li>
         <li><span class="price">$25,000</span> &ndash; <a href="#Preparation Room">Preparation Room</a></li>
