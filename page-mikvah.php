@@ -146,13 +146,13 @@ get_header(); ?>
           </label>
           <div class="col-sm-8">
             <label class="radio-inline">
-              <input type="radio" name="appt-time" value="08:30pm" checked> 8:30pm
+              <input type="radio" name="appt-time" value="08:00pm" checked> 8:00pm
+            </label><label class="radio-inline">
+              <input type="radio" name="appt-time" value="08:30pm"> 8:30pm
             </label><label class="radio-inline">
               <input type="radio" name="appt-time" value="09:00pm"> 9:00pm
             </label><label class="radio-inline">
               <input type="radio" name="appt-time" value="09:30pm"> 9:30pm
-            </label><label class="radio-inline">
-              <input type="radio" name="appt-time" value="10:00pm"> 10:00pm
             </label>
 
             <p class="help-block">
