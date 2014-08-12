@@ -12,7 +12,7 @@ get_header(); ?>
       <div class="col-xs-12 col-sm-7 text-center">
         <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
         <p class="lead">The new mikvah in Malden is now open for business!</p>
-        <p><strong>Open 8:30pm - 10:00pm.<br />All visits by appointment 24 hours in advance.</strong></p>
+        <p><strong>Open 8:00pm - 09:30pm.<br />All visits by appointment 24 hours in advance.</strong></p>
         <p>
           <a href="#make-appointment" class="btn btn-primary btn-lg"
              data-toggle="modal">Request Appointment</a>
