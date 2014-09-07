@@ -9,7 +9,7 @@ requirejs.config({
 
     /** jQuery */
     'jquery': '//code.jquery.com/jquery.min',
-    'jquery-ui': '//code.jquery.com/ui/1.10.3/jquery-ui',
+    'jquery-ui': '//code.jquery.com/ui/1.11.1/jquery-ui.min',
     'jquery-chosen': '//cdnjs.cloudflare.com/ajax/libs/chosen/1.0/chosen.jquery.min',
 
     /** requireJS */
