@@ -6,7 +6,7 @@
         <ul class="list-unstyled">
           <li><a href="<?php echo esc_url(home_url('/donate')); ?>">Donate</a></li>
           <li><a href="<?php echo get_category_link(get_cat_ID('Events'))?>">Events</a></li>
-          <li><span class="text-muted">Membership</span></li>
+          <li><a href="<?php echo esc_url(home_url('/membership')); ?>">Membership</a></li>
         </ul>
       </div><div class="col-xs-6 col-sm-2">
         <h4>Grow Spritually</h4>
