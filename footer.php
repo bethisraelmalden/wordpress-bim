@@ -9,7 +9,7 @@
           <li><a href="<?php echo esc_url(home_url('/membership')); ?>">Membership</a></li>
         </ul>
       </div><div class="col-xs-6 col-sm-2">
-        <h4>Grow Spritually</h4>
+        <h4>Grow Spiritually</h4>
         <ul class="list-unstyled">
           <li><a href="<?php echo esc_url(home_url('/mikvah')); ?>">Mikvah Mayanei Tovah</a></li>
           <li><span class="text-muted">Malden Eruv</span></li>
