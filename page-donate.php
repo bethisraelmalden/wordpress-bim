@@ -41,8 +41,9 @@ get_header(); ?>
                 <option data-price="0" value="General Donation" selected="selected">General Donation</option>
                 <option data-price="0" value="Pulpit Fund">Rabbi's Pulpit Fund</option>
                 <option data-price="0" value="Mikvah Fund">Mikvah Fund</option>
+                <option data-price="0" value="Library Fund">Library Fund</option>
               </optgroup>
-              <optgroup label="SEED Program">
+              <!--optgroup label="SEED Program">
                 <option data-price="18" value="Chai (SEED)">$18 - Chai (SEED)</option>
                 <option data-price="36" value="Double Chai (SEED)">$36 - Double Chai (SEED)</option>
                 <option data-price="54" value="Triple Chai (SEED)">$54 - Triple Chai (SEED)</option>
@@ -51,12 +52,12 @@ get_header(); ?>
                 <option data-price="144" value="Luncheon (SEED)">$144 - Luncheon (SEED)</option>
                 <option data-price="180" value="Day of Learning (SEED)">$180 - Day of Learning (SEED)</option>
                 <option data-price="540" value="Week of Learning (SEED)">$540 - Week of Learning (SEED)</option>
-              </optgroup>
-              <!--optgroup label="Learning">
+              </optgroup-->
+              <optgroup label="Learning">
                 <option data-price="18" value="Day of Learning">$18 - Day of Learning</option>
                 <option data-price="72" value="Book Dedication">$72 - Sefer / Book Dedication</option>
                 <option data-price="100" value="Week of Learning">$100 - Week of Learning</option>
-              </optgroup-->
+              </optgroup>
               <optgroup label="Sponsorships">
                 <option data-price="5" value="Breakfast">$5 - Breakfast</option>
                 <option data-price="18" value="Week of Breakfast">$18 - Week of Breakfast</option>
@@ -66,9 +67,8 @@ get_header(); ?>
                 <option data-price="144" value="Luncheon">$144 - Luncheon</option>
               </optgroup>
               <optgroup label="Seasonal">
-                <option data-price="0" value="Event Attendance">Event Attendance</option>
                 <option data-price="0" value="Ma'ot Chitim">Ma'ot Chitim (Pesach)</option>
-                <option data-price="0" value="Lulav/Etrog Set">Lulav/Etrog Set (Sukkot)</option>
+                <!--option data-price="0" value="Lulav/Etrog Set">Lulav/Etrog Set (Sukkot)</option-->
                 <option data-price="0" value="Matanot l'Evyonim">Matanot l'Evyonim (Purim)</option>
               </optgroup>
               <optgroup label="Mikvah Dedications">
@@ -167,7 +167,7 @@ get_header(); ?>
       </form>
 
     </div><div id="dedications" class="col-sm-4">
-      <h3 class="text-center">SEED Program <br /><small>Dedication Opportunities</small></h3>
+      <!--h3 class="text-center">SEED Program <br /><small>Dedication Opportunities</small></h3>
       <ul class="list-unstyled">
         <li><span class="price">$18</span> &ndash; <a href="#Chai (SEED)">Chai (SEED)</a></li>
         <li><span class="price">$36</span> &ndash; <a href="#Double Chai (SEED)">Double Chai (SEED)</a></li>
@@ -178,7 +178,7 @@ get_header(); ?>
         <li><span class="price">$180</span> &ndash; <a href="#Day of Learning (SEED)">Day of Learning (SEED)</a></li>
         <li><span class="price">$540</span> &ndash; <a href="#Week of Learning (SEED)">Week of Learning (SEED)</a></li>
       </ul>
-      <hr />
+      <hr /-->
       <h3 class="text-center">Mikvah Mayanei Tovah<br /><small>Dedication Opportunities</small></h3>
       <ul class="list-unstyled">
         <li class="taken"><span class="price">$72,000</span> &ndash; Building <span class="status">Taken</span></li>
@@ -196,7 +196,7 @@ get_header(); ?>
         <li class="taken"><span class="price">$7,200</span> &ndash; Washing Stations <span class="status">Taken</span></li>
         <li><span class="price">$5,000</span> &ndash; <a href="#Utility Room">Utility Room</a></li>
         <li><span class="price">$5,000</span> &ndash; <a href="#Door">Door</a> (9) <span class="status">5 Taken</span></li>
-        <li><span class="price">$3,600</span> &ndash; <a href="#Mezuzah">Mezuzah</a> (4) <span class="status">1 Taken</span></li>
+        <li><span class="price">$3,600</span> &ndash; <a href="#Mezuzah">Mezuzah</a> (6) <span class="status">3 Taken</span></li>
         <li><span class="price">$2,500</span> &ndash; <a href="#Plaque ($2,500)">Plaque ($2,500)</a></li>
         <li><span class="price">$1,800</span> &ndash; <a href="#Plaque ($1,800)">Plaque ($1,800)</a></li>
         <li><span class="price">$1,000</span> &ndash; <a href="#Plaque ($1,000)">Plaque ($1,000)</a></li>
