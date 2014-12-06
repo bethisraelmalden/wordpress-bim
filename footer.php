@@ -7,6 +7,7 @@
           <li><a href="<?php echo esc_url(home_url('/donate')); ?>">Donate</a></li>
           <li><a href="<?php echo get_category_link(get_cat_ID('Events'))?>">Events</a></li>
           <li><a href="<?php echo esc_url(home_url('/membership')); ?>">Membership</a></li>
+          <li><a href="http://eepurl.com/R3sL5">Subscribe to our email list</a></li>
         </ul>
       </div><div class="col-xs-6 col-sm-2">
         <h4>Grow Spiritually</h4>
