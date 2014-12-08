@@ -59,7 +59,7 @@ get_header(); ?>
       Come for a visit and see how you and your family would fit in.
     </p>
     <form id="visit" class="form-horizontal" method="POST"
-          data-gdocs="https://spreadsheets.google.com/spreadsheet/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/1KcXHa-VWdtXs4y-k-KSz7fXS1YFmEVa01HLyJjrknA4/formResponse">
       <div class="hidden alert alert-success">
         Thank you for submitting your request.
       </div>
@@ -67,14 +67,15 @@ get_header(); ?>
         <label for="name" class="col-sm-2 ">Name</label>
         <div class="col-sm-10">
           <input id="name" type="text" placeholder="Name" class="form-control"
-                 data-gdocs="entry.1.single" />
+                 data-gdocs="entry.465352079" />
         </div>
       </div>
       <div class="form-group">
         <label for="contact" class="col-sm-2 ">Contact</label>
         <div class="col-sm-10">
           <input id="contact" type="text" placeholder="Phone/Email"
-                 class="form-control" data-gdocs="entry.2.single" />
+                 class="form-control"
+                 data-gdocs="entry.1358191719" />
           <p class="help-block">What's the best way to contact you?</p>
         </div>
       </div>
