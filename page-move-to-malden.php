@@ -7,7 +7,7 @@ get_header(); ?>
   <div class="col-sm-8">
     <div class="feature">
       <h2>
-        Family Comes First.<br />
+        Family Comes First.
         <span class="text-muted">Be a part of ours.</span>
       </h2>
       <img src="<?php echo get_template_directory_uri(); ?>/img/move/girl.jpg"
@@ -24,10 +24,10 @@ get_header(); ?>
     <hr />
     <div class="feature">
       <h2>
-        Full service amenities,<br />
+        Full service amenities,
         <span class="text-muted">small community feel.</span>
       </h2>
-      <img src="<?php echo get_template_directory_uri(); ?>/img/mikvah/mikvah-pool.jpg"
+      <img src="<?php echo get_template_directory_uri(); ?>/img/move/mikvah-pool.jpg"
            class="pull-left img-thumbnail" />
       <p>
         You have needs, too, and we do our best to help you meet them. With our
@@ -38,9 +38,7 @@ get_header(); ?>
     </div>
     <hr />
     <div class="feature">
-      <h2>
-        We're convenient <br /><span class="text-muted">and engaging.</span>
-      </h2>
+      <h2>We're convenient <span class="text-muted">and engaging.</span></h2>
       <img src="<?php echo get_template_directory_uri(); ?>/img/move/ice-cream.jpg"
            class="pull-right img-thumbnail" />
       <p>
