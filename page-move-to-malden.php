@@ -42,9 +42,9 @@ get_header(); ?>
       <img src="<?php echo get_template_directory_uri(); ?>/img/move/ice-cream.jpg"
            class="pull-right img-thumbnail" />
       <p>
-        Want to go our for ice cream? Try to new JP Licks at nearby
-        Assembly Row. Checking out all that downtown Boston has to offer?
-        Hop on the Orange Line at Malden Center for a  quick 10 minute ride.
+        Want to go out for ice cream? Try the new JP Licks at nearby
+        Assembly Row. Checking out all that downtown Boston has to offer? Hop on the
+        Orange Line at Malden Center and be there in ten minutes.
         With the nearby parks, museums, and zoo, you can relax and enjoy your
         family time.
       </p>
