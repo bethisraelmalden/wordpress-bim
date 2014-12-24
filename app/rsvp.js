@@ -13,6 +13,7 @@ define(function (require) {
       $rsvp = $(this),
       $paypal = $('#paypal'),
       isCash = ('Cash' === $pay.val()),
+      isFamilyMax = ('1' === $('#family_max').val()),
       num = 0,
       pdata = {},
       gdata = {
@@ -28,6 +29,7 @@ define(function (require) {
 
     $rsvp.find('[data-paypal-item]').each(function () {
       var $field = $(this);
+      if (isFamilyMax && 'skip' === $field.data('family-max')) { return; }
       if (0 !== parseInt($field.val(), 10)) {
         num += 1;
         pdata['item_name_' + num] = $field.data('paypal-item');
