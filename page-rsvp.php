@@ -109,7 +109,7 @@
       </div>
     </div>
   </form>
-  <?php  case '2014-legoland': ?>
+  <?php  break; case '2014-legoland': ?>
   <h1>Legoland RSVP</h1>
   <form id="rsvp" class="form-horizontal" method="POST"
         data-gdocs="https://docs.google.com/forms/d/146Lk7MUbL2nN3WXz_F7SR0SxuU_LQ6GkbGp1fMcwejk/formResponse">
