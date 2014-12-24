@@ -3,8 +3,8 @@
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
 <?php else:
-    switch ($_GET['event']): ?>
-  <?php  case '2015-shabbaton': ?>
+    switch ($_GET['event']):
+      case '2015-shabbaton': ?>
   <h1>Parshat Yitro Shabbaton RSVP</h1>
   <form id="rsvp" class="form-horizontal" method="POST"
         data-gdocs="https://docs.google.com/forms/d/10VDlWjXkmLo9glPUKondCEZo_Ml4rGsVTlXHv8QPzmE/formResponse">
@@ -36,6 +36,19 @@
       </div>
     </div>
     <div class="form-group">
+      <label for="adults" class="col-sm-3 control-label">
+        # Adults ($15)
+      </label>
+      <div class="col-sm-8">
+        <input id="adults" type="number" name="adults"
+               value="0" min="0" step="1"
+               data-family-max="skip"
+               data-gdocs="entry.39081953"
+               data-paypal-item="Shabbaton - Adult"
+               data-paypal-amount="15.00" />
+      </div>
+    </div>
+    <div class="form-group">
       <label for="children" class="col-sm-3 control-label">
         # Children ($8)
       </label>
@@ -50,16 +63,13 @@
       </div>
     </div>
     <div class="form-group">
-      <label for="adults" class="col-sm-3 control-label">
-        # Adults ($15)
+      <label for="veg" class="col-sm-3 control-label">
+        # Vegetarian Meals
       </label>
       <div class="col-sm-8">
-        <input id="adults" type="number" name="adults"
+        <input id="veg" type="number" name="veg"
                value="0" min="0" step="1"
-               data-family-max="skip"
-               data-gdocs="entry.39081953"
-               data-paypal-item="Shabbaton - Adult"
-               data-paypal-amount="15.00" />
+               data-gdocs="entry.659366634" />
       </div>
     </div>
     <div class="form-group">
@@ -89,23 +99,16 @@
       </div>
     </div>
     <div class="form-group">
-      <label for="veg" class="col-sm-3 control-label">
-        # Vegetarian Meals
-      </label>
-      <div class="col-sm-8">
-        <input id="veg" type="number" name="veg"
-               value="0" min="0" step="1"
-               data-gdocs="entry.659366634" />
-      </div>
-    </div>
-    <div class="form-group">
       <div class="col-sm-8 col-sm-offset-3">
-        <input id="discount_rate" name="discount_rate" type="hidden" value="5"
-               data-gdocs="entry.1042250289" />
+        <input id="discount_rate" name="discount_rate" type="hidden"
+               value="5"
+               data-gdocs="entry.1042250289"
+               data-paypal="discount_rate_cart" />
         <input id="payment_method" type="hidden" value="PayPal"
                data-gdocs="entry.1281585095" />
         <input type="submit" value="PayPal" class="btn btn-primary" />
         <input type="submit" value="Cash" class="btn btn-default" />
+        <p class="help-block">Pay by January 17th for a 5% discount.</p>
       </div>
     </div>
   </form>
