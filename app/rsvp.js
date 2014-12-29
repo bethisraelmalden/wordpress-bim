@@ -2,32 +2,37 @@ define(function (require) {
   'use strict';
   var
     $ = require('jquery'),
-    $pay = $('#payment_method');
+    app = {
+      $pay: $('#payment_method'),
+      $rsvp: $('#rsvp'),
+      $paypal: $('#paypal')
+    };
 
-  $('#rsvp input[type=submit]').click(function() { $pay.val($(this).val()); });
+  app.init = function () {
+    app.$rsvp
+      .submit(app.submit)
+      .find(':input:first').focus().end()
+      .find('input[type=submit]')
+        .click(function () {
+          app.$pay.val($(this).val()); // update payment method
+        })
+      .end();
+    return app;
+  };
 
-  $('#rsvp').submit(function (e) {
-    e.preventDefault(); // nowhere to go
-
-    var
-      $rsvp = $(this),
-      $paypal = $('#paypal'),
-      isCash = ('Cash' === $pay.val()),
+  app.build_paypal = function (isInterested) {
+    var num = 0,
       isFamilyMax = ('1' === $('#family_max').val()),
-      num = 0,
-      pdata = {},
-      gdata = {
-        pageHistory: 0,
-        draftResponse: '[,,&quot;-123456789&quot;]',
-        fbzx:'-132456789'
-      };
+      pdata = {};
 
-    $rsvp.find('[data-paypal]').each(function () {
+    if (!isInterested) { return true; } // nothing to do
+
+    app.$rsvp.find('[data-paypal]').each(function () {
       var $field = $(this);
       pdata[$field.data('paypal')] = $field.val();
     });// initial paypal data
 
-    $rsvp.find('[data-paypal-item]').each(function () {
+    app.$rsvp.find('[data-paypal-item]').each(function () {
       var $field = $(this);
       if (isFamilyMax && 'skip' === $field.data('family-max')) { return; }
       if (0 !== parseInt($field.val(), 10)) {
@@ -44,26 +49,48 @@ define(function (require) {
     }//end if: nothing selected
 
     $.each(pdata, function (k, v) {
-      $paypal.append(
+      app.$paypal.append(
         '<input type="hidden" name="{k}" value="{v}" />'
         .replace('{k}', k).replace('{v}', v)
       );
     });// paypal form built
 
-    $rsvp.find('[data-gdocs]').each(function () {
+    return true;
+  };
+
+  app.submit_gdocs = function (isInterested) {
+    var
+      isCash = ('Cash' === app.$pay.val()),
+      gdata = {
+        pageHistory: 0,
+        draftResponse: '[,,&quot;-123456789&quot;]',
+        fbzx:'-132456789'
+      };
+
+    app.$rsvp.find('[data-gdocs]').each(function () {
       var $field = $(this);
       gdata[$field.data('gdocs')] = $field.val();
     });// gdata ready
 
-    $.post($rsvp.data('gdocs'), gdata) // gdata posted
+    $.post(app.$rsvp.data('gdocs'), gdata) // gdata posted
       .always(function () {
-        if (isCash) {
+        if (!isInterested || isCash) {
           window.location = location.href + '&thankyou=1';
         } else {
-          $paypal.submit();
+          app.$paypal.submit();
         }//end if: redirected
       });
 
+    return true; // always works
+  };
+
+  app.submit = function (e) {
+    e.preventDefault(); // nowhere to go
+    var isInterested = ('0' === $('#notme').val());
+    if (!app.build_paypal(isInterested)) { return false; }
+    if (!app.submit_gdocs(isInterested)) { return false; }
     return false;
-  });
+  };
+
+  $(app.init); // initialize
 });
