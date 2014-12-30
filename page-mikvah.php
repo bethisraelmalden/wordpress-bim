@@ -30,7 +30,7 @@ get_header(); ?>
               <i class="glyphicon glyphicon-download"></i>
               <a href="http://bethisraelmalden.org/media/2014/mikvah/mikvah-prep.pdf" target="_blank">Download Preparation Sheet</a>
             </dd>
-            
+
             <dt>Cost</dt>
             <dd>
               $25 per visit<br />
@@ -60,6 +60,14 @@ get_header(); ?>
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
+          <a href="http://bethisraelmalden.org/2014/12/taharas-hamishpacha-initiative/">
+            <img src="http://bethisraelmalden.org/wp-content/uploads/2014/12/mishpacha-789x1024.png" />
+          </a>
+          <div class="carousel-caption">
+            <h3>Taharas Mishpacha Initiative</h3>
+            <p>Attend the 5-part refresher. <a href="btn btn-primary" href="http://bit.ly/1A5vQvC">RSVP Now</a></p>
+          </div>
+        </div><div class="item">
           <img src="<?php echo get_template_directory_uri(); ?>/img/mikvah/waiting-room.jpg"></a>
           <div class="carousel-caption">
             <h3>Waiting Room</h3>
