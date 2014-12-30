@@ -29,11 +29,13 @@ define(function (require) {
 
     app.$rsvp.find('[data-paypal]').each(function () {
       var $field = $(this);
+      if ($field.is(':checkbox') && !$field.is(':checked')) { return; }
       pdata[$field.data('paypal')] = $field.val();
     });// initial paypal data
 
     app.$rsvp.find('[data-paypal-item]').each(function () {
       var $field = $(this);
+      if ($field.is(':checkbox') && !$field.is(':checked')) { return; }
       if (isFamilyMax && 'skip' === $field.data('family-max')) { return; }
       if (0 !== parseInt($field.val(), 10)) {
         num += 1;
@@ -69,6 +71,7 @@ define(function (require) {
 
     app.$rsvp.find('[data-gdocs]').each(function () {
       var $field = $(this);
+      if ($field.is(':checkbox') && !$field.is(':checked')) { return; }
       gdata[$field.data('gdocs')] = $field.val();
     });// gdata ready
 

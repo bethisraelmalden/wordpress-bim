@@ -59,7 +59,7 @@
                  data-family-max="skip"
                  data-gdocs="entry.39081953"
                  data-paypal-item="Shabbaton - Adult"
-                 data-paypal-amount="15.00" />
+                 data-paypal-amount="14.25" />
         </div>
       </div>
       <div class="form-group">
@@ -72,7 +72,7 @@
                  data-family-max="skip"
                  data-gdocs="entry.1315406559"
                  data-paypal-item="Shabbaton - Child"
-                 data-paypal-amount="8.00"/>
+                 data-paypal-amount="7.60"/>
           <p class="help-block">Ages 3-12</p>
         </div>
       </div>
@@ -94,7 +94,7 @@
           <select id="family_max" name="family_max"
                   data-gdocs="entry.261499401"
                   data-paypal-item="Shabbaton - Family max"
-                  data-paypal-amount="54.00">
+                  data-paypal-amount="51.30">
             <option value="0" selected="selected">No</option>
             <option value="1">Yes</option>
           </select>
@@ -112,13 +112,40 @@
           </select>
         </div>
       </div>
+      <hr />
+      <div class="form-group">
+        <label for="sponsorship" class="col-sm-6 control-label">
+          Add a sponsorship?
+        </label>
+        <div class="col-sm-6">
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.1794699399"
+                   data-paypal-item="Sponsor - Oneg"
+                   data-paypal-amount="18.00" /> Oneg ($18)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.755506829"
+                   data-paypal-item="Sponsor - Luncheon"
+                   data-paypal-amount="54.00" /> Luncheon ($54)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.1745866060"
+                   data-paypal-item="Sponsor - Seudah Shelishit"
+                   data-paypal-amount="36.00" /> Seudah Shelishit ($36)
+          </label>
+        </div>
+      </div>
+
       <div class="form-group">
         <div class="col-sm-6 col-sm-offset-6">
           <input id="notme" type="hidden" value="0" />
-          <input id="discount_rate" name="discount_rate" type="hidden"
+          <!--input id="discount_rate" name="discount_rate" type="hidden"
                  value="5"
                  data-gdocs="entry.1042250289"
-                 data-paypal="discount_rate_cart" />
+                 data-paypal="discount_rate_cart" /-->
           <input id="payment_method" type="hidden" value="PayPal"
                  data-gdocs="entry.1281585095" />
           <input type="submit" value="PayPal" class="btn btn-primary" />
