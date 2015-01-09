@@ -70,8 +70,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-6 text-center">
-      <a href="http://bethisraelmalden.org/2014/12/parshat-yitro-shabbaton/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2014/12/KlatzkoShabbaton-232x300.png" />
+      <a href="http://bethisraelmalden.org/2015/01/game-pizza-night/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/01/Game-Night-e1420776222368.png" />
       </a>
     </div>
   </div>
