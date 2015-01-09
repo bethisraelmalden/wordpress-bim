@@ -2,10 +2,81 @@
 <div id="content" class="container">
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
-<?php else:
-    switch ($_GET['event']):
-      case '2015-shabbaton': ?>
-  <h1>Parshat Yitro Shabbaton RSVP</h1>
+<?php else: switch ($_GET['event']): ?>
+<?php case '2015-gamenight': ?>
+  <h1>January 2015 - Game Night</h1>
+  <div class="row">
+    <form id="rsvp" class="form col-sm-4" method="POST"
+          data-gdocs="https://docs.google.com/forms/d/1yW8WDgYejESPIuvbL9sqlvn4AqhgTdydmhYdKSCgC6U/formResponse">
+      <div class="form-group">
+        <label for="first_name" class="control-label">First Name</label>
+        <input id="first_name" type="text" name="first_name"
+               value="<?php echo $_GET['fname']?>" class="form-control"
+               data-gdocs="entry.1394265091"
+               data-paypal="first_name" />
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="control-label">Last Name</label>
+        <input id="last_name" type="text" name="last_name"
+               value="<?php echo $_GET['lname']?>" class="form-control"
+               data-gdocs="entry.2116404569"
+               data-paypal="last_name" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="control-label">Email</label>
+        <input id="email" type="email" name="email"
+               value="<?php echo $_GET['email']?>" class="form-control"
+               data-gdocs="entry.1677663896"
+               data-paypal="email" />
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <input id="notme" type="hidden" value="1" />
+        <input id="adults" type="hidden" name="adults"
+               value="Not Interested" data-gdocs="entry.1212927425" />
+        <input id="payment_method" type="hidden" value=""
+               data-gdocs="entry.1104698442" />
+        <input type="submit" value="Not Interested" class="btn btn-primary" />
+        <p class="help-block">Please confirm you're not interested.</p>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label for="adults" class="control-label"># Attending ($5 each)</label>
+        <input id="adults" type="number" name="adults"
+               class="form-control"
+               value="0" min="0" step="1"
+               data-gdocs="entry.1212927425"
+               data-paypal-item="Game Night"
+               data-paypal-amount="5.00" />
+        <p class="help-block">Includes all you can eat pizza!</p>
+      </div>
+      <div class="form-group">
+        <label for="games" class="control-label">
+          Which games will you bring?
+        </label>
+        <textarea id="games" name="games" class="form-control"
+                  data-gdocs="entry.472182146" rows="4"></textarea>
+        <p class="help-block">
+          Please mark any games you bring so you can take it home afterwards.
+        </p>
+      </div>
+      <div class="form-group">
+        <input id="notme" type="hidden" value="0" />
+        <input id="payment_method" type="hidden" value="PayPal"
+               data-gdocs="entry.1104698442" />
+        <input type="submit" value="PayPal" class="btn btn-primary" />
+        <input type="submit" value="Cash" class="btn btn-default" />
+      </div>
+      <?php endif; ?>
+    </form>
+    <div class="col-sm-6 text-center">
+      <a href="http://bethisraelmalden.org/2014/12/parshat-yitro-shabbaton/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2014/12/KlatzkoShabbaton-232x300.png" />
+      </a>
+    </div>
+  </div>
+<?php break; case '2015-shabbaton': ?>
+  <h1>Parshat Yitro Shabbaton</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
           data-gdocs="https://docs.google.com/forms/d/10VDlWjXkmLo9glPUKondCEZo_Ml4rGsVTlXHv8QPzmE/formResponse">
@@ -13,7 +84,7 @@
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
           <input id="first_name" type="text" name="first_name"
-                 value="<?php echo $_GET['fname']?>"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
                  data-gdocs="entry.636705728"
                  data-paypal="first_name" />
         </div>
@@ -22,7 +93,7 @@
         <label for="last_name" class="col-sm-6 control-label">Last Name</label>
         <div class="col-sm-6">
           <input id="last_name" type="text" name="last_name"
-                 value="<?php echo $_GET['lname']?>"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
                  data-gdocs="entry.490719412"
                  data-paypal="last_name" />
         </div>
@@ -31,7 +102,7 @@
         <label for="email" class="col-sm-6 control-label">Email</label>
         <div class="col-sm-6">
           <input id="email" type="email" name="email"
-                 value="<?php echo $_GET['email']?>"
+                 value="<?php echo $_GET['email']?>" class="form-control"
                  data-gdocs="entry.439574896"
                  data-paypal="email" />
         </div>
@@ -54,7 +125,7 @@
           # Adults ($15)
         </label>
         <div class="col-sm-6">
-          <input id="adults" type="number" name="adults"
+          <input id="adults" type="number" name="adults" class="form-control"
                  value="0" min="0" step="1"
                  data-family-max="skip"
                  data-gdocs="entry.39081953"
@@ -68,7 +139,7 @@
         </label>
         <div class="col-sm-6">
           <input id="children" type="number" name="children"
-                 value="0" min="0" step="1" size="2"
+                 value="0" min="0" step="1" size="2" class="form-control"
                  data-family-max="skip"
                  data-gdocs="entry.1315406559"
                  data-paypal-item="Shabbaton - Child"
@@ -81,7 +152,7 @@
           # Vegetarian Meals
         </label>
         <div class="col-sm-6">
-          <input id="veg" type="number" name="veg"
+          <input id="veg" type="number" name="veg" class="form-control"
                  value="0" min="0" step="1"
                  data-gdocs="entry.659366634" />
         </div>
@@ -91,7 +162,7 @@
           Pay Family Max ($54)
         </label>
         <div class="col-sm-6">
-          <select id="family_max" name="family_max"
+          <select id="family_max" name="family_max" class="form-control"
                   data-gdocs="entry.261499401"
                   data-paypal-item="Shabbaton - Family max"
                   data-paypal-amount="51.30">
@@ -106,6 +177,7 @@
         </label>
         <div class="col-sm-6">
           <select id="need_hospitality" name="need_hospitality"
+                  class="form-control"
                   data-gdocs="entry.1397021896">
             <option value="No" selected="selected">No</option>
             <option value="Yes">Yes</option>
@@ -167,7 +239,6 @@
     Sorry, we cannot find the RSVP form for this event. Try looking at the
     <a href="<?php echo get_category_link(get_cat_ID('Events'))?>">Events</a> page.
   </div>
-
 <?php
     endswitch;
   endif;
