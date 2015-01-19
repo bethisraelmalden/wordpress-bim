@@ -130,7 +130,7 @@
                  data-family-max="skip"
                  data-gdocs="entry.39081953"
                  data-paypal-item="Shabbaton - Adult"
-                 data-paypal-amount="14.25" />
+                 data-paypal-amount="15.00" />
         </div>
       </div>
       <div class="form-group">
@@ -143,7 +143,7 @@
                  data-family-max="skip"
                  data-gdocs="entry.1315406559"
                  data-paypal-item="Shabbaton - Child"
-                 data-paypal-amount="7.60"/>
+                 data-paypal-amount="8.00"/>
           <p class="help-block">Ages 3-12</p>
         </div>
       </div>
@@ -165,7 +165,7 @@
           <select id="family_max" name="family_max" class="form-control"
                   data-gdocs="entry.261499401"
                   data-paypal-item="Shabbaton - Family max"
-                  data-paypal-amount="51.30">
+                  data-paypal-amount="54.00">
             <option value="0" selected="selected">No</option>
             <option value="1">Yes</option>
           </select>
