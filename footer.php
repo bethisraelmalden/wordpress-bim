@@ -13,25 +13,25 @@
         <h4>Grow Spiritually</h4>
         <ul class="list-unstyled">
           <li><a href="<?php echo esc_url(home_url('/mikvah')); ?>">Mikvah Mayanei Tovah</a></li>
-          <li><span class="text-muted">Malden Eruv</span></li>
-          <li><span class="text-muted">Minyan</span></li>
+          <li><a href="<?php echo esc_url(home_url('/eruv')); ?>">Malden Eruv</a></li>
+          <!--li><span class="text-muted">Minyan</span></li-->
           <li><a href="<?php echo get_category_link(get_cat_ID('Torah'))?>">Past Shiurim</a></li>
         </ul>
       </div><div class="col-xs-6 col-sm-2">
         <h4>Incentives</h4>
         <ul class="list-unstyled">
-          <li><span class="text-muted">Home Loans</span></li>
-          <li><span class="text-muted">Tuition Assistance</span></li>
-          <li><span class="text-muted">School Bus</span></li>
+          <li><a href="<?php echo esc_url(home_url('/incentives#home-loan')); ?>">Home Loans</a></li>
+          <li><a href="<?php echo esc_url(home_url('/incentives#scholarship')); ?>">Tuition Assistance</a></li>
+          <li><a href="<?php echo esc_url(home_url('/incentives#bus')); ?>">School Bus</a></li>
         </ul>
       </div><div class="col-xs-6 col-sm-2">
         <h4>Learn More</h4>
         <ul class="list-unstyled">
-          <li><span class="text-muted">Move to Malden</span></li>
-          <li><span class="text-muted">About the Shul</span></li>
-          <li><span class="text-muted">About the City</span></li>
-          <li><span class="text-muted">Community Resources</span></li>
-          <li><span class="text-muted">Our Sponsors</span></li>
+          <li><a href="<?php echo esc_url(home_url('/move')); ?>">Move to Malden</a></li>
+          <li><a href="<?php echo esc_url(home_url('/about')); ?>">About the Shul</a></li>
+          <li><a href="<?php echo esc_url(home_url('/about/about-malden')); ?>">About the City</a></li>
+          <!--li><span class="text-muted">Community Resources</span></li>
+          <li><span class="text-muted">Our Sponsors</span></li-->
         </ul>
       </div>
     </div><br /><div class="row">
