@@ -155,7 +155,7 @@
                  data-gdocs="entry.1281585095" />
           <input type="submit" value="PayPal" class="btn btn-primary" />
           <input type="submit" value="Cash" class="btn btn-default" />
-          <p class="help-block">Pay by January 17th for a 5% discount.</p>
+          <!--p class="help-block">Pay by January 17th for a 5% discount.</p-->
         </div>
       </div>
       <?php endif; ?>
