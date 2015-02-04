@@ -6,9 +6,160 @@
 <?php case '2015-shabbaton': ?>
   <h1>Parshat Yitro Shabbaton</h1>
   <div class="row">
-    <div class="col-sm-5">
-      <span class="lead text-muted">Registration is closed.</span>
-    </div>
+    <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
+          data-gdocs="https://docs.google.com/forms/d/10VDlWjXkmLo9glPUKondCEZo_Ml4rGsVTlXHv8QPzmE/formResponse">
+      <div class="form-group">
+        <label for="first_name" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input id="first_name" type="text" name="first_name"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
+                 data-gdocs="entry.636705728"
+                 data-paypal="first_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+          <input id="last_name" type="text" name="last_name"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
+                 data-gdocs="entry.490719412"
+                 data-paypal="last_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+          <input id="email" type="email" name="email"
+                 value="<?php echo $_GET['email']?>" class="form-control"
+                 data-gdocs="entry.439574896"
+                 data-paypal="email" />
+        </div>
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="1" />
+          <input id="adults" type="hidden" name="adults"
+                 value="Not Interested" data-gdocs="entry.39081953" />
+          <input id="payment_method" type="hidden" value=""
+                 data-gdocs="entry.1281585095" />
+          <input type="submit" value="Not Interested" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not interested.</p>
+        </div>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label for="adults" class="col-sm-6 control-label">
+          # Adults ($15)
+        </label>
+        <div class="col-sm-6">
+          <input id="adults" type="number" name="adults" class="form-control"
+                 value="0" min="0" step="1"
+                 data-family-max="skip"
+                 data-gdocs="entry.39081953"
+                 data-paypal-item="Shabbaton - Adult"
+                 data-paypal-amount="15.00" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="children" class="col-sm-6 control-label">
+          # Children ($8)
+        </label>
+        <div class="col-sm-6">
+          <input id="children" type="number" name="children"
+                 value="0" min="0" step="1" size="2" class="form-control"
+                 data-family-max="skip"
+                 data-gdocs="entry.1315406559"
+                 data-paypal-item="Shabbaton - Child"
+                 data-paypal-amount="8.00"/>
+          <p class="help-block">Ages 3-12</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="veg" class="col-sm-6 control-label">
+          # Vegetarian Meals
+        </label>
+        <div class="col-sm-6">
+          <input id="veg" type="number" name="veg" class="form-control"
+                 value="0" min="0" step="1"
+                 data-gdocs="entry.659366634" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="family_max" class="col-sm-6 control-label">
+          Pay Family Max ($54)
+        </label>
+        <div class="col-sm-6">
+          <select id="family_max" name="family_max" class="form-control"
+                  data-gdocs="entry.261499401"
+                  data-paypal-item="Shabbaton - Family max"
+                  data-paypal-amount="54.00">
+            <option value="0" selected="selected">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="need_hospitality" class="col-sm-6 control-label">
+          Do you need hospitality?
+        </label>
+        <div class="col-sm-6">
+          <select id="need_hospitality" name="need_hospitality"
+                  class="form-control"
+                  data-gdocs="entry.1397021896">
+            <option value="No" selected="selected">No</option>
+            <option value="Yes">Yes</option>
+          </select>
+          <p class="help-text text-center">
+            <span class="alert-danger">
+            Limited hospitality available.
+            </span>
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="form-group">
+        <label for="sponsorship" class="col-sm-6 control-label">
+          Add a sponsorship?
+        </label>
+        <div class="col-sm-6">
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.1794699399"
+                   data-paypal-item="Sponsor - Oneg"
+                   data-paypal-amount="18.00" /> Oneg ($18)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.755506829"
+                   data-paypal-item="Sponsor - Luncheon"
+                   data-paypal-amount="54.00" /> Luncheon ($54)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.1745866060"
+                   data-paypal-item="Sponsor - Seudah Shelishit"
+                   data-paypal-amount="36.00" /> Seudah Shelishit ($36)
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <!--input id="discount_rate" name="discount_rate" type="hidden"
+                 value="5"
+                 data-gdocs="entry.1042250289"
+                 data-paypal="discount_rate_cart" /-->
+          <input id="payment_method" type="hidden" value="PayPal"
+                 data-gdocs="entry.1281585095" />
+          <input type="submit" value="PayPal" class="btn btn-primary" />
+          <input type="submit" value="Cash" class="btn btn-default" />
+          <p class="help-block">Pay by January 17th for a 5% discount.</p>
+        </div>
+      </div>
+      <?php endif; ?>
+    </form>
     <div class="col-sm-4 text-center">
       <a href="http://bethisraelmalden.org/2014/12/parshat-yitro-shabbaton/">
         <img src="http://bethisraelmalden.org/wp-content/uploads/2014/12/KlatzkoShabbaton-232x300.png" />
