@@ -104,15 +104,15 @@
           Do you need hospitality?
         </label>
         <div class="col-sm-6">
-          <select id="need_hospitality" name="need_hospitality"
+          <!--select id="need_hospitality" name="need_hospitality"
                   class="form-control"
                   data-gdocs="entry.1397021896">
             <option value="No" selected="selected">No</option>
             <option value="Yes">Yes</option>
-          </select>
+          </select-->
           <p class="help-text text-center">
             <span class="alert-danger">
-            Limited hospitality available.
+            Hospitality no longer available.
             </span>
           </p>
         </div>
