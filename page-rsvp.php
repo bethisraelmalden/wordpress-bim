@@ -3,7 +3,137 @@
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
 <?php else: switch ($_GET['event']): ?>
-<?php case '2015-shabbaton': ?>
+<?php case '2015-purim': ?>
+  <h1>Purim Seudah</h1>
+  <div class="row">
+    <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
+          data-gdocs="https://docs.google.com/forms/d/1bEQwkqqibrJMpTEecAz5tBHy1DIhxEwgHSfwTGe6GqM/formResponse">
+      <div class="form-group">
+        <label for="first_name" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input id="first_name" type="text" name="first_name"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
+                 data-gdocs="entry.1887950156"
+                 data-paypal="first_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+          <input id="last_name" type="text" name="last_name"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
+                 data-gdocs="entry.206638227"
+                 data-paypal="last_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+          <input id="email" type="email" name="email"
+                 value="<?php echo $_GET['email']?>" class="form-control"
+                 data-gdocs="entry.1977756189"
+                 data-paypal="email" />
+        </div>
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="1" />
+          <input id="adults" type="hidden" name="adults"
+                 value="Not Interested" data-gdocs="entry.653959134" />
+          <input id="payment_method" type="hidden" value=""
+                 data-gdocs="entry.273947779" />
+          <input type="submit" value="Not Interested" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not interested.</p>
+        </div>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label for="adults" class="col-sm-6 control-label">
+          # Adults ($20)
+        </label>
+        <div class="col-sm-6">
+          <input id="adults" type="number" name="adults" class="form-control"
+                 value="0" min="0" step="1"
+                 data-family-max="skip"
+                 data-gdocs="entry.653959134"
+                 data-paypal-item="Purim - Adult"
+                 data-paypal-amount="19.00" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="children" class="col-sm-6 control-label">
+          # Children ($10)
+        </label>
+        <div class="col-sm-6">
+          <input id="children" type="number" name="children"
+                 value="0" min="0" step="1" size="2" class="form-control"
+                 data-family-max="skip"
+                 data-gdocs="entry.1924342993"
+                 data-paypal-item="Purim - Child"
+                 data-paypal-amount="9.50"/>
+          <p class="help-block">Ages 3-12</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="veg" class="col-sm-6 control-label">
+          # Vegetarian Meals
+        </label>
+        <div class="col-sm-6">
+          <input id="veg" type="number" name="veg" class="form-control"
+                 value="0" min="0" step="1"
+                 data-gdocs="entry.72935328" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="family_max" class="col-sm-6 control-label">
+          Pay Family Max ($60)
+        </label>
+        <div class="col-sm-6">
+          <select id="family_max" name="family_max" class="form-control"
+                  data-gdocs="entry.40740482"
+                  data-paypal-item="Purim - Family max"
+                  data-paypal-amount="57.00">
+            <option value="0" selected="selected">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+      <div class="form-group">
+        <label for="sponsorship" class="col-sm-6 control-label">
+          Add a sponsorship?
+        </label>
+        <div class="col-sm-6">
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.250828265"
+                   data-paypal-item="Purim - Sponsor"
+                   data-paypal-amount="54.00" /> Be a Sponsor ($54)
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <input type="hidden" value="5" data-gdocs="entry.1829509625" />
+          <input id="payment_method" type="hidden" value="PayPal"
+                 data-gdocs="entry.273947779" />
+          <input type="submit" value="PayPal" class="btn btn-primary" />
+          <input type="submit" value="Cash" class="btn btn-default" />
+          <p class="help-block">Pay by February 28th for a 5% discount.</p>
+        </div>
+      </div>
+      <?php endif; ?>
+    </form>
+    <div class="col-sm-4 text-center">
+      <a href="http://bethisraelmalden.org/2015/02/purim-bash-seudah-5775/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/02/purim-flyer-300x169.png" />
+      </a>
+    </div>
+  </div>
+<?php break; case '2015-shabbaton': ?>
   <h1>Parshat Yitro Shabbaton</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
