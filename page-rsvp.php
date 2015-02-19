@@ -129,7 +129,7 @@
     </form>
     <div class="col-sm-4 text-center">
       <a href="http://bethisraelmalden.org/2015/02/purim-bash-seudah-5775/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/02/purim-flyer-300x169.png" />
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/02/purim-5775-300x169.png" />
       </a>
     </div>
   </div>
