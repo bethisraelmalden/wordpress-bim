@@ -117,7 +117,7 @@
       <div class="form-group">
         <div class="col-sm-6 col-sm-offset-6">
           <input id="notme" type="hidden" value="0" />
-          <input type="hidden" value="1" data-gdocs="entry.1829509625" />
+          <input type="hidden" value="0" data-gdocs="entry.1829509625" />
           <input id="payment_method" type="hidden" value="PayPal"
                  data-gdocs="entry.273947779" />
           <input type="submit" value="PayPal" class="btn btn-primary" />
