@@ -58,7 +58,7 @@
                  data-family-max="skip"
                  data-gdocs="entry.653959134"
                  data-paypal-item="Purim - Adult"
-                 data-paypal-amount="19.00" />
+                 data-paypal-amount="20.00" />
         </div>
       </div>
       <div class="form-group">
@@ -71,7 +71,7 @@
                  data-family-max="skip"
                  data-gdocs="entry.1924342993"
                  data-paypal-item="Purim - Child"
-                 data-paypal-amount="9.50"/>
+                 data-paypal-amount="10.00"/>
           <p class="help-block">Ages 3-12</p>
         </div>
       </div>
@@ -93,7 +93,7 @@
           <select id="family_max" name="family_max" class="form-control"
                   data-gdocs="entry.40740482"
                   data-paypal-item="Purim - Family max"
-                  data-paypal-amount="57.00">
+                  data-paypal-amount="60.00">
             <option value="0" selected="selected">No</option>
             <option value="1">Yes</option>
           </select>
@@ -122,7 +122,7 @@
                  data-gdocs="entry.273947779" />
           <input type="submit" value="PayPal" class="btn btn-primary" />
           <input type="submit" value="Cash" class="btn btn-default" />
-          <p class="help-block">Pay by February 28th for a 5% discount.</p>
+          <!--p class="help-block">Pay by February 28th for a 5% discount.</p-->
         </div>
       </div>
       <?php endif; ?>
