@@ -14,7 +14,7 @@ define(function (require) {
       .find(':input:first').focus().end()
       .find('input[type=submit]')
         .click(function () {
-          $(this).button('loading');
+          //$(this).button('loading');
           app.$pay.val($(this).val()); // update payment method
         })
       .end();
@@ -61,7 +61,7 @@ define(function (require) {
     });// paypal item data
 
     if (0 === num) {
-      app.$rsvp.find('input[type=submit]').button('reset');
+      //app.$rsvp.find('input[type=submit]').button('reset');
       alert('No items selected.');
       return false;
     }//end if: nothing selected
