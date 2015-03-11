@@ -14,10 +14,15 @@ define(function (require) {
       .find(':input:first').focus().end()
       .find('input[type=submit]')
         .click(function () {
+          $(this).button('loading');
           app.$pay.val($(this).val()); // update payment method
         })
       .end();
     return app;
+  };
+
+  app.skipUnchecked = function ($field) {
+    return $field.is(':checkbox,:radio,option') && !$field.is(':checked');
   };
 
   app.build_paypal = function (isInterested) {
@@ -29,23 +34,34 @@ define(function (require) {
 
     app.$rsvp.find('[data-paypal]').each(function () {
       var $field = $(this);
-      if ($field.is(':checkbox') && !$field.is(':checked')) { return; }
+      if (app.skipUnchecked($field)) { return; }
       pdata[$field.data('paypal')] = $field.val();
     });// initial paypal data
 
     app.$rsvp.find('[data-paypal-item]').each(function () {
-      var $field = $(this);
-      if ($field.is(':checkbox') && !$field.is(':checked')) { return; }
+      var $field = $(this), quant;
+      if (app.skipUnchecked($field)) { return; }
       if (isFamilyMax && 'skip' === $field.data('family-max')) { return; }
-      if (0 !== parseInt($field.val(), 10)) {
+
+      quant = parseInt($field.data('paypal-num') || $field.val(), 10)
+
+      /** Special Dinner Rules **/
+      var level = parseInt($('#level :selected').data('paypal-amount'), 10);
+      if ('guests' === $field.attr('id') && level >= 500 ) {
+        quant = Math.max(0, quant - 2);
+      }//end if: free banquet for two
+      /** END SPECIAL RULES **/
+
+      if (0 !== quant) {
         num += 1;
         pdata['item_name_' + num] = $field.data('paypal-item');
         pdata['amount_' + num] = $field.data('paypal-amount');
-        pdata['quantity_' + num] = $field.val();
+        pdata['quantity_' + num] = ('' + quant);
       }//end if: added field
     });// paypal item data
 
     if (0 === num) {
+      app.$rsvp.find('input[type=submit]').button('reset');
       alert('No items selected.');
       return false;
     }//end if: nothing selected
@@ -71,8 +87,8 @@ define(function (require) {
 
     app.$rsvp.find('[data-gdocs]').each(function () {
       var $field = $(this);
-      if ($field.is(':checkbox') && !$field.is(':checked')) { return; }
-      gdata[$field.data('gdocs')] = $field.val();
+      if (app.skipUnchecked($field)) { return; }
+      gdata[$field.data('gdocs')] = $field.data('gdocs-value') || $field.val();
     });// gdata ready
 
     $.post(app.$rsvp.data('gdocs'), gdata) // gdata posted
