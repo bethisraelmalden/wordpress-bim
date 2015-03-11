@@ -7,7 +7,7 @@
   <div class="page-dinner well">
     <div class="background"></div>
     <div class="text-center">
-      <img src="../wp-content/themes/bim/img/dinner/logo.png"/>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/dinner/logo.png"/>
       <h1>
         Honoring Rabbi Yitzchak &amp; Tova Rabinowitz<br />
         <em>for their 18 years of service</em>
