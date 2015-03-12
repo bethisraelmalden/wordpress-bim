@@ -68,6 +68,12 @@
           <div class="<?php echo 'item' . (1 === $post_count ? ' active' : ''); ?>">
             <?php if ($post_image): ?>
             <a href="<?php echo $post_url; ?>"><img src="<?php echo $post_image;?>" /></a>
+              <?php if (has_excerpt()): ?>
+            <div class="carousel-caption has-image">
+              <h3 class="text-center"><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h3>
+              <?php the_excerpt(); ?>
+            </div>
+              <?php endif; ?>
             <?php else: ?>
             <a href="<?php echo $post_url; ?>"><img src="<?php echo get_template_directory_uri();?>/img/bim-building.jpg" /></a>
             <div class="carousel-caption no-image">
