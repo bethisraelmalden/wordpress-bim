@@ -131,13 +131,15 @@
           <div class="form-group">
             <div class="col-sm-6">
               <label>
-                <input name="banquet" type="radio" value="1" checked
+                <input name="notme" type="radio" value="1"
+                       <?php echo ('1' === $_GET['notme'] ? '' : 'checked'); ?>
                        data-gdocs="entry.481247392" />
                 Attending
               </label>
               <small>($125 per person)</small><br />
               <label>
-                <input name="banquet" type="radio" value="0"
+                <input name="notme" type="radio" value="0"
+                       <?php echo ('1' === $_GET['notme'] ? 'checked' : ''); ?>
                        data-gdocs="entry.481247392" />
                 Unable to Attend
               </label>

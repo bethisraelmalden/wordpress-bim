@@ -105,7 +105,7 @@ define(function (require) {
 
   app.submit = function (e) {
     e.preventDefault(); // nowhere to go
-    var isInterested = ('0' === $('#notme').val());
+    var isInterested = ('0' === $('#notme,[name=notme]:checked').val());
     if (!app.build_paypal(isInterested)) { return false; }
     if (!app.submit_gdocs(isInterested)) { return false; }
     return false;
