@@ -13,7 +13,10 @@
         <em>for their 18 years of service</em>
       </h1>
       <h2 class="text-center">Dinner &amp; Journal Reservations</h2>
-      <h4>Sivan 13, 5775 / Sunday, May 31, 2015</h4>
+      <h4>
+        Sivan 13, 5775 / Sunday, May 31, 2015<br />
+        Reception at 6pm, Dinner at 7pm
+      </h4>
       <hr />
     </div>
 
@@ -129,35 +132,45 @@
         <div class="col-sm-7">
           <h4>Banquet Reservations</h4>
           <div class="form-group">
-            <div class="col-sm-6">
-              <label>
-                <input name="notme" type="radio" value="1"
+            <!-- div class="col-sm-6">
+              <label class="control-label">
+                <input name="notme" type="radio" value="Yes"
                        <?php echo ('1' === $_GET['notme'] ? '' : 'checked'); ?>
                        data-gdocs="entry.481247392" />
                 Attending
               </label>
               <small>($125 per person)</small><br />
-              <label>
-                <input name="notme" type="radio" value="0"
+
+              <label class="control-label">
+                <input name="notme" type="radio" value="No"
                        <?php echo ('1' === $_GET['notme'] ? 'checked' : ''); ?>
                        data-gdocs="entry.481247392" />
                 Unable to Attend
               </label>
               <small>(Please accept our donation.)</small>
+            </div -->
+            <div class="col-sm-12">
+              <label for="guests" class="control-label">
+                Number attending
+              </label>
+              <small>($125 per person)</small>
             </div>
-            <label for="guests" class="col-sm-4 control-label">
-              Number of guests
-            </label>
-            <div class="col-sm-2">
-              <input id="guests" type="number" name="guests"
-                     class="form-control"
-                     value="0" min="0" step="1"
-                     data-gdocs="entry.1859262524"
-                     data-paypal-item="Chai Celebration - Banquet"
-                     data-paypal-amount="125.00" />
+            <div class="col-sm-4">
+              <select id="guests" name="guests" class="form-control"
+                      data-gdocs="entry.1859262524"
+                      data-paypal-item="Chai Celebration - Banquet"
+                      data-paypal-amount="125.00" />
+                <option value="0" <?php echo ('1' === $_GET['notme'] ? 'selected' : ''); ?>>Unable to Attend</option>
+                <option value="1" <?php echo ('1' === $_GET['notme'] ? '' : 'selected'); ?>>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
             </div>
           </div>
 
+          <hr />
           <h4>Journal Ad</h4>
           <p>
             Place an ad as a salute to Rabbi and Rebbetzin Rabinowitz,
@@ -166,10 +179,10 @@
           </p>
 
           <div class="form-group">
-            <div class="col-sm-5">
+            <div class="col-sm-6">
               <select id="level" name="level" class="form-control"
                       data-gdocs="entry.184912279">
-                <option selected>Select an Option</option>
+                <option value="None" selected>Select Ad Level</option>
                 <option data-paypal-item="Chai Celebration - Founder"
                         data-paypal-amount="10000.00"
                         data-paypal-num="1"
@@ -219,6 +232,20 @@
                         data-paypal-num="1"
                         value="Greeting">$72 - Greeting</option>
               </select>
+            </div>
+            <label for="other" class="col-sm-3 control-label">
+              Other Amount
+            </label>
+            <div class="col-sm-3">
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input id="other" type="number" name="other"
+                       class="form-control"
+                       value="0.00" min="0.00" step="0.01"
+                       data-gdocs="entry.2055518957"
+                       data-paypal-item="Chai Celebration - Other"
+                       data-paypal-num="1" />
+              </div>
             </div>
             <div class="col-sm-12">
               <span class="help-block">

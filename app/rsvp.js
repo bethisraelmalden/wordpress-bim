@@ -39,15 +39,18 @@ define(function (require) {
     });// initial paypal data
 
     app.$rsvp.find('[data-paypal-item]').each(function () {
-      var $field = $(this), quant;
+      var $field = $(this);
       if (app.skipUnchecked($field)) { return; }
       if (isFamilyMax && 'skip' === $field.data('family-max')) { return; }
 
-      quant = parseInt($field.data('paypal-num') || $field.val(), 10)
+      var quant = parseInt($field.data('paypal-num') || $field.val(), 10);
+      var amount = parseFloat($field.data('paypal-amount') || $field.val(), 10);
 
       /** Special Dinner Rules **/
-      var level = parseInt($('#level :selected').data('paypal-amount'), 10);
-      if ('guests' === $field.attr('id') && level >= 500 ) {
+      var usdLevel = parseInt($('#level :selected').data('paypal-amount'), 10);
+      var usdOther = parseFloat($('#other').val(), 10);
+      var hasFreeSeats = (usdLevel >= 500 || usdOther >= 500);
+      if ('guests' === $field.attr('id') && hasFreeSeats) {
         quant = Math.max(0, quant - 2);
       }//end if: free banquet for two
       /** END SPECIAL RULES **/
@@ -55,7 +58,7 @@ define(function (require) {
       if (0 !== quant) {
         num += 1;
         pdata['item_name_' + num] = $field.data('paypal-item');
-        pdata['amount_' + num] = $field.data('paypal-amount');
+        pdata['amount_' + num] = ('' + amount);
         pdata['quantity_' + num] = ('' + quant);
       }//end if: added field
     });// paypal item data
