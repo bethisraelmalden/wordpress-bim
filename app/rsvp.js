@@ -55,7 +55,7 @@ define(function (require) {
       }//end if: free banquet for two
       /** END SPECIAL RULES **/
 
-      if (0 !== quant) {
+      if (0 !== quant && 0 !== amount) {
         num += 1;
         pdata['item_name_' + num] = $field.data('paypal-item');
         pdata['amount_' + num] = ('' + amount);
