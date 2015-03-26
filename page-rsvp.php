@@ -283,6 +283,146 @@
     </form>
   </div>
 
+<?php break; case '2015-pesach': ?>
+  <form id="rsvp" class="form form-horizontal" method="POST"
+        data-gdocs="https://docs.google.com/forms/d/19Dqnoqsp26in-A0Hgqv1lFrVjae340ma_vw4O0qIU24/formResponse">
+    <div class="row">
+      <div class="col-sm-5 col-sm-offset-2">
+        <h1>Passover <small>5775</small></h1>
+        <h2>Sale of Chametz</h2>
+        <p class="text-justify">
+          Any <em>chametz</em> owned by a Jew during Passover week is
+          forbidden for actual use forever. If there is <em>chametz</em> that
+          you do not want to dispose of (eg. bottle of shnapps), you must
+          arrange for a formal sale of <em>chametz</em> to a non-Jew that
+          will go into effect before Passover.
+        </p>
+
+        <h3>Sale of Chametz Contract</h3>
+        <p class="text-justify">
+          I (we) hereby authorize Rabbi Yitzchak Zev Rabinowitz to sell all
+          the chametz that is in my (our) possession, home and/or place of
+          business, in accordance with the requirements of Jewish Law.
+        </p>
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <textarea id="names" name="names" class="form-control"
+                      placeholder="Names"
+                      data-gdocs="entry.25969392"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <textarea id="addresses" name="addresses" class="form-control"
+                   placeholder="Addresses"
+                   data-gdocs="entry.395634033"></textarea>
+            <p class="help-block">Include addresses of all premises.</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-8">
+            Approximate total value of the chametz items you are selling
+            (focus on the value of items that we conventionally
+            refer to as real chametz, e.g. breads, pasta, cereals, pastries,
+            oatmeal etc.).
+          </div>
+          <div class="col-sm-4">
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input type="text" class="form-control"
+                     placeholder="Value"
+                     data-gdocs="entry.1979450425" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-8">
+            <input type="text" id="signed" name="signed" class="form-control"
+                   placeholder="Signed"
+                   data-gdocs="entry.963998337" />
+          </div>
+          <div class="col-sm-4">
+            <input type="text" id="dated" name="dated" class="form-control"
+                   placeholder="Date"
+                   data-gdocs="entry.867892090" />
+          </div>
+        </div>
+
+        <hr />
+        <div class="form-group">
+          <div class="col-sm-8">
+            Please make out all contributions for the sale of chametz to
+            the rabbi for his services.
+          </div>
+          <div class="col-sm-4">
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input type="text" class="form-control"
+                     placeholder="Amount"
+                     data-gdocs="entry.1677582139"
+                     data-paypal-item="Pesach - Chametz Sale Contribution"
+                     data-paypal-num="1" />
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <h2>Ma’ot Chitin<br /><small>Passover Charity Fund</small></h2>
+        <p class="text-justify">
+        Ma’ot Chitin is the annual Passover fund that helps our less fortunate
+        brethren celebrate Passover with joy and respect. To perform this Tzedaka
+        that has been practised by Jewish communities around the world for
+        centuries, please donate here or write a check out to Congregation Beth
+        Israel, and write "Ma’ot Chitin" in the memo line.
+        </p>
+        <div class="form-group">
+          <div class="col-sm-4 col-sm-offset-8">
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input id="maot" name="maot" type="text" class="form-control"
+                     placeholder="Amount"
+                     data-gdocs="entry.522294352"
+                     data-paypal-item="Pesach - Ma'ot Chitin"
+                     data-paypal-num="1" />
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="form-group text-center">
+          <div class="col-sm-12 text-center">
+            <input id="notme" type="hidden" value="0" />
+            <input id="payment_method" type="hidden" value="PayPal"
+                   data-gdocs="entry.1112114755" />
+            <input type="submit" value="PayPal" class="btn btn-lg btn-primary" />
+            <input type="submit" value="Cash" class="btn btn-lg btn-default" />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="well pull-right">
+          <strong>Passover 5775 Downloads</strong>
+          <p>All the guides, in one place.</p>
+          <ul class="list-unstyled">
+            <li>
+              <i class="glyphicon glyphicon-download"></i>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-pesach-annual-halacha-guide.pdf">Halacha Guidebook</a>
+            </li>
+            <li>
+              <i class="glyphicon glyphicon-download"></i>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-passover-supplement.pdf">Product Supplement</a>
+            </li>
+            <li>
+              <i class="glyphicon glyphicon-download"></i>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-sefirah.pdf">Sefirat HaOmer Chart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </form>
+
 <?php break; case '2015-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
