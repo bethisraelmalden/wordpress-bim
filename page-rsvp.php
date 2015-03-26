@@ -377,7 +377,12 @@
         Israel, and write "Ma’ot Chitin" in the memo line.
         </p>
         <div class="form-group">
-          <div class="col-sm-4 col-sm-offset-8">
+          <div class="col-sm-8">
+            <input id="maot-name" name="maot-name" class="form-control"
+                   placeholder="Name"
+                   data-gdocs="entry.966939546" />
+          </div>
+          <div class="col-sm-4">
             <div class="input-group">
               <div class="input-group-addon">$</div>
               <input id="maot" name="maot" type="text" class="form-control"
