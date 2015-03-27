@@ -43,8 +43,8 @@ define(function (require) {
       if (app.skipUnchecked($field)) { return; }
       if (isFamilyMax && 'skip' === $field.data('family-max')) { return; }
 
-      var quant = parseInt($field.data('paypal-num') || $field.val(), 10);
-      var amount = parseFloat($field.data('paypal-amount') || $field.val(), 10);
+      var quant = parseInt($field.data('paypal-num') || $field.val() || 0, 10);
+      var amount = parseFloat($field.data('paypal-amount') || $field.val() || 0, 10);
 
       /** Special Dinner Rules **/
       var usdLevel = parseInt($('#level :selected').data('paypal-amount'), 10);
