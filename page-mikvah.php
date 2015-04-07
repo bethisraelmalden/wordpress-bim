@@ -12,13 +12,17 @@ get_header(); ?>
       <div class="col-xs-12 col-sm-7 text-center">
         <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
         <p class="lead">The new mikvah in Malden is now open for business!</p>
-        <p><strong>Open 7:30pm - 09:00pm.<br />All visits by appointment 24 hours in advance.</strong></p>
+        <p>
+          <strong>Open 7:30pm - 09:00pm.<br />
+          All visits by appointment 24 hours in advance.</strong>
+        </p>
         <p>
           <a href="#make-appointment" class="btn btn-primary btn-lg"
              data-toggle="modal">Request Appointment</a>
         </p><p>
           <a href="mailto:mikvah@bethisraelmalden.org">mikvah@bethisraelmalden.org</a>
-          <span>&bull; <a href="tel:+17813333202">781-333-3202</a></span>
+          <span>&bull; <a href="tel:+17813333202">781-333-3202</a> or
+          <a href="tel:+17812331470">781-233-1470</a></span>
         </p>
       </div><div class="col-xs-12 col-sm-5">
         <hr class="visible-xs" />
@@ -60,14 +64,6 @@ get_header(); ?>
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <a href="http://bethisraelmalden.org/2014/12/taharas-hamishpacha-initiative/">
-            <img src="http://bethisraelmalden.org/wp-content/uploads/2014/12/mishpacha-789x1024.png" />
-          </a>
-          <div class="carousel-caption">
-            <h3>Taharas Mishpacha Initiative</h3>
-            <p>Attend the 5-part refresher. <a href="btn btn-primary" href="http://bit.ly/1A5vQvC">RSVP Now</a></p>
-          </div>
-        </div><div class="item">
           <img src="<?php echo get_template_directory_uri(); ?>/img/mikvah/waiting-room.jpg"></a>
           <div class="carousel-caption">
             <h3>Waiting Room</h3>
