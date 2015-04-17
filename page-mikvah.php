@@ -1,6 +1,8 @@
 <?php
 wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraffitti');
-get_header(); ?>
+get_header();
+
+$times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <div class="background">
   <div id="flash" class="text-center alert hidden">
@@ -13,7 +15,7 @@ get_header(); ?>
         <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
         <p class="lead">The new mikvah in Malden is now open for business!</p>
         <p>
-          <strong>Open 7:30pm - 09:00pm.<br />
+          <strong>Open <?php echo $times[0] . ' - ' . end($times)?>.<br />
           All visits by appointment 24 hours in advance.</strong>
         </p>
         <p>
@@ -149,15 +151,13 @@ get_header(); ?>
             Requested Time
           </label>
           <div class="col-sm-8">
+            <?php foreach($times as $i => $time): ?>
             <label class="radio-inline">
-              <input type="radio" name="appt-time" value="07:30pm" checked> 7:30pm
-            </label><label class="radio-inline">
-              <input type="radio" name="appt-time" value="08:00pm"> 8:00pm
-            </label><label class="radio-inline">
-              <input type="radio" name="appt-time" value="08:30pm"> 8:30pm
-            </label><label class="radio-inline">
-              <input type="radio" name="appt-time" value="09:00pm"> 9:00pm
+              <input type="radio" <?php echo 0 == $i ? 'checked': ''?>
+                     name="appt-time" value="<?php echo $time; ?>">
+              <?php echo $time; ?>
             </label>
+            <?php endforeach; ?>
 
             <p class="help-block">
               Please contact <a href="mailto:mikvah@bethisraelmalden.org">mikvah@bethisraelmalden.org</a>
