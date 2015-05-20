@@ -3,7 +3,111 @@
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
 <?php else: switch ($_GET['event']): ?>
-<?php case '2015-dinner': ?>
+<?php case '2015-shavuot': ?>
+  <h1>Shavuoton Dinner</h1>
+  <div class="row">
+    <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
+          data-gdocs="https://docs.google.com/forms/d/1XCmMo8mJ15pE5o__LBn591ZD_WWkxJ76xd7Znuxf7BA/formResponse">
+      <div class="form-group">
+        <label for="first_name" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input id="first_name" type="text" name="first_name"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
+                 data-gdocs="entry.884522296"
+                 data-paypal="first_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+          <input id="last_name" type="text" name="last_name"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
+                 data-gdocs="entry.746781618"
+                 data-paypal="last_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+          <input id="email" type="email" name="email"
+                 value="<?php echo $_GET['email']?>" class="form-control"
+                 data-gdocs="entry.1739930788"
+                 data-paypal="email" />
+        </div>
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="1" />
+          <input id="adults" type="hidden" name="adults"
+                 value="Not Interested" data-gdocs="entry.1050952664" />
+          <input id="payment_method" type="hidden" value=""
+                 data-gdocs="entry.821983375" />
+          <input type="submit" value="Not Interested" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not interested.</p>
+        </div>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label for="adults" class="col-sm-6 control-label">
+          # Adults ($15)
+        </label>
+        <div class="col-sm-6">
+          <input id="adults" type="number" name="adults" class="form-control"
+                 value="0" min="0" step="1"
+                 data-family-max="skip"
+                 data-gdocs="entry.1050952664"
+                 data-paypal-item="Shavuot - Adult"
+                 data-paypal-amount="15.00" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="children" class="col-sm-6 control-label">
+          # Children ($8)
+        </label>
+        <div class="col-sm-6">
+          <input id="children" type="number" name="children"
+                 value="0" min="0" step="1" size="2" class="form-control"
+                 data-family-max="skip"
+                 data-gdocs="entry.2001808116"
+                 data-paypal-item="Shavuot - Child"
+                 data-paypal-amount="8.00"/>
+          <p class="help-block">Ages 5-13</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="family_max" class="col-sm-6 control-label">
+          Pay Family Max ($45)
+        </label>
+        <div class="col-sm-6">
+          <select id="family_max" name="family_max" class="form-control"
+                  data-gdocs="entry.1410218048"
+                  data-paypal-item="Shavuot - Family max"
+                  data-paypal-amount="45.00">
+            <option value="0" selected="selected">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <input id="payment_method" type="hidden" value="PayPal"
+                 data-gdocs="entry.821983375" />
+          <input type="submit" value="PayPal" class="btn btn-primary" />
+          <input type="submit" value="Cash" class="btn btn-default" />
+        </div>
+      </div>
+      <?php endif; ?>
+    </form>
+    <div class="col-sm-4 text-center">
+      <a href="http://bethisraelmalden.org/?p=4280">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/05/Shavuot-5775-300x209.png" />
+      </a>
+    </div>
+  </div>
+<?php break; case '2015-dinner': ?>
   <div class="page-dinner well">
     <div class="background"></div>
     <div class="text-center">
