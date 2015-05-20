@@ -2,7 +2,8 @@
 wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraffitti');
 get_header();
 
-$times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');?>
+$times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');
+?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <div class="background">
   <div id="flash" class="text-center alert hidden">
@@ -24,7 +25,7 @@ $times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');?>
         </p><p>
           <a href="mailto:mikvah@bethisraelmalden.org">mikvah@bethisraelmalden.org</a>
           <span>&bull; <a href="tel:+17813333202">781-333-3202</a> or
-          <a href="tel:+17812331470">781-233-1470</a></span>
+          <a href="tel:+17812231470">781-223-1470</a></span>
         </p>
       </div><div class="col-xs-12 col-sm-5">
         <hr class="visible-xs" />
