@@ -236,10 +236,6 @@
         <div class="col-sm-7">
           <h4>Banquet Reservations</h4>
           <div class="alert alert-warning">
-            The deadline for the Journal Ad has past. You can still submit
-            a message and donation to be sent to the Rabbi and Rebbetzin.
-          </div>
-          <div class="alert alert-warning">
             The deadline for banquet reservations has past.
           </div>
           <!-- div class="form-group">
