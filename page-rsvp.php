@@ -276,11 +276,15 @@
 
           <hr />
           <h4>Journal Ad</h4>
-          <p>
+          <!--p>
             Place an ad as a salute to Rabbi and Rebbetzin Rabinowitz,
             to the legacy of Congregation Beth Israel of Malden,
             and to the future of Malden's Jewish Community.
-          </p>
+          </p-->
+          <div class="alert alert-warning">
+            The deadline for the Journal Ad has past. You can still submit
+            a message and donation to be sent to the Rabbi and Rebbetzin.
+          </div>
 
           <div class="form-group">
             <div class="col-sm-6">
