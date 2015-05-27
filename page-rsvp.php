@@ -235,8 +235,15 @@
 
         <div class="col-sm-7">
           <h4>Banquet Reservations</h4>
-          <div class="form-group">
-            <!-- div class="col-sm-6">
+          <div class="alert alert-warning">
+            The deadline for the Journal Ad has past. You can still submit
+            a message and donation to be sent to the Rabbi and Rebbetzin.
+          </div>
+          <div class="alert alert-warning">
+            The deadline for banquet reservations has past.
+          </div>
+          <!-- div class="form-group">
+            <div class="col-sm-6">
               <label class="control-label">
                 <input name="notme" type="radio" value="Yes"
                        <?php echo ('1' === $_GET['notme'] ? '' : 'checked'); ?>
@@ -252,7 +259,7 @@
                 Unable to Attend
               </label>
               <small>(Please accept our donation.)</small>
-            </div -->
+            </div>
             <div class="col-sm-12">
               <label for="guests" class="control-label">
                 Number attending
@@ -272,7 +279,7 @@
                 <option value="5">5</option>
               </select>
             </div>
-          </div>
+          </div -->
 
           <hr />
           <h4>Journal Ad</h4>
