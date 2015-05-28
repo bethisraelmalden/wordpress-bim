@@ -285,8 +285,9 @@
             and to the future of Malden's Jewish Community.
           </p-->
           <div class="alert alert-warning">
-            The deadline for the Journal Ad has past. You can still submit
-            a message and donation to be sent to the Rabbi and Rebbetzin.
+            The deadline for including an ad in the printed Journal has passed.
+            You can still submit a message that will be published in the online
+            Journal after the dinner.
           </div>
 
           <div class="form-group">
