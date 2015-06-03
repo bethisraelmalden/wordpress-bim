@@ -3,7 +3,7 @@
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
 <?php else: switch ($_GET['event']): ?>
-<?php case '2015-shavuot': ?>
+<?php case 'x2015-shavuot': ?>
   <h1>Shavuoton Dinner</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -107,7 +107,7 @@
       </a>
     </div>
   </div>
-<?php break; case '2015-dinner': ?>
+<?php break; case 'x2015-dinner': ?>
   <div class="page-dinner well">
     <div class="background"></div>
     <div class="text-center">
@@ -395,7 +395,7 @@
     </form>
   </div>
 
-<?php break; case '2015-pesach': ?>
+<?php break; case 'x2015-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
         data-gdocs="https://docs.google.com/forms/d/19Dqnoqsp26in-A0Hgqv1lFrVjae340ma_vw4O0qIU24/formResponse">
     <div class="row">
@@ -540,7 +540,7 @@
     </div>
   </form>
 
-<?php break; case '2015-purim': ?>
+<?php break; case 'x2015-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -670,7 +670,7 @@
       </a>
     </div>
   </div>
-<?php break; case '2015-shabbaton': ?>
+<?php break; case 'x2015-shabbaton': ?>
   <h1>Parshat Yitro Shabbaton</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
