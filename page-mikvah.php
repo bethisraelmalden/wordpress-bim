@@ -19,10 +19,6 @@ $times = array('8:30pm', '9:00pm', '9:30pm', '10:00pm');
           <strong>Open <?php echo $times[0] . ' - ' . end($times)?>.<br />
           All visits by appointment 24 hours in advance.</strong>
         </p>
-        <div class="alert alert-warning">
-          <strong>Sunday, May 31</strong><br />
-          For today only, appointments start at 9:30pm.
-        </div>
         <p>
           <a href="#make-appointment" class="btn btn-primary btn-lg"
              data-toggle="modal">Request Appointment</a>
