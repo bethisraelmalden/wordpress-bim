@@ -670,17 +670,17 @@
       </a>
     </div>
   </div>
-<?php break; case 'x2015-shabbaton': ?>
-  <h1>Parshat Yitro Shabbaton</h1>
+<?php break; case '2015-07-shabbaton': ?>
+  <h1>Shabbat Nachamu Shabbaton</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/10VDlWjXkmLo9glPUKondCEZo_Ml4rGsVTlXHv8QPzmE/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/16EZwhH1k0Jw0ibxQsQ2f5zEPqWyxR9-Dg-DMvXzhGOY/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
           <input id="first_name" type="text" name="first_name"
                  value="<?php echo $_GET['fname']?>" class="form-control"
-                 data-gdocs="entry.636705728"
+                 data-gdocs="entry.1524512453"
                  data-paypal="first_name" />
         </div>
       </div>
@@ -689,7 +689,7 @@
         <div class="col-sm-6">
           <input id="last_name" type="text" name="last_name"
                  value="<?php echo $_GET['lname']?>" class="form-control"
-                 data-gdocs="entry.490719412"
+                 data-gdocs="entry.532285030"
                  data-paypal="last_name" />
         </div>
       </div>
@@ -698,7 +698,7 @@
         <div class="col-sm-6">
           <input id="email" type="email" name="email"
                  value="<?php echo $_GET['email']?>" class="form-control"
-                 data-gdocs="entry.439574896"
+                 data-gdocs="entry.89148143"
                  data-paypal="email" />
         </div>
       </div>
@@ -707,7 +707,7 @@
         <div class="col-sm-6 col-sm-offset-6">
           <input id="notme" type="hidden" value="1" />
           <input id="adults" type="hidden" name="adults"
-                 value="Not Interested" data-gdocs="entry.39081953" />
+                 value="Not Interested" data-gdocs="entry.1193950207" />
           <input id="payment_method" type="hidden" value=""
                  data-gdocs="entry.1281585095" />
           <input type="submit" value="Not Interested" class="btn btn-primary" />
@@ -723,7 +723,7 @@
           <input id="adults" type="number" name="adults" class="form-control"
                  value="0" min="0" step="1"
                  data-family-max="skip"
-                 data-gdocs="entry.39081953"
+                 data-gdocs="entry.1193950207"
                  data-paypal-item="Shabbaton - Adult"
                  data-paypal-amount="15.00" />
         </div>
@@ -736,7 +736,7 @@
           <input id="children" type="number" name="children"
                  value="0" min="0" step="1" size="2" class="form-control"
                  data-family-max="skip"
-                 data-gdocs="entry.1315406559"
+                 data-gdocs="entry.1060512057"
                  data-paypal-item="Shabbaton - Child"
                  data-paypal-amount="8.00"/>
           <p class="help-block">Ages 3-12</p>
@@ -749,7 +749,7 @@
         <div class="col-sm-6">
           <input id="veg" type="number" name="veg" class="form-control"
                  value="0" min="0" step="1"
-                 data-gdocs="entry.659366634" />
+                 data-gdocs="entry.1750738418" />
         </div>
       </div>
       <div class="form-group">
@@ -758,7 +758,7 @@
         </label>
         <div class="col-sm-6">
           <select id="family_max" name="family_max" class="form-control"
-                  data-gdocs="entry.261499401"
+                  data-gdocs="entry.1834299652"
                   data-paypal-item="Shabbaton - Family max"
                   data-paypal-amount="54.00">
             <option value="0" selected="selected">No</option>
@@ -771,21 +771,30 @@
           Do you need hospitality?
         </label>
         <div class="col-sm-6">
-          <!--select id="need_hospitality" name="need_hospitality"
+          <select id="need_hospitality" name="need_hospitality"
                   class="form-control"
-                  data-gdocs="entry.1397021896">
+                  data-gdocs="entry.1921718414">
             <option value="No" selected="selected">No</option>
             <option value="Yes">Yes</option>
-          </select-->
-          <p class="help-text text-center">
+          </select>
+          <!--p class="help-text text-center">
             <span class="alert-danger">
             Hospitality no longer available.
             </span>
-          </p>
+          </p-->
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="notes" class="col-sm-6 control-label">
+          Other Notes
+        </label>
+        <div class="col-sm-6">
+          <textarea id="notes" data-gdocs="entry.2110678729">
+          </textarea>
         </div>
       </div>
       <hr />
-      <div class="form-group">
+      <!--div class="form-group">
         <label for="sponsorship" class="col-sm-6 control-label">
           Add a sponsorship?
         </label>
@@ -809,7 +818,7 @@
                    data-paypal-amount="36.00" /> Seudah Shelishit ($36)
           </label>
         </div>
-      </div>
+      </div-->
 
       <div class="form-group">
         <div class="col-sm-6 col-sm-offset-6">
@@ -819,7 +828,7 @@
                  data-gdocs="entry.1042250289"
                  data-paypal="discount_rate_cart" /-->
           <input id="payment_method" type="hidden" value="PayPal"
-                 data-gdocs="entry.1281585095" />
+                 data-gdocs="entry.706757101" />
           <input type="submit" value="PayPal" class="btn btn-primary" />
           <input type="submit" value="Cash" class="btn btn-default" />
           <!--p class="help-block">Pay by January 17th for a 5% discount.</p-->
@@ -828,8 +837,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/2014/12/parshat-yitro-shabbaton/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2014/12/KlatzkoShabbaton-232x300.png" />
+      <a href="http://bethisraelmalden.org/2015/07/medical-halacha-shabbaton/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/07/medical-halacha-shabbaton-300x233.png" />
       </a>
     </div>
   </div>
