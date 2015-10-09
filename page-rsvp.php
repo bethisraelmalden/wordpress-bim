@@ -1,3 +1,8 @@
+<?php if ('' == $_GET['event']) {
+  header('Location: https://docs.google.com/forms/d/1oOf9KqKBQ50TIpqZn-B-SCx_AOQPEeY86swnbe3Y_2c/viewform');
+  exit();
+} ?>
+
 <?php get_header(); ?>
 <div id="content" class="container">
 <?php if ($_GET['thankyou']): ?>
@@ -670,7 +675,7 @@
       </a>
     </div>
   </div>
-<?php break; case '2015-07-shabbaton': ?>
+<?php break; case 'x2015-07-shabbaton': ?>
   <h1>Shabbat Nachamu Shabbaton</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
