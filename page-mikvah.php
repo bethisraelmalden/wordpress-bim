@@ -14,6 +14,7 @@ $times = array('7:30pm', '8:00pm', '8:30pm', '9:00pm');
     <div class="row">
       <div class="col-xs-12 col-sm-7 text-center">
         <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
+        <p class="lead">&nbsp;</p>
         <p>
           <strong>Open <?php echo $times[0] . ' - ' . end($times)?>.<br />
           All visits by appointment 24 hours in advance.</strong>
@@ -112,7 +113,7 @@ $times = array('7:30pm', '8:00pm', '8:30pm', '9:00pm');
       </div>
       <div class="modal-body">
         <div class="form-group">
-          <div class="col-sm-8 col-sm-offset-4">
+          <div class="col-sm-12">
             <p class="help-block">
               Please remember to schedule your appointment 24 hours in advance.
             </p><p class="help-block">
