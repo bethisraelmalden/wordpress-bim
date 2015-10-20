@@ -125,6 +125,9 @@ $times = array('7:30pm', '8:00pm', '8:30pm', '9:00pm');
                 the morning after your Hefsek Tahara) and make two bedikos a day?</li>
               </ul>
               If you can answer yes to all the above continue below to schedule your appointment.
+            </p><p class="help-block">
+              If you need to talk to a mikvah attendent, you can call Tova Rabinowitz at
+              <a href="tel:+17812231470">781-223-1470</a>.
             </p>
           </div>
         </div><div class="form-group">
@@ -185,9 +188,6 @@ $times = array('7:30pm', '8:00pm', '8:30pm', '9:00pm');
             <p class="help-block">
               Your appointment is <strong>not confirmed</strong> until a mikvah attendant contacts you
               to make final arrangements.
-            </p><p class="help-block">
-              If you need to talk to a mikvah attendent, you can call Tova Rabinowitz at
-              <a href="tel:+17812231470">781-223-1470</a>.
             </p>
           </div>
         </div>
