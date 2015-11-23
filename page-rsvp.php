@@ -1,6 +1,7 @@
 <?php if ('' == $_GET['event']) {
-  header('Location: https://docs.google.com/forms/d/1oOf9KqKBQ50TIpqZn-B-SCx_AOQPEeY86swnbe3Y_2c/viewform');
-  exit();
+  $_GET['event'] = '2015-chanukah';
+  // header('Location: https://bethisraelmalden.org/rsvp?event');
+  // exit();
 } ?>
 
 <?php get_header(); ?>
@@ -844,6 +845,162 @@
     <div class="col-sm-4 text-center">
       <a href="http://bethisraelmalden.org/2015/07/medical-halacha-shabbaton/">
         <img src="http://bethisraelmalden.org/wp-content/uploads/2015/07/medical-halacha-shabbaton-300x233.png" />
+      </a>
+    </div>
+  </div>
+<?php break; case '2015-chanukah': ?>
+  <h1>Chanukah Bash</h1>
+  <div class="row">
+    <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
+          data-gdocs="https://docs.google.com/forms/d/1kYJINLacMrsr1m5UMsrGUUlGIV9VMaKBuBlE5rZshyw/formResponse">
+      <div class="form-group">
+        <label for="first_name" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input id="first_name" type="text" name="first_name"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
+                 data-gdocs="entry.467309924"
+                 data-paypal="first_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+          <input id="last_name" type="text" name="last_name"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
+                 data-gdocs="entry.1239178442"
+                 data-paypal="last_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+          <input id="email" type="email" name="email"
+                 value="<?php echo $_GET['email']?>" class="form-control"
+                 data-gdocs="entry.1091378211"
+                 data-paypal="email" />
+        </div>
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="1" />
+          <input id="adults" type="hidden" name="adults"
+                 value="Not Interested" data-gdocs="entry.1033105750" />
+          <input id="payment_method" type="hidden" value=""
+                 data-gdocs="entry.1500179091" />
+          <input type="submit" value="Not Interested" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not interested.</p>
+        </div>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label for="adults" class="col-sm-6 control-label">
+          # Adults ($12)
+        </label>
+        <div class="col-sm-6">
+          <input id="adults" type="number" name="adults" class="form-control"
+                 value="0" min="0" step="1"
+                 data-family-max="skip"
+                 data-gdocs="entry.1033105750"
+                 data-paypal-item="Chanukah - Adult"
+                 data-paypal-amount="12.00" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="children" class="col-sm-6 control-label">
+          # Children ($6)
+        </label>
+        <div class="col-sm-6">
+          <input id="children" type="number" name="children"
+                 value="0" min="0" step="1" size="2" class="form-control"
+                 data-family-max="skip"
+                 data-gdocs="entry.348538221"
+                 data-paypal-item="Chanukah - Child"
+                 data-paypal-amount="6.00"/>
+          <p class="help-block">Ages 3-12</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="family_max" class="col-sm-6 control-label">
+          Pay Family Max ($36)
+        </label>
+        <div class="col-sm-6">
+          <select id="family_max" name="family_max" class="form-control"
+                  data-gdocs="entry.1872214929"
+                  data-paypal-item="Chanukah - Family max"
+                  data-paypal-amount="36.00">
+            <option value="0" selected="selected">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes" class="col-sm-6 control-label">
+          Other Notes
+        </label>
+        <div class="col-sm-6">
+          <textarea id="notes" data-gdocs="entry.1938692856">
+          </textarea>
+        </div>
+      </div>
+      <hr />
+      div class="form-group">
+        <label for="sponsorship" class="col-sm-6 control-label">
+          Add a sponsorship?
+        </label>
+        <div class="col-sm-6">
+          <label>
+            <input type="checkbox" value="$18"
+                   data-gdocs="entry.1553203501"
+                   data-paypal-item="Sponsor - Chanukah"
+                   data-paypal-amount="18.00" /> Oneg ($18)
+          </label><br />
+          <label>
+            <input type="checkbox" value="$36"
+                   data-gdocs="entry.1553203501"
+                   data-paypal-item="Sponsor - Chanukah"
+                   data-paypal-amount="36.00" /> Luncheon ($36)
+          </label><br />
+          <label>
+            <input type="checkbox" value="$54"
+                   data-gdocs="entry.1553203501"
+                   data-paypal-item="Sponsor - Chanukah"
+                   data-paypal-amount="54.00" /> Seudah Shelishit ($54)
+          </label>
+        </div>
+      </div
+
+      <div class="form-group">
+        <label for="family_max" class="col-sm-6 control-label">
+          Sponsorship
+        </label>
+        <div class="col-sm-6">
+          <select name="sponsorship" class="form-control"
+                  data-gdocs="entry.1872214929"
+                  data-paypal-item="Chanukah - Family max"
+                  data-paypal-amount="36.00">
+            <option value="0" selected="selected">No</option>
+            <option value="1">Yes</option>
+          </select>
+          <p class="help-block">Thank you for your generous support.</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <input id="payment_method" type="hidden" value="PayPal"
+                 data-gdocs="entry.1500179091" />
+          <input type="submit" value="PayPal" class="btn btn-primary" />
+          <input type="submit" value="Cash" class="btn btn-default" />
+        </div>
+      </div>
+      <?php endif; ?>
+    </form>
+    <div class="col-sm-4 text-center">
+      <a href="http://bethisraelmalden.org/?p=4280">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/11/chanukah-bash-5776-300x232.png" />
       </a>
     </div>
   </div>
