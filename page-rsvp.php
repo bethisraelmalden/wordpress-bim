@@ -940,8 +940,7 @@
           Other Notes
         </label>
         <div class="col-sm-6">
-          <textarea id="notes" data-gdocs="entry.1938692856">
-          </textarea>
+          <textarea id="notes" data-gdocs="entry.1938692856"></textarea>
         </div>
       </div>
       <hr />
@@ -968,25 +967,10 @@
                    data-paypal-item="Sponsor - Chanukah"
                    data-paypal-amount="54.00" /> Seudah Shelishit ($54)
           </label>
-        </div>
-      </div
 
-      <div class="form-group">
-        <label for="family_max" class="col-sm-6 control-label">
-          Sponsorship
-        </label>
-        <div class="col-sm-6">
-          <select name="sponsorship" class="form-control"
-                  data-gdocs="entry.1872214929"
-                  data-paypal-item="Chanukah - Family max"
-                  data-paypal-amount="36.00">
-            <option value="0" selected="selected">No</option>
-            <option value="1">Yes</option>
-          </select>
           <p class="help-block">Thank you for your generous support.</p>
         </div>
       </div>
-
       <div class="form-group">
         <div class="col-sm-6 col-sm-offset-6">
           <input id="notme" type="hidden" value="0" />
