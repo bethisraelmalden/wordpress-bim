@@ -944,7 +944,7 @@
         </div>
       </div>
       <hr />
-      div class="form-group">
+      <div class="form-group">
         <label for="sponsorship" class="col-sm-6 control-label">
           Add a sponsorship?
         </label>
