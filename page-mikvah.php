@@ -2,7 +2,7 @@
 wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraffitti');
 get_header();
 
-$times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');
+$times = array('7:30pm', '8:00pm', '8:30pm', '9:00pm');
 ?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <div class="background">
@@ -14,7 +14,7 @@ $times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');
     <div class="row">
       <div class="col-xs-12 col-sm-7 text-center">
         <h1 class="mikvah-name">Mikvah Mayanei Tovah</h1>
-        <p class="lead">The new mikvah in Malden is now open for business!</p>
+        <p class="lead">&nbsp;</p>
         <p>
           <strong>Open <?php echo $times[0] . ' - ' . end($times)?>.<br />
           All visits by appointment 24 hours in advance.</strong>
@@ -113,6 +113,24 @@ $times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');
       </div>
       <div class="modal-body">
         <div class="form-group">
+          <div class="col-sm-12">
+            <p class="help-block">
+              Please remember to schedule your appointment 24 hours in advance.
+            </p><p class="help-block">
+              When choosing the date for your appointment, please ask yourself the following questions:
+              <ul>
+                <li>Did you wait a minimum of 5 days?</li>
+                <li>Did you make a <em>Hefsek Tahara</em> before sunset of day 5?</li>
+                <li>Did you begin counting your seven consecutive clean days (starting
+                the morning after your Hefsek Tahara) and make two bedikos a day?</li>
+              </ul>
+              If you can answer yes to all the above continue below to schedule your appointment.
+            </p><p class="help-block">
+              If you need to talk to a mikvah attendent, you can call Tova Rabinowitz at
+              <a href="tel:+17812231470">781-223-1470</a>.
+            </p>
+          </div>
+        </div><div class="form-group">
           <label for="appt-name" class="col-sm-4 control-label">Your Name</label>
           <div class="col-sm-8">
             <input type="text" id="appt-name" name="appt-name"
@@ -170,9 +188,6 @@ $times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');
             <p class="help-block">
               Your appointment is <strong>not confirmed</strong> until a mikvah attendant contacts you
               to make final arrangements.
-            </p><p class="help-block">
-              If you need to talk to a mikvah attendent, you can call Tova Rabinowitz at
-              <a href="tel:+17812231470">781-223-1470</a>.
             </p>
           </div>
         </div>
