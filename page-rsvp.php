@@ -950,22 +950,22 @@
         </label>
         <div class="col-sm-6">
           <label>
-            <input type="checkbox" value="$18"
+            <input type="checkbox" value="1"
                    data-gdocs="entry.1553203501"
-                   data-paypal-item="Sponsor - Chanukah"
-                   data-paypal-amount="18.00" /> Oneg ($18)
+                   data-paypal-item="Chanukah - Sponsorship"
+                   data-paypal-amount="18.00" /> Sponsorship ($18)
           </label><br />
           <label>
-            <input type="checkbox" value="$36"
-                   data-gdocs="entry.1553203501"
-                   data-paypal-item="Sponsor - Chanukah"
-                   data-paypal-amount="36.00" /> Luncheon ($36)
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.1436561775"
+                   data-paypal-item="Chanukah - Sponsorship"
+                   data-paypal-amount="36.00" /> Sponsorship ($36)
           </label><br />
           <label>
-            <input type="checkbox" value="$54"
-                   data-gdocs="entry.1553203501"
-                   data-paypal-item="Sponsor - Chanukah"
-                   data-paypal-amount="54.00" /> Seudah Shelishit ($54)
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.327271197"
+                   data-paypal-item="Chanukah - Sponsorship"
+                   data-paypal-amount="54.00" /> Sponsorship ($54)
           </label>
 
           <p class="help-block">Thank you for your generous support.</p>
@@ -983,7 +983,7 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/?p=4280">
+      <a href="http://bethisraelmalden.org/?p=4716">
         <img src="http://bethisraelmalden.org/wp-content/uploads/2015/11/chanukah-bash-5776-300x232.png" />
       </a>
     </div>
