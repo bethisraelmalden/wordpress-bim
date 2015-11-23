@@ -885,11 +885,11 @@
         <div class="col-sm-6 col-sm-offset-6">
           <input id="notme" type="hidden" value="1" />
           <input id="adults" type="hidden" name="adults"
-                 value="Not Interested" data-gdocs="entry.1033105750" />
+                 value="Not Coming" data-gdocs="entry.1033105750" />
           <input id="payment_method" type="hidden" value=""
                  data-gdocs="entry.1500179091" />
-          <input type="submit" value="Not Interested" class="btn btn-primary" />
-          <p class="help-block">Please confirm you're not interested.</p>
+          <input type="submit" value="Not Coming" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not coming.</p>
         </div>
       </div>
       <?php else: ?>
