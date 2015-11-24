@@ -952,20 +952,20 @@
           <label>
             <input type="checkbox" value="1"
                    data-gdocs="entry.1553203501"
-                   data-paypal-item="Chanukah - Sponsorship"
-                   data-paypal-amount="18.00" /> Sponsorship ($18)
+                   data-paypal-item="Chanukah - Gelt Sponsor"
+                   data-paypal-amount="18.00" /> Gelt Sponsor ($18)
           </label><br />
           <label>
             <input type="checkbox" value="1"
                    data-gdocs="entry.1436561775"
-                   data-paypal-item="Chanukah - Sponsorship"
-                   data-paypal-amount="36.00" /> Sponsorship ($36)
+                   data-paypal-item="Chanukah - Menorah Sponsor"
+                   data-paypal-amount="36.00" /> Menorah Sponsor  ($36)
           </label><br />
           <label>
             <input type="checkbox" value="1"
                    data-gdocs="entry.327271197"
-                   data-paypal-item="Chanukah - Sponsorship"
-                   data-paypal-amount="54.00" /> Sponsorship ($54)
+                   data-paypal-item="Chanukah - Dreidel Sponsor"
+                   data-paypal-amount="54.00" /> Dreidel Sponsor ($54)
           </label>
 
           <p class="help-block">Thank you for your generous support.</p>
