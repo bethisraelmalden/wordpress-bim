@@ -17,8 +17,8 @@ get_header(); ?>
         and it's important to us, too. Our home buyer's incentive program,
         tuition and camp subsidies, and school bus, are all here to help you
         settle down and raise your kids in the kind of Torah-true environment
-        you want. Find out why Malden was voted Best City to (2009, 2011) by
-        Newsweek Magazine.
+        you want. Find out why Malden was voted Best City to Live In
+        (2009, 2011) by Newsweek Magazine.
       </p>
     </div>
     <hr />
