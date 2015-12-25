@@ -1,7 +1,134 @@
 <?php
+wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraffitti');
+wp_enqueue_style('Cabin', '//fonts.googleapis.com/css?family=Cabin');
 wp_enqueue_style('chosen', '//cdnjs.cloudflare.com/ajax/libs/chosen/1.0/chosen.min.css');
 wp_enqueue_style('chosen-bootstrap', get_template_directory_uri() . '/lib/chosen-bootstrap-0.0.2/chosen-bootstrap.css');
 get_header(); ?>
+<?php if ($_GET['end-of-year']): ?>
+<div id="content" class="container end-of-year">
+  <p class="lead text-center">
+    <span class="text-muted">There is still time to</span><br />
+    <strong>make a difference</strong>.
+  </p>
+  <div class="col-sm-10 col-sm-offset-1">
+    <div class="feature">
+      <h2>
+        <span class="text-muted">Every Gift</span> Matters
+      </h2>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/donate/ice-cream.jpg" class="pull-right img-thumbnail" />
+      <p>
+        You still have time to make a year-end tax deductible gift to BIM and be a partner in all of the work that we do to support the Malden Jewish community and Boston's Jewish community at large.
+      </p>
+
+      <br />
+      <form class="form-inline well pull-left" action="https://www.paypal.com/cgi-bin/webscr" method="POST">
+        <input type="hidden" name="return" value="http://bethisraelmalden.org" />
+        <input type="hidden" name="business" value="director@bethisraelmalden.org" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="hidden" name="cmd" value="_cart" />
+        <input type="hidden" name="upload" value="1" />
+        <input type="hidden" name="rm" value="2" />
+        <input type="hidden" name="charset" value="utf-8" />
+        <input type="hidden" name="mrb" value="3FWGC6LFTMTUG"/>
+        <input type="hidden" name="quantity_1" value="1" />
+        <input type="hidden" name="item_number" value="" />
+        <input type="hidden" name="shipping_1" value="0.00" />
+
+        <div class="form-group">
+          <select name="item_name_1" class="form-control chosen">
+            <option>Mikvah Fund</option>
+            <option>Pulpit Fund</option>
+            <option>Building Fund</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+              <input type="text" name="amount_1" class="form-control" placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Donate</button>
+      </form>
+
+      <p style="clear:left; font-size:98%">
+        Want to donate by mail?<br />
+        Send checks to 10 Dexter Street, Malden, MA 02148
+      </p>
+    </div>
+    <hr />
+
+    <div class="feature">
+      <h2>
+        <span class="text-muted">Spread</span> Spiritual Growth
+      </h2>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/donate/seed-learning.jpg" class="pull-left img-thumbnail" />
+      <p>Keeping our doors open allows us to serve not only the Malden community but people from surrounding communities and out of state. Our daily minyanim and numerous Torah classes create an environment in which people can grow spiritually at a pace that suits their needs.</p>
+      <p>Our partnership with JPULSE has brought in two dynamic families who are connecting with a growing number of unaffiliated young Jewish professionals.</p>
+    </div>
+    <hr style="clear: both" />
+
+    <div class="feature">
+      <h2>
+        <span class="text-muted">Support</span> Our Mikvah
+      </h2>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/move/mikvah-pool.jpg" class="pull-right img-thumbnail" />
+      <p>Our mikvah, <strong>Mayanei Tovah</strong>, is used by communities all around Malden, recently tripling the number of initially projected monthly users. There are still naming opportunities left  - you can be a significant contributor to this important mitzvah by making a dedication in your name or the name of a loved one!</p>
+    </div>
+    <hr style="clear: both" />
+
+    <div class="feature">
+      <h2>
+        <span class="text-muted">Help</span> Jewish Education
+      </h2>
+      <img src="<?php echo get_template_directory_uri(); ?>/img/donate/puzzle-work.jpg" class="pull-left img-thumbnail" />
+      <p>Through the Congregation Beth Israel of Malden Ruderman Family Endowment Fund, we continue to provide  significant financial support to a number of Orthodox Jewish schools in the Boston area.</p>
+      <br />
+    </div>
+    <hr style="clear: both" />
+
+    <h2 class="text-center">
+      <span class="text-muted">Thank You</span> for your Generous Support
+    </h2>
+    <div class="center-block" style="max-width: 45em;">
+      <form class="form-inline well text-center center-block" action="https://www.paypal.com/cgi-bin/webscr" method="POST">
+          <input type="hidden" name="return" value="http://bethisraelmalden.org" />
+          <input type="hidden" name="business" value="director@bethisraelmalden.org" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="hidden" name="cmd" value="_cart" />
+          <input type="hidden" name="upload" value="1" />
+          <input type="hidden" name="rm" value="2" />
+          <input type="hidden" name="charset" value="utf-8" />
+          <input type="hidden" name="mrb" value="3FWGC6LFTMTUG"/>
+          <input type="hidden" name="quantity_1" value="1" />
+          <input type="hidden" name="item_number" value="" />
+          <input type="hidden" name="shipping_1" value="0.00" />
+
+
+          <div class="form-group">
+            <select name="item_name_1" class="form-control chosen">
+              <option>Mikvah Fund</option>
+              <option>Pulpit Fund</option>
+              <option>Building Fund</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+                <input type="text" name="amount_1" class="form-control" placeholder="Amount">
+              <div class="input-group-addon">.00</div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-lg btn-primary">Donate Now</button>
+        </form>
+      </div>
+  </div>
+</div>
+<?php else: ?>
 <div id="content" class="container">
   <p class="lead text-center">
     Help the Jewish renaissance in Malden with your tax-deductible donation.
@@ -209,6 +336,7 @@ get_header(); ?>
     </div>
   </div>
 </div>
+<?php endif ?>
 
 <script src="<?php echo get_template_directory_uri(); ?>/lib/requirejs-2.1.9/require.js"></script>
 <script>
