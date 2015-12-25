@@ -74,7 +74,7 @@ $slug = (is_page($post) ? 'page-' . get_post($post)->post_name : '');
       </div>
     </div>
 
-    <a href="<?php echo esc_url(home_url('/donate')); ?>"
+    <a href="<?php echo esc_url(home_url('/donate?end-of-year=2015')); ?>"
        class="navbar-btn navbar-right btn btn-donate">Donate</a>
   </nav>
 </header>
@@ -88,7 +88,7 @@ $slug = (is_page($post) ? 'page-' . get_post($post)->post_name : '');
       <strong>Congregation Beth Israel</strong><br />
       10 Dexter Street,
       Malden, MA 02148<br />
-      781-322-5686   
+      781-322-5686
     </div>
   </div>
 </div>
