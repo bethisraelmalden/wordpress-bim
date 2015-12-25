@@ -1058,8 +1058,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="">
-        <img src="" />
+      <a href="http://bethisraelmalden.org/?p=4746">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/12/games-pizza-2015-300x232.png" />
       </a>
     </div>
   </div>
