@@ -74,7 +74,7 @@ $slug = (is_page($post) ? 'page-' . get_post($post)->post_name : '');
       </div>
     </div>
 
-    <a href="<?php echo esc_url(home_url('/donate?end-of-year=2015')); ?>"
+    <a href="<?php echo esc_url(home_url('/donate')); ?>"
        class="navbar-btn navbar-right btn btn-donate">Donate</a>
   </nav>
 </header>
