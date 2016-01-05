@@ -224,7 +224,7 @@ get_header(); ?>
           </div>
         </div>
 
-        <div class="form-group">
+        <!-- div class="form-group">
           <label for="first_name" class="col-sm-3 control-label">First Name</label>
           <div class="col-sm-9">
             <input id="first_name" name="first_name" type="text" class="form-control" />
@@ -283,12 +283,12 @@ get_header(); ?>
           <div class="col-sm-9">
             <input id="noteToSeller" name="noteToSeller" type="text" class="form-control" />
           </div>
-        </div>
+        </div-->
 
         <div class="form-group">
           <div class="col-sm-10 col-sm-offset-3">
-            <button type="submit" class="btn btn-lg btn-primary">Go to Checkout</button>
-            <button type="reset" class="btn btn-danger btn-link pull-right">Reset Form</button>
+            <button type="submit" class="btn btn-lg btn-primary">Donate Now</button>
+            <!-- button type="reset" class="btn btn-danger btn-link pull-right">Reset Form</button-->
           </div>
         </div>
       </form>
