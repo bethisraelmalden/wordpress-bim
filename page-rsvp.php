@@ -1,7 +1,7 @@
 <?php if ('' == $_GET['event']) {
-  $_GET['event'] = '2015-pizza';
-  // header('Location: https://bethisraelmalden.org/rsvp?event');
-  // exit();
+  // $_GET['event'] = '2015-pizza';
+  header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
+  exit();
 } ?>
 
 <?php get_header(); ?>
