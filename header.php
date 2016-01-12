@@ -27,8 +27,8 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-12157214-1', 'bethisraelmalden.org');
 ga('send', 'pageview');
 </script>
-<?php endif;
 <script href="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+<?php endif;
 
 wp_head();
 
