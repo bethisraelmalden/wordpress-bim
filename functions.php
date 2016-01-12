@@ -48,7 +48,7 @@ function bim_theme_resources() {
 }//end function
 add_action('wp_enqueue_scripts', 'bim_theme_resources');
 
-function bim_get_hebrew_date($t) {
+function bim_get_hebrew_date($t=null) {
   if(!$t) { $t = time(); }
   $julian = gregoriantojd(date('m', $t), date('d', $t), date('Y', $t));
   $hebMonthName = jdmonthname($julian, 4);
