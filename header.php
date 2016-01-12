@@ -16,7 +16,6 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
   <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script><![endif]-->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js" />
   <link rel="stylesheet/less" href="<?php echo get_template_directory_uri(); ?>/app/bim.less" />
 <?php if (strpos(esc_url(home_url('/')), 'http://localhost') === false): ?>
 <script>
@@ -29,6 +28,8 @@ ga('create', 'UA-12157214-1', 'bethisraelmalden.org');
 ga('send', 'pageview');
 </script>
 <?php endif;
+<script href="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+
 wp_head();
 
 global $post;
