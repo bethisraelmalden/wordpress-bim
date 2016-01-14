@@ -1063,6 +1063,113 @@
       </a>
     </div>
   </div>
+<?php break; case '2016-shlocking': ?>
+  <div class="text-center lead">
+    <strong>
+      Motzai Shabbat, February 20th<br />
+      Doors Open at 7:30pm<br />
+      Beth Israel Malden<br />
+      <em>in partnership with</em><br />
+      Yachad<br />
+      Ruderman Family Foundation<br />
+      Nefesh B'Nefesh<br />
+    </strong>
+    PRESENT<br />
+    <img src="bethisraelmalden.org/media/2016/shlocking/shlock-rock.png"
+      alt="Shlock Rock" /><br />
+
+    Free parking or <br />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/50px-MBTA.svg.png" alt="MBTA" />
+    Malden Center Station via Orange Line to (5 stops northbound from North
+Station) and Commuter Rail via Haverhill Line
+  </div>
+
+  <div class="row">
+    <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
+          data-gdocs="https://docs.google.com/forms/d/1YCwcWb9JRLQDNWjyFWVr45UCJRXYl5RAOS0eeRqk5HA/formResponse">
+      <div class="form-group">
+        <label for="first_name" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input id="first_name" type="text" name="first_name"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
+                 data-gdocs="entry.1608760469"
+                 data-paypal="first_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+          <input id="last_name" type="text" name="last_name"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
+                 data-gdocs="entry.1459881364"
+                 data-paypal="last_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+          <input id="email" type="email" name="email"
+                 value="<?php echo $_GET['email']?>" class="form-control"
+                 data-gdocs="entry.1965286632"
+                 data-paypal="email" />
+        </div>
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="1" />
+          <input id="adults" type="hidden" name="adults"
+                 value="Not Coming" data-gdocs="entry.1895518161" />
+          <input id="payment_method" type="hidden" value=""
+                 data-gdocs="entry.1044901675" />
+          <input type="submit" value="Not Coming" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not coming.</p>
+        </div>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label for="adults" class="col-sm-6 control-label">
+          # Adults ($15)
+        </label>
+        <div class="col-sm-6">
+          <input id="adults" type="number" name="adults" class="form-control"
+                 value="0" min="0" step="1"
+                 data-gdocs="entry.1895518161"
+                 data-paypal-item="Shlock Rock - Adult"
+                 data-paypal-amount="15.00" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="children" class="col-sm-6 control-label">
+          # Children ($10)
+        </label>
+        <div class="col-sm-6">
+          <input id="children" type="number" name="children"
+                 value="0" min="0" step="1" size="2" class="form-control"
+                 data-gdocs="entry.879185112"
+                 data-paypal-item="Shlock Rock - Child"
+                 data-paypal-amount="10.00"/>
+          <p class="help-block">Ages 3-12</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <input id="payment_method" type="hidden" value="PayPal"
+                 data-gdocs="entry.1044901675" />
+          <input type="submit" value="PayPal" class="btn btn-primary" />
+          <input type="submit" value="Cash" class="btn btn-default" />
+        </div>
+      </div>
+      <?php endif; ?>
+    </form>
+    <div class="col-sm-4 text-center">
+      <a href="http://bethisraelmalden.org/2016/01/shlock-rock-rsvp-5776/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2016/01/shlock-rock-5776-194x300.png" />
+      </a>
+    </div>
+  </div>
 <?php break; default: ?>
   <h1>Event Not Found</h1>
   <div class="alert alert-warning">
