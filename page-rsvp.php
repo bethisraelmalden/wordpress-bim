@@ -1078,19 +1078,15 @@
     </p>
 
     <p class="lead" style="font-variant: small-caps;">
-      Yachad &bul; Ruderman Family Foundation &bul; Nefesh B'Nefesh
+      Yachad &bull; Ruderman Family Foundation &bull; Nefesh B'Nefesh<br />
+      PRESENT
     </p>
 
-    <p>
-      PRESENT<br />
-      <img src="http://bethisraelmalden.org/media/2016/shlocking/shlock-rock.png"
-        alt="Shlock Rock" /><br />
+    <p class="lead">
+      <big><strong>LENNY SOLOMON &amp; SHLOCK ROCK</strong></big>
     </p>
 
-    Free parking or <br />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/20px-MBTA.svg.png" alt="MBTA" />
-    Malden Center Station via Orange Line to (5 stops northbound from North
-Station) and Commuter Rail via Haverhill Line
+    <hr />
   </div>
 
   <div class="row">
@@ -1178,6 +1174,12 @@ Station) and Commuter Rail via Haverhill Line
         <img src="http://bethisraelmalden.org/wp-content/uploads/2016/01/shlock-rock-5776-194x300.png" />
       </a>
     </div>
+  </div>
+  <div class="row text-center">
+    <big>Free parking or
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/20px-MBTA.svg.png" alt="MBTA" />
+    Malden Center Station via Orange Line to (5 stops northbound from North
+Station) and Commuter Rail via Haverhill Line</big>
   </div>
 <?php break; default: ?>
   <h1>Event Not Found</h1>
