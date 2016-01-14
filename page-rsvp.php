@@ -1176,10 +1176,12 @@
     </div>
   </div>
   <div class="row text-center">
-    <big>Free parking or
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/20px-MBTA.svg.png" alt="MBTA" />
-    Malden Center Station via Orange Line to (5 stops northbound from North
-Station) and Commuter Rail via Haverhill Line</big>
+    <div class="col-sm-6 col-sm-offset-2">
+      <big>Free parking or
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/20px-MBTA.svg.png" alt="MBTA" />
+      Malden Center Station via Orange Line to (5 stops northbound from North
+  Station) and Commuter Rail via Haverhill Line</big>
+    </div>
   </div>
 <?php break; default: ?>
   <h1>Event Not Found</h1>
