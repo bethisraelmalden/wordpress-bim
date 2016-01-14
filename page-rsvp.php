@@ -1064,22 +1064,31 @@
     </div>
   </div>
 <?php break; case '2016-shlocking': ?>
-  <div class="text-center lead">
-    <strong>
+  <div class="text-center">
+    <p class="lead">
+      <strong>
       Motzai Shabbat, February 20th<br />
-      Doors Open at 7:30pm<br />
-      Beth Israel Malden<br />
-      <em>in partnership with</em><br />
-      Yachad<br />
-      Ruderman Family Foundation<br />
-      Nefesh B'Nefesh<br />
-    </strong>
-    PRESENT<br />
-    <img src="bethisraelmalden.org/media/2016/shlocking/shlock-rock.png"
-      alt="Shlock Rock" /><br />
+      Doors Open at 7:30pm
+      </strong>
+    </p>
+
+    <p class="lead">
+      <big>Beth Israel Malden</big><br />
+      <em>in partnership with</em>
+    </p>
+
+    <p class="lead" style="font-variant: small-caps;">
+      Yachad &bul; Ruderman Family Foundation &bul; Nefesh B'Nefesh
+    </p>
+
+    <p>
+      PRESENT<br />
+      <img src="http://bethisraelmalden.org/media/2016/shlocking/shlock-rock.png"
+        alt="Shlock Rock" /><br />
+    </p>
 
     Free parking or <br />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/50px-MBTA.svg.png" alt="MBTA" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/20px-MBTA.svg.png" alt="MBTA" />
     Malden Center Station via Orange Line to (5 stops northbound from North
 Station) and Commuter Rail via Haverhill Line
   </div>
