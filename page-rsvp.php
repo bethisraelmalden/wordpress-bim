@@ -1180,7 +1180,7 @@
       <big>Free parking or take the 
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/20px-MBTA.svg.png" alt="MBTA" />
       to Malden Center Station on the Orange Line (5 stops outbound from North
-  Station towards Oak Grove) and Commuter Rail via Haverhill Line</big>
+  Station towards Oak Grove) or Commuter Rail via Haverhill Line</big>
     </div>
   </div>
 <?php break; default: ?>
