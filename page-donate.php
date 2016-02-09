@@ -168,6 +168,7 @@ get_header(); ?>
                 <option data-price="0" value="General Donation" selected="selected">General Donation</option>
                 <option data-price="0" value="Pulpit Fund">Rabbi's Pulpit Fund</option>
                 <option data-price="0" value="Mikvah Fund">Mikvah Fund</option>
+                <option data-price="0" value="Security Fund">Security Fund</option>
                 <option data-price="0" value="Library Fund">Library Fund</option>
               </optgroup>
               <!--optgroup label="SEED Program">
