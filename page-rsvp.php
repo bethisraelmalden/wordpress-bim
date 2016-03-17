@@ -1,5 +1,5 @@
 <?php if ('' == $_GET['event']) {
-  $_GET['event'] = '2016-shlocking';
+  $_GET['event'] = '2016-purim';
   // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
   // exit();
 } ?>
@@ -546,11 +546,11 @@
     </div>
   </form>
 
-<?php break; case 'x2015-purim': ?>
+<?php break; case '2016-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/1bEQwkqqibrJMpTEecAz5tBHy1DIhxEwgHSfwTGe6GqM/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/1NxN4OLl5shCkmFFtg3VAnVqHlrdDTkPbOqlZGdhPl_o/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -660,7 +660,7 @@
       <div class="form-group">
         <div class="col-sm-6 col-sm-offset-6">
           <input id="notme" type="hidden" value="0" />
-          <input type="hidden" value="0" data-gdocs="entry.1829509625" />
+          <!-- input type="hidden" value="0" data-gdocs="entry.1829509625" /-->
           <input id="payment_method" type="hidden" value="PayPal"
                  data-gdocs="entry.273947779" />
           <input type="submit" value="PayPal" class="btn btn-primary" />
@@ -671,8 +671,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/2015/02/purim-bash-seudah-5775/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/02/purim-5775-300x169.png" />
+      <a href="http://bethisraelmalden.org/2016/03/purim-seudah-5776/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2016/03/Purim-2015-300x172.jpg" />
       </a>
     </div>
   </div>
@@ -1177,7 +1177,7 @@
   </div>
   <div class="row text-center">
     <div class="col-sm-6 col-sm-offset-2">
-      <big>Free parking or take the 
+      <big>Free parking or take the
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/MBTA.svg/20px-MBTA.svg.png" alt="MBTA" />
       to Malden Center Station on the Orange Line (5 stops outbound from North
   Station towards Oak Grove) or Commuter Rail via Haverhill Line</big>
