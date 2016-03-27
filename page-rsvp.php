@@ -643,17 +643,26 @@
         </div>
       </div>
       <hr />
+      <h2>Matanot L’evyonim<br /><small>Purim Charity Fund</small></h2>
+      <p class="text-justify">
+      On Purim, we have the mitzvah of Matanot L'Evyonim-charitable gifts to
+      the poor.The mitzvah is to give two separate gifts to two needy people
+      and is to be distributed on Purim day.
+      The monies you pledge here will be distributed by the Rabbi on Purim day.
+      </p>
       <div class="form-group">
-        <label for="sponsorship" class="col-sm-6 control-label">
-          Add a sponsorship?
+        <label for="matanot" class="col-sm-6 control-label">
+          Matanot L'Evyonim
         </label>
         <div class="col-sm-6">
-          <label>
-            <input type="checkbox" value="1"
-                   data-gdocs="entry.250828265"
-                   data-paypal-item="Purim - Sponsor"
-                   data-paypal-amount="54.00" /> Be a Sponsor ($54)
-          </label>
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input id="matanot" name="matanot" type="text"
+                     placeholder="Amount"
+                     data-gdocs="entry.250828265"
+                      data-paypal-item="Purim - Matanot L'Evyonim"
+                     data-paypal-num="1" />
+            </div>
         </div>
       </div>
 
