@@ -50,8 +50,8 @@ get_header(); ?>
       </p>
     </div>
 
-  </div><div class="col-sm-4">
-    <h2>Schedule a Visit</h2>
+  </div><div class="col-sm-4 visit">
+    <h2>Come Check Us Out</h2>
     <p>
       We know that choosing a community takes a lot of research.
       Come for a visit and see how you and your family would fit in.
