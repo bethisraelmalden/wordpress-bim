@@ -1,5 +1,5 @@
 <?php if ('' == $_GET['event']) {
-  $_GET['event'] = '2016-purim';
+  $_GET['event'] = '2016-pesach';
   // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
   // exit();
 } ?>
@@ -401,12 +401,12 @@
     </form>
   </div>
 
-<?php break; case 'x2015-pesach': ?>
+<?php break; case '2016-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
-        data-gdocs="https://docs.google.com/forms/d/19Dqnoqsp26in-A0Hgqv1lFrVjae340ma_vw4O0qIU24/formResponse">
+        data-gdocs="https://docs.google.com/forms/d/1_76yfaqwJS1frGihh7VQHdqLFXjA7O40QLb_WHeD9w8/formResponse">
     <div class="row">
       <div class="col-sm-5 col-sm-offset-2">
-        <h1>Passover <small>5775</small></h1>
+        <h1>Passover <small>5776</small></h1>
         <h2>Sale of Chametz</h2>
         <p class="text-justify">
           Any <em>chametz</em> owned by a Jew during Passover week is
@@ -414,6 +414,12 @@
           you do not want to dispose of (eg. bottle of shnapps), you must
           arrange for a formal sale of <em>chametz</em> to a non-Jew that
           will go into effect before Passover.
+        </p>
+        <p class="text-justify">
+          This contract must be completed by
+          <strong>8am Friday, April 22</strong>.
+          If you miss the deadline, call the Rabbi at
+          <a href="tel:+17812231471">781-223-1471</a> by 10am.
         </p>
 
         <h3>Sale of Chametz Contract</h3>
@@ -524,8 +530,8 @@
         </div>
       </div>
       <div class="col-sm-3">
-        <div class="well pull-right">
-          <strong>Passover 5775 Downloads</strong>
+        <!-- div class="well pull-right">
+          <strong>Passover 5776 Downloads</strong>
           <p>All the guides, in one place.</p>
           <ul class="list-unstyled">
             <li>
@@ -541,7 +547,7 @@
               <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-sefirah.pdf">Sefirat HaOmer Chart</a>
             </li>
           </ul>
-        </div>
+        </div -->
       </div>
     </div>
   </form>
