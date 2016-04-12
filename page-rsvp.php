@@ -492,6 +492,16 @@
         </div>
 
         <hr />
+        <div class="form-group text-center">
+          <div class="col-sm-12 text-center">
+            <label>
+              <input name="notme" type="checkbox" value="1" />
+              Check this box to decline a contribution.
+            </label>
+          </div>
+        </div>
+
+        <hr />
         <h2>Ma’ot Chitin<br /><small>Passover Charity Fund</small></h2>
         <p class="text-justify">
         Ma’ot Chitin is the annual Passover fund that helps our less fortunate
@@ -863,7 +873,7 @@
       </a>
     </div>
   </div>
-<?php break; case '2015-chanukah': ?>
+<?php break; case 'x2015-chanukah': ?>
   <h1>Chanukah Bash</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -1003,7 +1013,7 @@
       </a>
     </div>
   </div>
-<?php break; case '2015-pizza': ?>
+<?php break; case 'x2015-pizza': ?>
   <h1>Games &amp; Pizza Night</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -1078,7 +1088,7 @@
       </a>
     </div>
   </div>
-<?php break; case '2016-shlocking': ?>
+<?php break; case 'x2016-shlocking': ?>
   <div class="text-center">
     <p class="lead">
       <strong>
