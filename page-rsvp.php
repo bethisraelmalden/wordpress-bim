@@ -540,24 +540,24 @@
         </div>
       </div>
       <div class="col-sm-3">
-        <!-- div class="well pull-right">
+        <div class="well pull-right">
           <strong>Passover 5776 Downloads</strong>
           <p>All the guides, in one place.</p>
           <ul class="list-unstyled">
             <li>
               <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-pesach-annual-halacha-guide.pdf">Halacha Guidebook</a>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2016/04/annual_halacha_guide_5776.pdf">Halacha Guidebook</a>
             </li>
             <li>
               <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-passover-supplement.pdf">Product Supplement</a>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2016/04/passover_supplement_5776.pdf">Product Supplement</a>
             </li>
-            <li>
+            <!-- <li>
               <i class="glyphicon glyphicon-download"></i>
               <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-sefirah.pdf">Sefirat HaOmer Chart</a>
-            </li>
+            </li> -->
           </ul>
-        </div -->
+        </div>
       </div>
     </div>
   </form>
