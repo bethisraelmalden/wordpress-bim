@@ -9,7 +9,7 @@ define(function (require) {
     $firstname = $('#first_name'),
 
     readhash = function (option) {
-      option = option || location.hash.substring(1);
+      option = option || decodeURIComponent(location.hash.substring(1));
       if (option) { $item.val(option).change().trigger('chosen:updated'); }
       return option;
     };
