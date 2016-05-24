@@ -9,11 +9,11 @@
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
 <?php else: switch ($_GET['event']): ?>
-<?php case 'x2015-shavuot': ?>
+<?php case '2016-shavuot': ?>
   <h1>Shavuoton Dinner</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/1XCmMo8mJ15pE5o__LBn591ZD_WWkxJ76xd7Znuxf7BA/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/1pHkUwxXqwYS05K2Qf4parxMXF7ROZYHmFu0aSW4Ib_w/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -108,8 +108,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/?p=4280">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/05/Shavuot-5775-300x209.png" />
+      <a href="http://bethisraelmalden.org/?p=5035">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2016/05/Shavuot-5776-300x209.png" />
       </a>
     </div>
   </div>
@@ -401,7 +401,7 @@
     </form>
   </div>
 
-<?php break; case '2016-pesach': ?>
+<?php break; case 'x2016-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
         data-gdocs="https://docs.google.com/forms/d/1_76yfaqwJS1frGihh7VQHdqLFXjA7O40QLb_WHeD9w8/formResponse">
     <div class="row">
@@ -562,7 +562,7 @@
     </div>
   </form>
 
-<?php break; case '2016-purim': ?>
+<?php break; case 'x2016-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
