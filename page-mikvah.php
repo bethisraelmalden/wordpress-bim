@@ -2,7 +2,7 @@
 wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraffitti');
 get_header();
 
-$times = array('8:30pm', '9:00pm', '9:30pm', '10:00pm');
+$times = array('8:00pm', '8:30pm', '9:00pm', '9:30pm');
 ?>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <div class="background">
