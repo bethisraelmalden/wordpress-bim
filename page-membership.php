@@ -38,12 +38,12 @@ get_header(); ?>
           <label for="level" class="col-sm-4 control-label">Level</label>
           <div class="col-sm-8">
             <select id="level" data-gdocs="entry.1242533523" name="level" class="form-control chosen">
-              <option data-paypal-amount="1080" value="Benefactor" selected="selected">$1,080 - Benefactor (4 complimentary seats)</option>
-              <option data-paypal-amount="720" value="Sustaining">$720 - Sustaining (2 complimentary seats)</option>
-              <option data-paypal-amount="360" value="Family Standard">$360 - Family Standard</option>
-              <option data-paypal-amount="270" value="Family Associate">$270 - Family Associate</option>
-              <option data-paypal-amount="210" value="Single Standard">$210 - Single Standard</option>
-              <option data-paypal-amount="180" value="Single Associate">$180 - Single Associate</option>
+              <option data-paypal-amount="1200" value="Benefactor" selected="selected">$1,200 - Benefactor (4 complimentary seats)</option>
+              <option data-paypal-amount="900" value="Sustaining">$900 - Sustaining (2 complimentary seats)</option>
+              <option data-paypal-amount="450" value="Family Standard">$450 - Family Standard</option>
+              <option data-paypal-amount="360" value="Family Associate">$360 - Family Associate</option>
+              <option data-paypal-amount="300" value="Single Standard">$300 - Single Standard</option>
+              <option data-paypal-amount="250" value="Single Associate">$250 - Single Associate</option>
             </select>
           </div>
         </div>
@@ -124,57 +124,57 @@ get_header(); ?>
       <h2 class="text-center">Additional Seats</h2>
       <hr />
       <div class="form-group">
-        <label for="member_adult" class="col-sm-5 control-label text-right">Adult Member ($36)</label>
+        <label for="member_adult" class="col-sm-5 control-label text-right">Adult Member ($54)</label>
         <div class="col-sm-3">
           <input id="member_adult" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.333865748"
                  data-paypal-item="Adult Member Seat"
-                 data-paypal-amount="36.00" class="form-control" />
+                 data-paypal-amount="54.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
       <div class="form-group">
-        <label for="member_child" class="col-sm-5 control-label text-right">Child Member ($18)</label>
+        <label for="member_child" class="col-sm-5 control-label text-right">Child Member ($25)</label>
         <div class="col-sm-3">
           <input id="member_child" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.1870149190"
                  data-paypal-item="Child Member Seat"
-                 data-paypal-amount="18.00" class="form-control" />
+                 data-paypal-amount="25.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">
           Under 13. Includes complimentary babysitting.
         </div>
       </div>
       <div class="form-group">
-        <label for="nonmember_adult" class="col-sm-5 control-label text-right">Adult Non-Member ($72)</label>
+        <label for="nonmember_adult" class="col-sm-5 control-label text-right">Adult Non-Member ($90)</label>
         <div class="col-sm-3">
           <input id="nonmember_adult" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.646547736"
                  data-paypal-item="Adult Non-Member Seat"
-                 data-paypal-amount="72.00" class="form-control" />
+                 data-paypal-amount="90.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
       <div class="form-group">
-        <label for="nonmember_child" class="col-sm-5 control-label text-right">Child Non-Member ($18)</label>
+        <label for="nonmember_child" class="col-sm-5 control-label text-right">Child Non-Member ($45)</label>
         <div class="col-sm-3">
           <input id="nonmember_child" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.1729958570"
                  data-paypal-item="Child Non-Member Seat"
-                 data-paypal-amount="36.00" class="form-control" />
+                 data-paypal-amount="45.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">
           Under 13. Includes complimentary babysitting.
         </div>
       </div>
-      
+
       <div class="form-group">
-        <label for="babysitting" class="col-sm-5 control-label text-right">Babysitting ($10/day/child)</label>
+        <label for="babysitting" class="col-sm-5 control-label text-right">Babysitting ($15/day/child)</label>
         <div class="col-sm-3">
           <input id="babysitting" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.697830986"
                  data-paypal-item="Babysitting"
-                 data-paypal-amount="10.00" class="form-control" />
+                 data-paypal-amount="15.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>

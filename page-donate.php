@@ -183,16 +183,20 @@ get_header(); ?>
               </optgroup-->
               <optgroup label="Learning">
                 <option data-price="18" value="Day of Learning">$18 - Day of Learning</option>
-                <option data-price="72" value="Book Dedication">$72 - Sefer / Book Dedication</option>
+                <option data-price="72" value="Sefer Dedication">$72 - Siddur/Chumash Dedication</option>
+                <option data-price="54" value="Other Book Dedication">$54 - Other Book Dedication</option>
                 <option data-price="100" value="Week of Learning">$100 - Week of Learning</option>
               </optgroup>
               <optgroup label="Sponsorships">
                 <option data-price="5" value="Breakfast">$5 - Breakfast</option>
                 <option data-price="18" value="Week of Breakfast">$18 - Week of Breakfast</option>
                 <option data-price="18" value="School-Year-Kiddush">$18 - End of School Year Kiddush</option>
-                <option data-price="36" value="Seudah Shelishit">$36 - Seudah Shelishit</option>
-                <option data-price="54" value="Kiddush">$54 - Kiddush</option>
-                <option data-price="144" value="Luncheon">$144 - Luncheon</option>
+                <option data-price="54" value="Seudah Shelishit">$54 - Seudah Shelishit</option>
+                <option data-price="72" value="Kiddush">$72 - Kiddush</option>
+                <option data-price="90" value="Gala Kiddush">$90 - Gala Kiddush</option>
+                <option data-price="120" value="Lavish Kiddush">$120 - Lavish Kiddush</option>
+                <option data-price="250" value="Luncheon">$250 - Luncheon</option>
+                <option data-price="500" value="Kiddush Pillar">$500 - Kiddush Pillar</option>
               </optgroup>
               <optgroup label="Seasonal">
                 <option data-price="0" value="Ma'ot Chitim">Ma'ot Chitim (Pesach)</option>
