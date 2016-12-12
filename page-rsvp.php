@@ -9,7 +9,7 @@
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
 <?php else: switch ($_GET['event']): ?>
-<?php case '2016-shavuot': ?>
+<?php case 'x2016-shavuot': ?>
   <h1>Shavuoton Dinner</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -873,11 +873,11 @@
       </a>
     </div>
   </div>
-<?php break; case 'x2015-chanukah': ?>
+<?php break; case '2016-chanukah': ?>
   <h1>Chanukah Bash</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/1kYJINLacMrsr1m5UMsrGUUlGIV9VMaKBuBlE5rZshyw/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLSfZBuyPG26G8pWcQWIKQrt-uXGKDrZZDhsJmNl2fz1v2Rb1jQ/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -1008,8 +1008,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/?p=4716">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2015/11/chanukah-bash-5776-300x232.png" />
+      <a href="http://bethisraelmalden.org/?p=5323">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2016/12/chanukah-5777-300x231.png" />
       </a>
     </div>
   </div>
