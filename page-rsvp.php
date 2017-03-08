@@ -1,5 +1,5 @@
 <?php if ('' == $_GET['event']) {
-  $_GET['event'] = '2016-pesach';
+  $_GET['event'] = '2017-purim';
   // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
   // exit();
 } ?>
@@ -562,11 +562,11 @@
     </div>
   </form>
 
-<?php break; case 'x2016-purim': ?>
+<?php break; case '2017-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/1NxN4OLl5shCkmFFtg3VAnVqHlrdDTkPbOqlZGdhPl_o/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/1FAIpQLSfNK8yufFRASY8i8BsOIZ20T6UXnuzDMTqe0Ul2jqX3Py0CsA/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -658,6 +658,19 @@
           </select>
         </div>
       </div>
+      <div class="form-group">
+        <label for="add_sponsorship" class="col-sm-6 control-label">
+          Become a sponsor ($54)?
+        </label>
+        <div class="col-sm-6">
+          <select id="add_sponsorship" name="add_sponsorship"
+                  class="form-control"
+                  data-gdocs="entry.4276840">
+            <option value="0" selected="selected">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+      </div>
       <hr />
       <h2>Matanot L’evyonim<br /><small>Purim Charity Fund</small></h2>
       <p class="text-justify">
@@ -696,11 +709,12 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/2016/03/purim-seudah-5776/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2016/03/Purim-2015-300x172.jpg" />
+      <a href="http://bethisraelmalden.org/2017/03/purim-seudah-5777/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2017/03/purim-5777-300x168.png" />
       </a>
     </div>
   </div>
+
 <?php break; case 'x2015-07-shabbaton': ?>
   <h1>Shabbat Nachamu Shabbaton</h1>
   <div class="row">
@@ -873,7 +887,8 @@
       </a>
     </div>
   </div>
-<?php break; case '2016-chanukah': ?>
+
+<?php break; case 'x2016-chanukah': ?>
   <h1>Chanukah Bash</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -1013,6 +1028,7 @@
       </a>
     </div>
   </div>
+
 <?php break; case 'x2015-pizza': ?>
   <h1>Games &amp; Pizza Night</h1>
   <div class="row">
