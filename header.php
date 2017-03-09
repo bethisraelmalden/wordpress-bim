@@ -9,6 +9,12 @@
   <meta property="og:url" content="<?php echo get_permalink(); ?>" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?>" />
+
+  <?php if (is_single() && has_post_thumbnail()): ?>
+  <meta property="og:image" content="<?php wp_get_attachment_url( get_post_thumbnail_id() ); ?>" />
+  <?php endif; ?>
+
+
   <!-- <meta property="og:description" content="" />
   <meta property="og:image" content="" />-->
 
