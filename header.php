@@ -11,7 +11,7 @@
   <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?>" />
 
   <?php if (is_single() && has_post_thumbnail()): ?>
-  <meta property="og:image" content="<?php wp_get_attachment_url( get_post_thumbnail_id(get_the_ID())); ?>" />
+  <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>" />
   <?php endif; ?>
 
 
