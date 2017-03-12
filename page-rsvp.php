@@ -566,7 +566,8 @@
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/1FAIpQLSfNK8yufFRASY8i8BsOIZ20T6UXnuzDMTqe0Ul2jqX3Py0CsA/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLSfNK8yufFRASY8i8BsOIZ20T6UXnuzDMTqe0Ul2jqX3Py0CsA/formResponse"
+          >
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
