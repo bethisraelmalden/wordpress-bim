@@ -704,7 +704,7 @@
           <a href="tel:+17812231471">781-223-1471</a> by 8am April 10th.
         </p>
 
-        <h3>Sale of Chametz Contract</h3>
+        <h3>Power of Attorney Form</h3>
         <p class="text-justify">
           I (we) hereby authorize Rabbi Yitzchak Zev Rabinowitz to sell all
           the chametz that is in my (our) possession, home and/or place of
