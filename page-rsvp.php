@@ -822,7 +822,7 @@
         </div>
       </div>
       <div class="col-sm-3">
-        div class="well pull-right">
+        <div class="well pull-right">
           <strong>Passover 5777 Downloads</strong>
           <p>All the guides, in one place.</p>
           <ul class="list-unstyled">
