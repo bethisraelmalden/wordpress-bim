@@ -94,14 +94,20 @@ define(function (require) {
       gdata[$field.data('gdocs')] = $field.data('gdocs-value') || $field.val();
     });// gdata ready
 
-    $.post(app.$rsvp.data('gdocs'), gdata) // gdata posted
-      .always(function () {
-        if (!isInterested || isCash) {
-          window.location = location.href + '&thankyou=1';
-        } else {
-          app.$paypal.submit();
-        }//end if: redirected
-      });
+    // $.post(app.$rsvp.data('gdocs'), gdata) // gdata posted
+    $.ajax({
+      type: 'POST',
+      url: app.$rsvp.data('gdocs'),
+      data: gdata,
+      global: false
+    })
+    .always(function () {
+      if (!isInterested || isCash) {
+        window.location = location.href + '&thankyou=1';
+      } else {
+        app.$paypal.submit();
+      }//end if: redirected
+    });
 
     return true; // always works
   };
@@ -115,4 +121,5 @@ define(function (require) {
   };
 
   $(app.init); // initialize
+  window.app = app;
 });
