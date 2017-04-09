@@ -839,7 +839,7 @@
               <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-sefirah.pdf">Sefirat HaOmer Chart</a>
             </li> -->
           </ul>
-        </div
+        </div>
       </div>
     </div>
   </form>
