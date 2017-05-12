@@ -14,9 +14,9 @@
   <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>" />
   <?php endif; ?>
 
-
-  <!-- <meta property="og:description" content="" />
-  <meta property="og:image" content="" />-->
+  <?php if (is_single() && has_excerpt() && is_category('Bulletin')): ?>
+  <meta property="og:description" content="<?php the_excerpt(); ?>" />
+  <?php endif; ?>
 
   <link rel="profile" href="http://gmpg.org/xfn/11" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
