@@ -14,8 +14,11 @@
   <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>" />
   <?php endif; ?>
 
-  <?php if (is_single() && has_excerpt() && is_category('bulletin')): ?>
-  <meta property="og:description" content="<?php echo get_the_excerpt(); ?>" />
+  <?php if (is_single() && has_excerpt()): ?>
+    <?php $desc = get_the_excerpt(); ?>
+    <?php if(false == strpos($desc, '<a')): ?>
+  <meta property="og:description" content="<?php echo $desc; ?>" />
+    <?php endif; ?>
   <?php endif; ?>
 
   <link rel="profile" href="http://gmpg.org/xfn/11" />
