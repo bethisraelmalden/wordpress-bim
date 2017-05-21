@@ -781,8 +781,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/?p=5035">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2016/05/Shavuot-5776-300x209.png" />
+      <a href="http://bethisraelmalden.org/?p=5609">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2017/05/shavuton-5777-300x209.png" />
       </a>
     </div>
   </div>
