@@ -108,6 +108,9 @@ get_header(); ?>
           <input type="hidden" name="quantity_1" value="1" />
           <input type="hidden" name="item_number" value="" />
           <input type="hidden" name="shipping_1" value="0.00" />
+          <input type="hidden" name="cn" value="Add a note" />
+          <input type="hidden" name="no_note" value="0" />
+          <input type="hidden" name="no_shipping" value="1" />
 
 
           <div class="form-group">
@@ -162,6 +165,9 @@ get_header(); ?>
         <input type="hidden" name="quantity_1" value="1" />
         <input type="hidden" name="item_number" value="" />
         <input type="hidden" name="shipping_1" value="0.00" />
+        <input type="hidden" name="cn" value="Add a note" />
+        <input type="hidden" name="no_note" value="0" />
+        <input type="hidden" name="no_shipping" value="1" />
 
         <div class="form-group">
           <label for="item" class="col-sm-3 control-label">Item</label>
