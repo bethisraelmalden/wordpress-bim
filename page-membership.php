@@ -47,6 +47,7 @@ get_header(); ?>
               <option data-paypal-amount="360" value="Family Associate">$360 - Associate Family</option>
               <option data-paypal-amount="300" value="Single Standard">$300 - Standard Single </option>
               <option data-paypal-amount="250" value="Single Associate">$250 - Associate Single</option>
+              <option data-paypal-amount="0" value="Non-Member">$0 - Non-Member</option>
             </select>
           </div>
         </div>
