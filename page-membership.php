@@ -38,12 +38,15 @@ get_header(); ?>
           <label for="level" class="col-sm-4 control-label">Level</label>
           <div class="col-sm-8">
             <select id="level" data-gdocs="entry.1242533523" name="level" class="form-control chosen">
-              <option data-paypal-amount="1200" value="Benefactor" selected="selected">$1,200 - Benefactor (4 complimentary seats)</option>
-              <option data-paypal-amount="900" value="Sustaining">$900 - Sustaining (2 complimentary seats)</option>
-              <option data-paypal-amount="450" value="Family Standard">$450 - Family Standard</option>
-              <option data-paypal-amount="360" value="Family Associate">$360 - Family Associate</option>
-              <option data-paypal-amount="300" value="Single Standard">$300 - Single Standard</option>
-              <option data-paypal-amount="250" value="Single Associate">$250 - Single Associate</option>
+              <option data-paypal-amount="3600" value="Partner" selected="selected">$3,600 - Partner (4 complimentary seats)</option>
+              <option data-paypal-amount="2800" value="Pillar">$2,800 - Pillar (4 complimentary seats)</option>
+              <option data-paypal-amount="1800" value="Benefactor">$1,800 - Benefactor (4 complimentary seats)</option>
+              <option data-paypal-amount="1200" value="Supporter">$1,200 - Supporter (2 complimentary seats)</option>
+              <option data-paypal-amount="900" value="Sustaining Member">$900 - Sustaining Member (2 complimentary seats)</option>
+              <option data-paypal-amount="450" value="Standard Family">$450 - Standard Family</option>
+              <option data-paypal-amount="360" value="Family Associate">$360 - Associate Family</option>
+              <option data-paypal-amount="300" value="Single Standard">$300 - Standard Single </option>
+              <option data-paypal-amount="250" value="Single Associate">$250 - Associate Single</option>
             </select>
           </div>
         </div>
