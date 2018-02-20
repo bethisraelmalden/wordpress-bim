@@ -1,4 +1,7 @@
 <?php
+header('Location: https://maldenmikvah.org');
+exit;
+
 wp_enqueue_style('Calligraffitti', '//fonts.googleapis.com/css?family=Calligraffitti');
 get_header();
 

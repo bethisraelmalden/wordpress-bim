@@ -12,7 +12,8 @@
       </div><div class="col-xs-6 col-sm-2">
         <h4>Grow Spiritually</h4>
         <ul class="list-unstyled">
-          <li><a href="<?php echo esc_url(home_url('/mikvah')); ?>">Mikvah Mayanei Tovah</a></li>
+          <!-- <li><a href="<?php echo esc_url(home_url('/mikvah')); ?>">Mikvah Mayanei Tovah</a></li> -->
+          <li><a href="https://maldenmikvah.org/">Mikvah Mayanei Tovah</a></li>
           <li><a href="<?php echo esc_url(home_url('/eruv')); ?>">Malden Eruv</a></li>
           <!--li><span class="text-muted">Minyan</span></li-->
           <li><a href="<?php echo get_category_link(get_cat_ID('Torah'))?>">Past Shiurim</a></li>
