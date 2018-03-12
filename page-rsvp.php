@@ -431,12 +431,12 @@
     </div>
   </div>
 
-<?php break; case 'x2017-pesach': ?>
+<?php break; case '2018-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
-        data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLSdP7nBnaqhvie1r9DosW6YG6PU6JVEBdhDy_4i9Q1-FRc4bOw/formResponse">
+        data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLScBF6PSguJaLZHl-duktjpnQqV38hZGogMqHSS8TaIazjnCdQ/formResponse">
     <div class="row">
       <div class="col-sm-5 col-sm-offset-2">
-        <h1>Passover <small>5777</small></h1>
+        <h1>Passover <small>5778</small></h1>
         <h2>Sale of Chametz</h2>
         <p class="text-justify">
           Any <em>chametz</em> owned by a Jew during Passover week is
@@ -447,9 +447,9 @@
         </p>
         <p class="text-justify">
           This contract must be completed by
-          <strong>12pm on Sunday, April 9th</strong>.
+          <strong>12pm on Thursday, March 29th</strong>.
           If you miss the deadline, call the Rabbi at
-          <a href="tel:+17812231471">781-223-1471</a> by 8am April 10th.
+          <a href="tel:+17812231471">781-223-1471</a> by 8pm March 29th.
         </p>
 
         <h3>Power of Attorney Form</h3>
@@ -569,9 +569,9 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
+      <!-- <div class="col-sm-3">
         <div class="well pull-right">
-          <strong>Passover 5777 Downloads</strong>
+          <strong>Passover 5778 Downloads</strong>
           <p>All the guides, in one place.</p>
           <ul class="list-unstyled">
             <li>
@@ -582,13 +582,13 @@
               <i class="glyphicon glyphicon-download"></i>
               <a href="http://bethisraelmalden.org/wp-content/uploads/2017/04/5777-Passover-Supplement.pdf">Product Supplement</a>
             </li>
-            <!-- <li>
+            <li>
               <i class="glyphicon glyphicon-download"></i>
               <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-sefirah.pdf">Sefirat HaOmer Chart</a>
-            </li> -->
+            </li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </div>
   </form>
 
