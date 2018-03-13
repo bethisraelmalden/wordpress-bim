@@ -451,6 +451,10 @@
           If you miss the deadline, call the Rabbi at
           <a href="tel:+17812231471">781-223-1471</a> by 8pm March 29th.
         </p>
+        <p>
+          <strong>It is preferable to authorize the Rabbi to sell your chametz
+          in-person.</strong> If it is difficult to do so, please use this form.
+        </p>
 
         <h3>Power of Attorney Form</h3>
         <p class="text-justify">
@@ -522,16 +526,6 @@
         </div>
 
         <hr />
-        <div class="form-group text-center">
-          <div class="col-sm-12 text-center">
-            <label>
-              <input name="notme" type="checkbox" value="1" />
-              Check this box to decline a contribution.
-            </label>
-          </div>
-        </div>
-
-        <hr />
         <h2>Ma’ot Chitin<br /><small>Passover Charity Fund</small></h2>
         <p class="text-justify">
         Ma’ot Chitin is the annual Passover fund that helps our less fortunate
@@ -555,6 +549,18 @@
                      data-paypal-item="Pesach - Ma'ot Chitin"
                      data-paypal-num="1" />
             </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="form-group text-center">
+          <div class="col-sm-12 text-center">
+            <label>
+              <input name="notme" type="checkbox" value="1" />
+              Check this box if you are not making any contributions to the
+              Rabbi or Ma'ot Chitin.
+            </label>
+            <p>
           </div>
         </div>
 
