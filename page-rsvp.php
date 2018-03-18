@@ -1,5 +1,5 @@
 <?php if ('' == $_GET['event']) {
-  $_GET['event'] = '2018-purim';
+  $_GET['event'] = '2018-pesach';
   // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
   // exit();
 } ?>
@@ -529,10 +529,9 @@
         <h2>Ma’ot Chitin<br /><small>Passover Charity Fund</small></h2>
         <p class="text-justify">
         Ma’ot Chitin is the annual Passover fund that helps our less fortunate
-        brethren celebrate Passover with joy and respect. To perform this Tzedaka
-        that has been practised by Jewish communities around the world for
-        centuries, please donate here or write a check out to Congregation Beth
-        Israel, and write "Ma’ot Chitin" in the memo line.
+        brethren celebrate Passover with joy and respect. To perform this
+        Tzedaka that has been practised by Jewish communities around the world
+        for centuries, please donate here or write a check out to Congregation Beth Israel, and write "Ma’ot Chitin" in the memo line.
         </p>
         <div class="form-group">
           <div class="col-sm-8">
