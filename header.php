@@ -6,7 +6,7 @@
   <title><?php wp_title('|', true, 'right'); ?></title>
 
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
-  <meta property="og:url" content="<?php echo get_permalink(); ?>" />
+  <meta property="og:url" content="<?php the_permalink(); ?>" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="<?php wp_title('|', true, 'right'); ?>" />
 

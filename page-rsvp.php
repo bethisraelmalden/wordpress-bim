@@ -1,8 +1,15 @@
-<?php if ('' == $_GET['event']) {
-  $_GET['event'] = '2018-pesach';
-  // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
-  // exit();
-} ?>
+<?php
+  function append_query_string($url) {
+      return add_query_arg($_GET, $url);
+  }
+  add_filter('the_permalink', 'append_query_string');
+
+  if ('' == $_GET['event']) {
+    $_GET['event'] = '2018-pesach';
+    // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
+    // exit();
+  }
+?>
 
 <?php get_header(); ?>
 <div id="content" class="container">
