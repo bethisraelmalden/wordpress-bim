@@ -12,7 +12,7 @@
       <div class="entry-meta text-muted hidden-print">
         <?php if('post' == get_post_type()): ?>
         <span class="entry-date-hebrew"><?php echo bim_get_hebrew_date(get_the_date('U')); ?></span>
-        <span class="entry-date" class="stop-fouc"
+        <span class="entry-date stop-fouc"
               data-reldate="<?php echo get_the_date('c'); ?>"><?php echo get_the_date('F j, Y'); ?></span>
           <?php if(in_array('category', get_object_taxonomies(get_post_type()))): ?>
         &bull; <span class="cat-links"><?php echo get_the_category_list(', '); ?></span>
