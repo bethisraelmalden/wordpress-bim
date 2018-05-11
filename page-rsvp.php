@@ -794,7 +794,7 @@
     </form>
     <div class="col-sm-4 text-center">
       <a href="http://bethisraelmalden.org/2018/05/shavuaton-5778/ ">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2018/05/2018-05-21-shavuot-791x1024.jpg" />
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2018/05/2018-05-21-shavuot-232x300.jpg" />
       </a>
     </div>
   </div>
