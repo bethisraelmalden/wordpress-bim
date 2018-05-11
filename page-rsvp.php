@@ -157,7 +157,7 @@
     </div>
   </div>
 
-<?php break; case '2018-purim': ?>
+<?php break; case 'x2018-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -438,7 +438,7 @@
     </div>
   </div>
 
-<?php break; case '2018-pesach': ?>
+<?php break; case 'x2018-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
         data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLScBF6PSguJaLZHl-duktjpnQqV38hZGogMqHSS8TaIazjnCdQ/formResponse">
     <div class="row">
@@ -604,7 +604,7 @@
     </div>
   </form>
 
-<?php break; case '2017-lag-bomer': ?>
+<?php break; case 'x2017-lag-bomer': ?>
   <h1>Lag B'Omer</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -694,11 +694,11 @@
     </div>
   </div>
 
-<?php case '2017-shavuot': ?>
+<?php case '2018-shavuot': ?>
   <h1>Shavuoton Dinner</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLSeYFuA5GeBRPAjk90DvbZsRhApPyBGDxF_ZicHtjvFs6iLcTw/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLSeM4LrkTuVF590FW4H-QGVEawrF6f9DR89yamJhjHP9-HKPvA/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -793,8 +793,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/?p=5609">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2017/05/shavuton-5777-300x209.png" />
+      <a href="http://bethisraelmalden.org/2018/05/shavuaton-5778/ ">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2018/05/2018-05-21-shavuot-791x1024.jpg" />
       </a>
     </div>
   </div>
