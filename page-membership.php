@@ -38,17 +38,22 @@ get_header(); ?>
           <label for="level" class="col-sm-4 control-label">Level</label>
           <div class="col-sm-8">
             <select id="level" data-gdocs="entry.1242533523" name="level" class="form-control chosen">
-              <option data-paypal-amount="3600" value="Partner" selected="selected">$3,600 - Partner (4 complimentary seats)</option>
-              <option data-paypal-amount="2800" value="Pillar">$2,800 - Pillar (4 complimentary seats)</option>
+              <option data-paypal-amount="3600" value="Pillar" selected="selected">$3,600 - Pillar (4 complimentary seats)</option>
+              <option data-paypal-amount="2500" value="Partner">$2,500 - Partner (4 complimentary seats)</option>
               <option data-paypal-amount="1800" value="Benefactor">$1,800 - Benefactor (4 complimentary seats)</option>
-              <option data-paypal-amount="1200" value="Supporter">$1,200 - Supporter (2 complimentary seats)</option>
-              <option data-paypal-amount="900" value="Sustaining Member">$900 - Sustaining Member (2 complimentary seats)</option>
-              <option data-paypal-amount="450" value="Standard Family">$450 - Standard Family</option>
-              <option data-paypal-amount="360" value="Family Associate">$360 - Associate Family</option>
-              <option data-paypal-amount="300" value="Single Standard">$300 - Standard Single </option>
-              <option data-paypal-amount="250" value="Single Associate">$250 - Associate Single</option>
+              <option data-paypal-amount="1000" value="Sustaining">$1,000 - Sustaining (2 complimentary seats)</option>
+              <option data-paypal-amount="500" value="Full Family">$500 - Full Family</option>
+              <option data-paypal-amount="360" value="Full Single">$360 - Full Single </option>
+              <option data-paypal-amount="360" value="Associate Family">$360 - Associate Family</option>
+              <option data-paypal-amount="250" value="Associate Single">$250 - Associate Single</option>
               <option data-paypal-amount="0" value="Non-Member">$0 - Non-Member</option>
             </select>
+            <p class="help-block">
+              If you can’t make the above levels work, please
+              <a href="mailto:director@bethisraelmalden.org">contact the Executive Director</a>
+              for a confidential discussion. Your continued membership is
+              important to us.
+            </p>
           </div>
         </div>
 
@@ -128,44 +133,44 @@ get_header(); ?>
       <h2 class="text-center">Additional Seats</h2>
       <hr />
       <div class="form-group">
-        <label for="member_adult" class="col-sm-5 control-label text-right">Adult Member ($54)</label>
+        <label for="member_adult" class="col-sm-5 control-label text-right">Member Adult ($72)</label>
         <div class="col-sm-3">
           <input id="member_adult" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.333865748"
-                 data-paypal-item="Adult Member Seat"
-                 data-paypal-amount="54.00" class="form-control" />
+                 data-paypal-item="Member Adult Seat"
+                 data-paypal-amount="72.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
       <div class="form-group">
-        <label for="member_child" class="col-sm-5 control-label text-right">Child Member ($25)</label>
+        <label for="member_child" class="col-sm-5 control-label text-right">Member Child ($54)</label>
         <div class="col-sm-3">
           <input id="member_child" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.1870149190"
                  data-paypal-item="Child Member Seat"
-                 data-paypal-amount="25.00" class="form-control" />
+                 data-paypal-amount="54.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">
           Under 13. Includes complimentary babysitting.
         </div>
       </div>
       <div class="form-group">
-        <label for="nonmember_adult" class="col-sm-5 control-label text-right">Adult Non-Member ($90)</label>
+        <label for="nonmember_adult" class="col-sm-5 control-label text-right">Non-Member Adult ($125)</label>
         <div class="col-sm-3">
           <input id="nonmember_adult" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.646547736"
-                 data-paypal-item="Adult Non-Member Seat"
-                 data-paypal-amount="90.00" class="form-control" />
+                 data-paypal-item="Non-Member Adult Seat"
+                 data-paypal-amount="125.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
       <div class="form-group">
-        <label for="nonmember_child" class="col-sm-5 control-label text-right">Child Non-Member ($45)</label>
+        <label for="nonmember_child" class="col-sm-5 control-label text-right">Non-Member Child ($72)</label>
         <div class="col-sm-3">
           <input id="nonmember_child" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.1729958570"
-                 data-paypal-item="Child Non-Member Seat"
-                 data-paypal-amount="45.00" class="form-control" />
+                 data-paypal-item="Non-Member Child Seat"
+                 data-paypal-amount="72.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">
           Under 13. Includes complimentary babysitting.
@@ -173,12 +178,36 @@ get_header(); ?>
       </div>
 
       <div class="form-group">
-        <label for="babysitting" class="col-sm-5 control-label text-right">Babysitting ($15/day/child)</label>
+        <label for="babysitting" class="col-sm-5 control-label text-right">Babysitting ($10/day/child)</label>
         <div class="col-sm-3">
           <input id="babysitting" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.697830986"
                  data-paypal-item="Babysitting"
-                 data-paypal-amount="15.00" class="form-control" />
+                 data-paypal-amount="10.00" class="form-control" />
+        </div>
+        <div class="col-sm-4 help-text">&nbsp;</div>
+      </div>
+
+      <h2 class="text-center">Additional Sponsorship</h2>
+      <hr />
+      <div class="form-group">
+        <label for="babysitting" class="col-sm-5 control-label text-right">Specific Sponsorship Levels</label>
+        <div class="col-sm-3">
+          <select id="sponsorship" data-gdocs="entry.1807653483" name="sponsorship" class="form-control chosen">
+            <option data-paypal-amount="0" value="No Sponsorship" selected="selected">Select Below</option>
+            <option data-paypal-amount="2500.00" value="Annual Learning Sponsor">$2,500 - Annual Learning Sponsor</option>
+            <option data-paypal-amount="500.00" value="Monthly Learning Sponsor">$500 - Monthly Learning Sponsor</option>
+            <option data-paypal-amount="1000.00" value="Luncheon Benefactor">$1,000 - Luncheon Benefactor</option>
+            <option data-paypal-amount="625.00" value="Lavish Kiddush Benefactor">$625 - Lavish Kiddush Benefactor</option>
+            <option data-paypal-amount="500.00" value="Gala Kiddush Benefactor">$500 - Gala Kiddush Benefactor</option>
+            <option data-paypal-amount="420.00" value="Sponsored Kiddush Benefactor">$420 - Sponsored Kiddush Benefactor</option>
+            <option data-paypal-amount="120.00" value="Breakfast Club">$120 - Breakfast Club</option>
+            <option data-paypal-amount="180.00" value="Week of Learning">$180 - Week of Learning</option>
+            <option data-paypal-amount="50.00" value="Day of Learning">$50 - Day of Learning</option>
+            <option data-paypal-amount="500.00" value="Library Scholar">$500 - Library Scholar</option>
+            <option data-paypal-amount="72.00" value="Library Siddur/Chumash">$72 - Library Siddur/Chumash</option>
+            <option data-paypal-amount="54.00" value="Library Book">$54 - Library Book</option>
+          </select>
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
