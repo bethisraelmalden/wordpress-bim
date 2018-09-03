@@ -179,6 +179,7 @@ get_header(); ?>
                 <option data-price="0" value="Mikvah Fund">Mikvah Fund</option>
                 <option data-price="0" value="Security Fund">Security Fund</option>
                 <option data-price="0" value="Library Fund">Library Fund</option>
+                <option data-price="0" value="Charidy Campaign">Charidy Campaign</option>
               </optgroup>
               <!--optgroup label="SEED Program">
                 <option data-price="18" value="Chai (SEED)">$18 - Chai (SEED)</option>
