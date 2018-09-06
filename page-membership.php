@@ -130,7 +130,7 @@ get_header(); ?>
         </div>
     </div>
     <div class="col-sm-6">
-      <h2 class="text-center">Additional Seats</h2>
+      <h2 class="text-center">High Holiday Seating</h2>
       <hr />
       <div class="form-group">
         <label for="member_adult" class="col-sm-5 control-label text-right">Member Adult ($72)</label>
