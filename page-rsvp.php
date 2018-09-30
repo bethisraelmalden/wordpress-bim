@@ -1261,7 +1261,7 @@
   <h1>Gila Manolson Event</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="">
+          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLScyRvMxqTQ-XvbdIb0FHvTFj8TYgdoPI3n3vSFRuDF3Yo0nWw/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -1338,8 +1338,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="">
-        <img src="" />
+      <a href="http://bethisraelmalden.org/2018/09/finding-yourself-in-the-crowd/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2018/09/2018-gila-manolson-791x1024.jpg" />
       </a>
     </div>
   </div>
