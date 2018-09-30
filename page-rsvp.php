@@ -1167,7 +1167,7 @@
     </div>
   </div>
 
-<?php break; case '2018-picnic': ?>
+<?php break; case 'x2018-picnic': ?>
   <h1>End of Summer Picnic</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -1253,6 +1253,93 @@
     <div class="col-sm-4 text-center">
       <a href="http://bethisraelmalden.org/?p=6510">
         <img src="http://bethisraelmalden.org/wp-content/uploads/2018/08/end-of-summer-bbq-232x300.jpg" />
+      </a>
+    </div>
+  </div>
+
+<?php break; case '2018-manolson': ?>
+  <h1>Gila Manolson Event</h1>
+  <div class="row">
+    <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
+          data-gdocs="">
+      <div class="form-group">
+        <label for="first_name" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input id="first_name" type="text" name="first_name"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
+                 data-gdocs="entry.1706211117"
+                 data-paypal="first_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+          <input id="last_name" type="text" name="last_name"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
+                 data-gdocs="entry.559931540"
+                 data-paypal="last_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+          <input id="email" type="email" name="email"
+                 value="<?php echo $_GET['email']?>" class="form-control"
+                 data-gdocs="entry.1807666963"
+                 data-paypal="email" />
+        </div>
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="1" />
+          <input id="adults" type="hidden" name="adults"
+                 value="Cannot Attend" data-gdocs="entry.954606298" />
+          <input id="payment_method" type="hidden" value=""
+                 data-gdocs="entry.1404141729" />
+          <input type="submit" value="Not Coming" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not coming.</p>
+        </div>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label for="adults" class="col-sm-6 control-label">
+          # Attending ($10)
+        </label>
+        <div class="col-sm-6">
+          <input id="adults" type="number" name="adults" class="form-control"
+                 value="0" min="0" step="1"
+                 data-family-max="skip"
+                 data-gdocs="entry.954606298"
+                 data-paypal-item="Gila Manolson Event"
+                 data-paypal-amount="10.00" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="children" class="col-sm-6 control-label">
+          # Children for Babysitting (free)
+        </label>
+        <div class="col-sm-6">
+          <textarea id="children" name="children"
+            data-gdocs="entry.1513278221"
+            class="form-control"></textarea>
+          <p class="help-block">List age of each child.</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <input id="payment_method" type="hidden" value="PayPal"
+                 data-gdocs="entry.1404141729" />
+          <input type="submit" value="PayPal" class="btn btn-primary" />
+          <input type="submit" value="Cash" class="btn btn-default" />
+        </div>
+      </div>
+      <?php endif; ?>
+    </form>
+    <div class="col-sm-4 text-center">
+      <a href="">
+        <img src="" />
       </a>
     </div>
   </div>
