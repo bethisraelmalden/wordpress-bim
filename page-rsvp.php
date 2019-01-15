@@ -130,7 +130,7 @@
     </div>
   </div>
 
-<?php case '2018-chanukah': ?>
+<?php break; case '2018-chanukah': ?>
   <h1>Chanukah Bash</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
