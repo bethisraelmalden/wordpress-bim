@@ -15,9 +15,8 @@
 <div id="content" class="container">
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
-<?php else: switch ($_GET['event']): ?>
-
-<?php case '2018-chanukah': ?>
+<?php else: switch ($_GET['event']):
+  case '2018-chanukah': ?>
   <h1>Chanukah Bash</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
