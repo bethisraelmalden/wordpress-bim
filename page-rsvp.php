@@ -16,6 +16,120 @@
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
 <?php else: switch ($_GET['event']): ?>
+
+<?php case '2019-shevat': ?>
+  <h1>Tu B'Shevat Seder</h1>
+  <div class="row">
+    <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
+          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfotWO3vlSzb2KuuzxWC9TZujGbE2N8XNIgEJCfIQM7qY-i3g/formResponse">
+      <div class="form-group">
+        <label for="first_name" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input id="first_name" type="text" name="first_name"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
+                 data-gdocs="entry.467309924"
+                 data-paypal="first_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+          <input id="last_name" type="text" name="last_name"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
+                 data-gdocs="entry.1239178442"
+                 data-paypal="last_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+          <input id="email" type="email" name="email"
+                 value="<?php echo $_GET['email']?>" class="form-control"
+                 data-gdocs="entry.1091378211"
+                 data-paypal="email" />
+        </div>
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="1" />
+          <input id="adults" type="hidden" name="adults"
+                 value="Not Coming" data-gdocs="entry.1033105750" />
+          <input id="payment_method" type="hidden" value=""
+                 data-gdocs="entry.1500179091" />
+          <input type="submit" value="Not Coming" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not coming.</p>
+        </div>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label for="adults" class="col-sm-6 control-label">
+          # Adults ($10)
+        </label>
+        <div class="col-sm-6">
+          <input id="adults" type="number" name="adults" class="form-control"
+                 value="0" min="0" step="1"
+                 data-family-max="skip"
+                 data-gdocs="entry.1033105750"
+                 data-paypal-item="Tu B'Shevat Seder - Adult"
+                 data-paypal-amount="10.00" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="children" class="col-sm-6 control-label">
+          # Children ($5)
+        </label>
+        <div class="col-sm-6">
+          <input id="children" type="number" name="children"
+                 value="0" min="0" step="1" size="2" class="form-control"
+                 data-family-max="skip"
+                 data-gdocs="entry.348538221"
+                 data-paypal-item="Tu B'Shevat Seder - Child"
+                 data-paypal-amount="5.00"/>
+          <p class="help-block">Ages 3-12</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="family_max" class="col-sm-6 control-label">
+          Pay Family Max ($30)
+        </label>
+        <div class="col-sm-6">
+          <select id="family_max" name="family_max" class="form-control"
+                  data-gdocs="entry.1872214929"
+                  data-paypal-item="Tu B'Shevat Seder - Family max"
+                  data-paypal-amount="30.00">
+            <option value="0" selected="selected">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes" class="col-sm-6 control-label">
+          Other Notes
+        </label>
+        <div class="col-sm-6">
+          <textarea id="notes" data-gdocs="entry.1938692856"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <input id="payment_method" type="hidden" value="PayPal"
+                 data-gdocs="entry.1500179091" />
+          <input type="submit" value="PayPal" class="btn btn-primary" />
+          <input type="submit" value="Cash" class="btn btn-default" />
+        </div>
+      </div>
+      <?php endif; ?>
+    </form>
+    <div class="col-sm-4 text-center">
+      <a href="http://bethisraelmalden.org/2019/01/tu-b'shevat-seder-5779/‎">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2019/01/2019-01-20-tubshevat-232x300.jpg" />
+      </a>
+    </div>
+  </div>
+
 <?php case '2018-chanukah': ?>
   <h1>Chanukah Bash</h1>
   <div class="row">
