@@ -265,7 +265,7 @@
     </form>
     <div class="col-sm-4 text-center">
       <a href="http://bethisraelmalden.org/2019/01/tu-b'shevat-seder-5779/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2019/01/2019-01-20-tubshevat-232x300.jpg" />
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2019/01/190120-tu-bshevat-232x300.jpg" />
       </a>
     </div>
   </div>
