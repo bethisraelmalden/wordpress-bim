@@ -270,11 +270,11 @@
     </div>
   </div>
 
-<?php break; case 'x2018-purim': ?>
+<?php break; case '2019-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLSfs-356azwq1HtiwTvGYr_Zg8q4MOquGFwoUURRpx8jZdZJ2w/formResponse"
+          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSf0zcrAuv2cIVX4mVp7eiVcEM-PSmqx1j9scaF_DVRNTCSPhw/formResponse"
           >
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
@@ -418,8 +418,8 @@
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/2018/02/purim-seudah-5778/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2018/02/purim-5778-232x300.jpg" />
+      <a href="http://bethisraelmalden.org/2019/03/purim-seudah-5779/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2019/03/2019-03-13-purim-232x300.jpg" />
       </a>
     </div>
   </div>
