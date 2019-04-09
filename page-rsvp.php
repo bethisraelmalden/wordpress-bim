@@ -551,9 +551,9 @@
     </div>
   </div>
 
-<?php break; case 'x2018-pesach': ?>
+<?php break; case '2019-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
-        data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLScBF6PSguJaLZHl-duktjpnQqV38hZGogMqHSS8TaIazjnCdQ/formResponse">
+        data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLScMvxgx7JUhxMCnBgiYjQqpjp6bZZ6cgtnmYherPfdPmqQL4w/formResponse">
     <div class="row">
       <div class="col-sm-5 col-sm-offset-2">
         <h1>Passover <small>5778</small></h1>
@@ -567,9 +567,9 @@
         </p>
         <p class="text-justify">
           This contract must be completed by
-          <strong>12pm on Thursday, March 29th</strong>.
+          <strong>8am on Friday, April 19th</strong>.
           If you miss the deadline, call the Rabbi at
-          <a href="tel:+17812231471">781-223-1471</a> by 8pm March 29th.
+          <a href="tel:+17812231471">781-223-1471</a> <!--by 8pm March 29th-->.
         </p>
         <p>
           <strong>It is preferable to authorize the Rabbi to sell your chametz
@@ -696,16 +696,16 @@
       </div>
       <div class="col-sm-3">
         <div class="well pull-right">
-          <strong>Passover 5778 Downloads</strong>
+          <strong>Passover 5779 Downloads</strong>
           <p>All the guides, in one place.</p>
           <ul class="list-unstyled">
             <li>
               <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2018/03/5778-halacha-guide.pdf">Halacha Guidebook</a>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2018/08/5779-Annual-Halacha-Guide.pdf">Halacha Guidebook</a>
             </li>
             <li>
               <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2018/03/5778-passover-supplement.pdf">Product Supplement</a>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2019/04/5779-passover-supplement.pdf">Product Supplement</a>
             </li>
 <!--             <li>
               <i class="glyphicon glyphicon-download"></i>
