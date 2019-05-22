@@ -49,7 +49,7 @@ define(function (require) {
       /** Special Dinner Rules **/
       var usdLevel = parseInt($('#level :selected').data('paypal-amount'), 10);
       var usdOther = parseFloat($('#other').val(), 10);
-      var hasFreeSeats = (usdLevel >= 500 || usdOther >= 500);
+      var hasFreeSeats = (usdLevel >= 720 || usdOther >= 720);
       if ('guests' === $field.attr('id') && hasFreeSeats) {
         quant = Math.max(0, quant - 2);
       }//end if: free banquet for two
@@ -114,7 +114,8 @@ define(function (require) {
 
   app.submit = function (e) {
     e.preventDefault(); // nowhere to go
-    var isInterested = ('0' === $('#notme,[name=notme]:checked').val());
+    var notme = $('#notme,[name=notme]:checked').val();
+    var isInterested = ('0' === notme || 'Yes' == notme);
     if (!app.build_paypal(isInterested)) { return false; }
     if (!app.submit_gdocs(isInterested)) { return false; }
     return false;

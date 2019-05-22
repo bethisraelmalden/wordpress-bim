@@ -5,7 +5,7 @@
   add_filter('the_permalink', 'append_query_string');
 
   if ('' == $_GET['event']) {
-    $_GET['event'] = '2018-pesach';
+    $_GET['event'] = '2019-siyum';
     // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
     // exit();
   }
@@ -551,7 +551,7 @@
     </div>
   </div>
 
-<?php break; case '2019-pesach': ?>
+<?php break; case 'x2019-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
         data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLScMvxgx7JUhxMCnBgiYjQqpjp6bZZ6cgtnmYherPfdPmqQL4w/formResponse">
     <div class="row">
@@ -807,7 +807,7 @@
     </div>
   </div>
 
-<?php break; case '2018-shavuot': ?>
+<?php break; case 'x2018-shavuot': ?>
   <h1>Shavuoton Dinner</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -1370,7 +1370,7 @@
     </div>
   </div>
 
-<?php break; case '2018-manolson': ?>
+<?php break; case 'x2018-manolson': ?>
   <h1>Gila Manolson Event</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -1744,6 +1744,434 @@
       </div>
     </form>
   </div>
+
+<?php break; case '2019-siyum': ?>
+  <div class="page-siyum well">
+    <div class="background"></div>
+    <div class="text-center">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/siyum/mishna-neshama.png"/>
+      <h1>
+        – An Uplifting Celebration 21 Years in the Making –
+      </h1>
+      <h2 class="text-center">Dinner &amp; Journal Reservations</h2>
+      <h4>
+        Sivan 23, 5779 / Sunday, June 23, 2019<br />
+        Reception at 5:30pm, Buffet Dinner at 6:30pm
+      </h4>
+      <hr />
+    </div>
+
+    <form id="rsvp" class="form-horizontal" method="POST"
+          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdcxZ9F93G4JCFgcr8XNSLN_Efq1Nbi2x14xPGLq51ZqzWM3g/formResponse">
+      <div class="row">
+        <div class="col-sm-5">
+          <h4>Contact Information</h4>
+          <div class="form-group">
+            <label for="first_name"
+                   class="col-sm-3 control-label">First Name</label>
+            <div class="col-sm-9">
+              <input id="first_name" name="first_name" type="text"
+                     class="form-control" value="<?php echo $_GET['fname']?>"
+                     data-gdocs="entry.1863260533" data-paypal="first_name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="last" class="col-sm-3 control-label">Last Name</label>
+            <div class="col-sm-9">
+              <input id="last_name" type="text" name="last_name"
+                     value="<?php echo $_GET['lname']?>" class="form-control"
+                     data-gdocs="entry.1347743833" data-paypal="last_name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address1" class="col-sm-3 control-label">Address</label>
+            <div class="col-sm-9">
+              <input id="address1" name="address1" type="text"
+                     class="form-control"
+                     data-gdocs="entry.756717941" data-paypal="address1" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="city" class="col-sm-3 control-label">City</label>
+            <div class="col-sm-5">
+              <input id="city" name="city" type="text" class="form-control"
+                     data-gdocs="entry.986520116" data-paypal="city" />
+            </div>
+            <label for="state" class="col-sm-1 control-label">State</label>
+            <div class="col-sm-3">
+              <select id="state" name="state" value="" class="form-control"
+                      data-gdocs="entry.496211654" data-paypal="state">
+                <option value=""></option><option value="AA">AA</option>
+                <option value="AE">AE</option><option value="AK">AK</option>
+                <option value="AL">AL</option><option value="AP">AP</option>
+                <option value="AR">AR</option><option value="AS">AS</option>
+                <option value="AZ">AZ</option><option value="CA">CA</option>
+                <option value="CO">CO</option><option value="CT">CT</option>
+                <option value="DC">DC</option><option value="DE">DE</option>
+                <option value="FL">FL</option><option value="FM">FM</option>
+                <option value="GA">GA</option><option value="GU">GU</option>
+                <option value="HI">HI</option><option value="IA">IA</option>
+                <option value="ID">ID</option><option value="IL">IL</option>
+                <option value="IN">IN</option><option value="KS">KS</option>
+                <option value="KY">KY</option><option value="LA">LA</option>
+                <option value="MA">MA</option><option value="MD">MD</option>
+                <option value="ME">ME</option><option value="MH">MH</option>
+                <option value="MI">MI</option><option value="MN">MN</option>
+                <option value="MO">MO</option><option value="MP">MP</option>
+                <option value="MS">MS</option><option value="MT">MT</option>
+                <option value="NC">NC</option><option value="ND">ND</option>
+                <option value="NE">NE</option><option value="NH">NH</option>
+                <option value="NJ">NJ</option><option value="NM">NM</option>
+                <option value="NV">NV</option><option value="NY">NY</option>
+                <option value="OH">OH</option><option value="OK">OK</option>
+                <option value="OR">OR</option><option value="PA">PA</option>
+                <option value="PR">PR</option><option value="PW">PW</option>
+                <option value="RI">RI</option><option value="SC">SC</option>
+                <option value="SD">SD</option><option value="TN">TN</option>
+                <option value="TX">TX</option><option value="UT">UT</option>
+                <option value="VA">VA</option><option value="VI">VI</option>
+                <option value="VT">VT</option><option value="WA">WA</option>
+                <option value="WI">WI</option><option value="WV">WV</option>
+                <option value="WY">WY</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="zip" class="col-sm-3 control-label">Zip</label>
+            <div class="col-sm-9">
+              <input id="zip" name="zip" type="text" class="form-control"
+                     data-gdocs="entry.1286550168" data-paypal="zip" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="night_phone_a"
+                   class="col-sm-3 control-label">Phone</label>
+            <div class="col-sm-9">
+              <input id="night_phone_a" name="night_phone_a" type="text"
+                     class="form-control"
+                     data-gdocs="entry.1444058160"
+                     data-paypal="night_phone_a" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email</label>
+            <div class="col-sm-9">
+              <input id="email" type="email" name="email"
+                   value="<?php echo $_GET['email']?>" class="form-control"
+                   data-gdocs="entry.1490243901"
+                   data-paypal="email" />
+            </div>
+          </div>
+
+          <hr />
+          <div class="col-sm-6">
+            <p>
+              <strong>SHAS</strong> - Short for "shisha sidrei",
+              literally "six orders"; an acronym for the entire mishnayot.
+            </p>
+            <p>
+              <strong>Seder</strong> -  one of six orders of the Mishna. Plural "sedarim".
+            </p>
+            <p>
+              <strong>Masechta</strong> - one of 63 books of Mishna. Plural "masechtot". Each
+              Seder has between eight and
+              thirteen Masechtot.
+            </p>
+          </div>
+
+          <div class="col-sm-6">
+            <p>
+              <strong>Perek</strong> -  Chapter. Plural "perakim".
+            </p>
+            <p>
+              <strong>Mishna</strong> - the paragraphs within each chapter. Plural “mishnayot”.
+              "A mishna" refers to one paragraph; "THE Mishna" refers to the entire body of work.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-7">
+          <h4>Dinner Reservations</h4>
+          <!--div class="alert alert-warning">
+            The deadline for banquet reservations has past.
+          </div-->
+          <div class="form-group">
+            <div class="col-sm-6">
+              <label class="control-label">
+                <input name="notme" type="radio" value="Yes"
+                       <?php echo ('1' === $_GET['notme'] ? '' : 'checked'); ?>
+                       data-gdocs="entry.481247392" />
+                Attending
+              </label>
+              <small>($125 per person)</small><br />
+
+              <label class="control-label">
+                <input name="notme" type="radio" value="No"
+                       <?php echo ('1' === $_GET['notme'] ? 'checked' : ''); ?>
+                       data-gdocs="entry.481247392" />
+                Unable to Attend
+              </label>
+              <small>(Please accept our donation.)</small>
+            </div>
+            <div class="col-sm-12">
+              <label for="guests" class="control-label">
+                Number attending
+              </label>
+              <small>($125 per person)</small>
+            </div>
+            <div class="col-sm-4">
+              <select id="guests" name="guests" class="form-control"
+                      data-gdocs="entry.1859262524"
+                      data-paypal-item="Mishna Neshama Siyum - Dinner"
+                      data-paypal-amount="125.00" />
+                <option value="0" <?php echo ('1' === $_GET['notme'] ? 'selected' : ''); ?>>Unable to Attend</option>
+                <option value="1" <?php echo ('1' === $_GET['notme'] ? '' : 'selected'); ?>>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div >
+
+          <hr />
+          <h4>Journal Ad</h4>
+          <p>
+            Participating in a siyum is a great merit.
+
+            <strong>Please help us reach
+            our goal to get sponsors for all 6 sedarim, all 63 masechtot,
+            all 525 perakim, and all 4,192 mishnayot.</strong>
+          </p>
+          <!--div class="alert alert-warning">
+            The deadline for including an ad in the printed Journal has passed.
+            You can still submit a message that will be published in the online
+            Journal after the dinner.
+          </div-->
+
+          <div class="form-group">
+            <div class="col-sm-6">
+              <select id="level" name="level" class="form-control"
+                      data-gdocs="entry.184912279">
+                <option value="None" selected>Select Ad Level</option>
+                <option data-paypal-item="Mishna Neshama Siyum - Siyum Sponsor"
+                        data-paypal-amount="25000.00"
+                        data-paypal-num="1"
+                        value="Siyum Sponsor">$25,000 - Siyum Sponsor</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - SHAS Sponsor"
+                        data-paypal-amount="18000.00"
+                        data-paypal-num="1"
+                        value="SHAS Sponsor">$18,000 - SHAS Sponsor</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Seder Sponsor"
+                        data-paypal-amount="10000.00"
+                        data-paypal-num="1"
+                        value="Seder Sponsor">$10,000 - Seder Sponsor</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - 20 Masechtot"
+                        data-paypal-amount="7200.00"
+                        data-paypal-num="1"
+                        value="20 Masechtot">$7,200 - 20 Masechtot</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - 10 Masechtot"
+                        data-paypal-amount="5000.00"
+                        data-paypal-num="1"
+                        value="10 Masechtot">$5,000 - 10 Masechtot</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - 50 Perakim"
+                        data-paypal-amount="3600.00"
+                        data-paypal-num="1"
+                        value="50 Perakim">$3,600 - 50 Perakim</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Platinum Page 25 Perakim"
+                        data-paypal-amount="2500.00"
+                        data-paypal-num="1"
+                        value="Platinum Page 25 Perakim">$2,500 - Platinum Page 25 Perakim</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Diamond Page 10 Perakim"
+                        data-paypal-amount="1800.00"
+                        data-paypal-num="1"
+                        value="Diamond Page 10 Perakim">$1,800 - Diamond Page 10 Perakim</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Gold Page 250 Mishnayot"
+                        data-paypal-amount="1000.00"
+                        data-paypal-num="1"
+                        value="Gold Page 250 Mishnayot">$1,000 - Gold Page 250 Mishnayot</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Silver Page 100 Mishnayot"
+                        data-paypal-amount="720.00"
+                        data-paypal-num="1"
+                        value="Silver Page 100 Mishnayot">$720 - Silver Page 100 Mishnayot</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Full Page 50 Mishnayot"
+                        data-paypal-amount="500.00"
+                        data-paypal-num="1"
+                        value="Full Page 50 Mishnayot">$500 - Full Page 50 Mishnayot</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Half Page 25 Mishnayot"
+                        data-paypal-amount="360.00"
+                        data-paypal-num="1"
+                        value="Half Page 25 Mishnayot">$360 - Half Page 25 Mishnayot</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Quarter Page 10 Mishnayot"
+                        data-paypal-amount="250.00"
+                        data-paypal-num="1"
+                        value="Quarter Page 10 Mishnayot">$250 - Quarter Page 10 Mishnayot</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Eighth Page 5 Mishnayot"
+                        data-paypal-amount="125.00"
+                        data-paypal-num="1"
+                        value="Eighth Page 5 Mishnayot">$125 - Eighth Page 5 Mishnayot</option>
+
+                <option data-paypal-item="Mishna Neshama Siyum - Greeting"
+                        data-paypal-amount="72.00"
+                        data-paypal-num="1"
+                        value="Greeting">$72 - Greeting</option>
+
+              </select>
+            </div>
+            <label for="other" class="col-sm-3 control-label">
+              Other Amount
+            </label>
+            <div class="col-sm-3">
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input id="other" type="number" name="other"
+                       class="form-control"
+                       value="0.00" min="0.00" step="0.01"
+                       data-gdocs="entry.2055518957"
+                       data-paypal-item="Mishna Neshama Siyum - Other"
+                       data-paypal-num="1" />
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <span class="help-block">
+                <strong>Ads of $720 or more entitle donor to dinner reservations
+                for two.</strong><br /> Your ad can be tax-deductible as a charitable
+                contribution or as a business advertisement.
+              </span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <textarea class="form-control" rows="2"
+                        placeholder="Your Message"
+                        data-gdocs="entry.546851675"></textarea>
+              <span class="help-block">
+                Please submit images, PDFs and Word documents to
+                <a href="mailto:siyum@bethisraelmalden.org">siyum@bethisraelmalden.org</a>.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <input id="payment_method" type="hidden" value="PayPal"
+                 data-gdocs="entry.391920344" />
+          <input type="submit" value="PayPal" class="btn btn-lg btn-primary" />
+          <input type="submit" value="Cash" class="btn btn-lg btn-default" />
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="page-siyum container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h3>
+          The theme of this event is "Mishna/
+          Neshama: Raising Our Community". Beth
+          Israel of Malden seeks to enrich and
+          uplift the lives of our entire community.
+        </h3>
+        <p>
+          We are made of body and soul. Although the body
+          eventually ceases to function, the soul lives on in
+          the Afterlife. The actions of the living can positively
+          affect the soul. When we do mitzvot in memory of a
+          departed soul, the soul ascends to a higher level of
+          closeness to G-d in Heaven. <strong>The Mishna raises the
+          souls of those who study it and the souls of the
+          departed in whose memory it is studied.</strong>
+        </p>
+
+        <h3>What is Mishna?</h3>
+        <p>
+          Mishna is a fundamental part of the study of Torah. Mishna elucidates the Chumash. Talmud elucidates the Mishna.
+        </p><p>
+          Mishna consist of 6 orders. Each order contains tractates. Each tractate consists of chapters. Each chapter consists of individual sections that are called a mishna in singular form and mishnayot in plural form.
+        </p>
+
+        <h3>Why Mishna?</h3>
+        <p>
+          The study of Mishna has a particularly unique effect
+          on a soul. Mishna is the soul of Torah. As the soul
+          gives the energy of life to the body, Mishna gives light
+          to the Five Books of the Torah and life to the Talmud.
+        </p>
+
+        <h3>What is a Siyum?</h3>
+        <p>The completion of an entire order is considered a significant accomplishment and is celebrated with a siyum which means completion. When the entire six orders of Mishna are completed the celebration is even greater for this entire fundamental body of Torah has been completed.</p>
+
+        <h3>How can I participate?</h3>
+        <p>You can participate in our Siyum by making a dedication in our journal to commemorate a departed loved one, or even just for the merit of participating in this special event. Participating in a siyum is considered like participating in the study of the Torah that was completed. Therefore, this is a unique opportunity to bring a special merit to the soul of a departed loved one by making a dedication in their memory.</p>
+
+        <h3>A Meaningful Memorial</h3>
+        <p>
+          There is a well established practice to study Mishna in
+          particular for the soul of someone who has departed,
+          because Mishna has its unique power to bring
+          ascension to the soul. This is alluded to by the fact that
+          the Hebrew letters that spell the word Mishna <strong>ה,נ,ש,מ</strong>
+          also spell neshama <strong>נשמה</strong> ,the Hebrew word for soul.
+          Since participating in a Siyum of Mishna is considered
+          like studying it, donating in honor of this event is a
+          unique way to memorialize a loved one.
+        </p>
+
+        <big style="color: #ac723a">
+          <strong>Please consider making a contribution in
+          the name of a loved one. Your donation will
+          directly support Jewish community growth
+          and Torah study in Malden.</strong>
+        </big>
+
+        <hr />
+        <h3>Tribute Committee</h3>
+        <div class="col-sm-6">
+          Bostoner Rebbe <br />
+          Rabbi Naftoli Bier <br />
+          Rabbi Gershon Segal <br /><br />
+
+          Barton Brass <br />
+          Harvey and Reva Gertel <br />
+          Barry and Sandy Goldman <br />
+          Harvey and Arlene Goldman
+        </div>
+        <div class="col-sm-6">
+          Dr. Jesse and Brenda Hefter <br />
+          Jay and Cheryl Lamport <br />
+          Dovid and Penina Rosengard <br />
+          Dr. David and Miri Rosmarin <br />
+          Susan and Larry Weiner
+        </div>
+      </div>
+    </div>
+  </div>
+
 <?php break; default: ?>
   <h1>Event Not Found</h1>
   <div class="alert alert-warning">
