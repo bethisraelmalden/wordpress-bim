@@ -180,6 +180,7 @@ get_header(); ?>
                 <option data-price="0" value="Security Fund">Security Fund</option>
                 <option data-price="0" value="Library Fund">Library Fund</option>
                 <option data-price="0" value="Charidy Campaign">Charidy Campaign</option>
+                <option data-price="0" value="Mishna Neshama Siyum">Mishna Neshama Siyum</option>
                 <option data-price="0" value="Aliyah Pledge">Aliyah Pledge</option>
               </optgroup>
               <!--optgroup label="SEED Program">
@@ -210,9 +211,10 @@ get_header(); ?>
                 <option data-price="500" value="Kiddush Pillar">$500 - Kiddush Pillar</option>
               </optgroup>
               <optgroup label="Seasonal">
+                <option data-price="0" value="Matanot l'Evyonim">Matanot l'Evyonim (Purim)</option>
                 <option data-price="0" value="Ma'ot Chitim">Ma'ot Chitim (Pesach)</option>
                 <!--option data-price="0" value="Lulav/Etrog Set">Lulav/Etrog Set (Sukkot)</option-->
-                <option data-price="0" value="Matanot l'Evyonim">Matanot l'Evyonim (Purim)</option>
+                <option data-price="0" value="Lag B'Omer">Lag B'Omer</option>
               </optgroup>
               <optgroup label="Mikvah Dedications">
                 <option data-price="36000" value="Beit HaTevillah (Mikvah Room)">$36,000 - Beit HaTevillah (Mikvah Room)</option>
