@@ -1749,7 +1749,7 @@
   <div class="page-siyum well">
     <div class="background"></div>
     <div class="text-center">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/siyum/mishna-neshama.png"/>
+      <img src="http://bethisraelmalden.org/wp-content/uploads/2019/05/2019-05-30-Mishna-Neshama-Banner.jpg"/>
       <h1>
         – An Uplifting Celebration 21 Years in the Making –
       </h1>
