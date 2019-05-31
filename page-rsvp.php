@@ -807,11 +807,11 @@
     </div>
   </div>
 
-<?php break; case 'x2018-shavuot': ?>
+<?php break; case '2019-shavuot': ?>
   <h1>Shavuoton Dinner</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLSeM4LrkTuVF590FW4H-QGVEawrF6f9DR89yamJhjHP9-HKPvA/formResponse">
+          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSflZpvSP3xlauFFNIk2BIF68UVIkmfDXHf5oesq3nM-a5Yu5A/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -905,9 +905,10 @@
       </div>
       <?php endif; ?>
     </form>
+
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/2018/05/shavuaton-5778/ ">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2018/05/2018-05-21-shavuot-232x300.jpg" />
+      <a href="http://bethisraelmalden.org/2019/05/shavuaton-5779/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2019/05/2019-shavuot-232x300.jpg" />
       </a>
     </div>
   </div>
