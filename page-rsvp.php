@@ -2079,12 +2079,12 @@
 
       <hr />
       <div class="form-group">
-        <div class="col-sm-6 col-sm-offset-6">
+        <div class="col-sm-8 col-sm-offset-3">
           <input id="notme" type="hidden" value="0" />
           <input id="payment_method" type="hidden" value="PayPal"
                  data-gdocs="entry.391920344" />
-          <input type="submit" value="PayPal" class="btn btn-lg btn-primary" />
-          <input type="submit" value="Cash" class="btn btn-lg btn-default" />
+          <button type="submit" value="PayPal" class="btn btn-lg btn-primary">Pay Now (Credit Card or PayPal)</button>
+          <button type="submit" value="Cash" class="btn btn-lg btn-default">Pledge and Pay Later</button>
         </div>
       </div>
     </form>

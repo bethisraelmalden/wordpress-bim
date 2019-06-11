@@ -12,7 +12,7 @@ define(function (require) {
     app.$rsvp
       .submit(app.submit)
       .find(':input:first').focus().end()
-      .find('input[type=submit]')
+      .find('[type=submit]')
         .click(function () {
           //$(this).button('loading');
           app.$pay.val($(this).val()); // update payment method
