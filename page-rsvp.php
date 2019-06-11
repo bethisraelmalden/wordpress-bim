@@ -1930,9 +1930,10 @@
               <select id="guests" name="guests" class="form-control"
                       data-gdocs="entry.1859262524"
                       data-paypal-item="Mishna Neshama Siyum - Dinner"
-                      data-paypal-amount="125.00" />
+                      data-paypal-amount="125.00" required />
+                <option disabled value="" <?php echo ('1' === $_GET['notme'] ? '' : 'selected'); ?>>Select One</option>
                 <option value="0" <?php echo ('1' === $_GET['notme'] ? 'selected' : ''); ?>>Unable to Attend</option>
-                <option value="1" <?php echo ('1' === $_GET['notme'] ? '' : 'selected'); ?>>1</option>
+                <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
