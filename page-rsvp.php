@@ -2199,10 +2199,9 @@
   </form>
 </div>
 
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min"></script>
-<script src="https://code.jquery.com/jquery.min"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
 
 <script>
   $('html').removeClass('no-js');
