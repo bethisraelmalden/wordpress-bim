@@ -16,7 +16,7 @@ define(function (require) {
         .click(function () {
           //$(this).button('loading');
           app.$pay.val($(this).val()); // update payment method
-          app.$rsvp.find('[type=submit]').attr('disabled', true);
+          // app.$rsvp.find('[type=submit]').attr('disabled', true);
         })
       .end();
     return app;
