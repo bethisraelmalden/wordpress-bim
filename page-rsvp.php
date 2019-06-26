@@ -1754,12 +1754,13 @@
       <h1>
         – An Uplifting Celebration 21 Years in the Making –
       </h1>
-      <h2 class="text-center">Dinner &amp; Journal Reservations</h2>
-      <h4>
+      <!-- <h2 class="text-center">Dinner &amp; Journal Reservations</h2> -->
+      <h2 class="text-center">Ad Journal Submissions</h2>
+<!--       <h4>
         Sivan 23, 5779 / Sunday, June 23, 2019<br />
         Reception at 5:30pm, Buffet Dinner at 6:30pm
       </h4>
-      <hr />
+ -->      <hr />
     </div>
 
     <form id="rsvp" class="form-horizontal" method="POST"
@@ -1898,11 +1899,11 @@
         </div>
 
         <div class="col-sm-7">
-          <h4>Dinner Reservations</h4>
+          <!-- <h4>Dinner Reservations</h4> -->
           <!--div class="alert alert-warning">
             The deadline for banquet reservations has past.
           </div-->
-          <div class="form-group">
+          <!-- <div class="form-group">
             <div class="col-sm-6">
               <label class="control-label">
                 <input name="notme" type="radio" value="Yes"
@@ -1940,9 +1941,9 @@
                 <option value="5">5</option>
               </select>
             </div>
-          </div >
+          </div > -->
 
-          <hr />
+          <!-- <hr /> -->
           <h4>Journal Ad</h4>
           <p>
             Participating in a siyum is a great merit.
@@ -1951,11 +1952,11 @@
             our goal to get sponsors for all 6 sedarim, all 63 masechtot,
             all 525 perakim, and all 4,192 mishnayot.</strong>
           </p>
-          <!--div class="alert alert-warning">
+          <div class="alert alert-warning">
             The deadline for including an ad in the printed Journal has passed.
             You can still submit a message that will be published in the online
             Journal after the dinner.
-          </div-->
+          </div>
 
           <div class="form-group">
             <div class="col-sm-6">
@@ -2056,8 +2057,8 @@
 
             <div class="col-sm-12">
               <span class="help-block">
-                <strong>Ads of $720 or more entitle donor to dinner reservations
-                for two.</strong><br /> Your ad can be tax-deductible as a charitable
+                <!-- <strong>Ads of $720 or more entitle donor to dinner reservations
+                for two.</strong><br />  -->Your ad can be tax-deductible as a charitable
                 contribution or as a business advertisement.
               </span>
             </div>
