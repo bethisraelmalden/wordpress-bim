@@ -38,12 +38,13 @@ get_header(); ?>
           <label for="level" class="col-sm-4 control-label">Level</label>
           <div class="col-sm-8">
             <select id="level" data-gdocs="entry.1242533523" name="level" class="form-control chosen">
-              <option data-paypal-amount="3600" value="Pillar" selected="selected">$3,600 - Pillar (4 complimentary seats)</option>
-              <option data-paypal-amount="2500" value="Partner">$2,500 - Partner (4 complimentary seats)</option>
-              <option data-paypal-amount="1800" value="Benefactor">$1,800 - Benefactor (4 complimentary seats)</option>
-              <option data-paypal-amount="1000" value="Sustaining">$1,000 - Sustaining (2 complimentary seats)</option>
-              <option data-paypal-amount="500" value="Full Family">$500 - Full Family</option>
-              <option data-paypal-amount="360" value="Full Single">$360 - Full Single </option>
+              <option data-paypal-amount="5000" value="Pillar" selected="selected">$5,000 - Pillar (4 complimentary seats)</option>
+              <option data-paypal-amount="3600" value="Partner">$3,600 - Partner (4 complimentary seats)</option>
+              <option data-paypal-amount="2500" value="Benefactor">$2,500 - Benefactor (4 complimentary seats)</option>
+              <option data-paypal-amount="1800" value="Supporter">$1,800 - Supporter (2 complimentary seats)</option>
+              <option data-paypal-amount="1200" value="Sustaining">$1,200 - Sustaining (2 complimentary seats)</option>
+              <option data-paypal-amount="600" value="Standard Family">$600 - Standard Family</option>
+              <option data-paypal-amount="400" value="Standard Single">$400 - Standard Single </option>
               <option data-paypal-amount="360" value="Associate Family">$360 - Associate Family</option>
               <option data-paypal-amount="250" value="Associate Single">$250 - Associate Single</option>
               <option data-paypal-amount="0" value="Non-Member">$0 - Non-Member</option>
