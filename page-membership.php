@@ -10,6 +10,16 @@ get_header(); ?>
   <p class="lead text-center">
     Become a member of Congregation Beth Israel.
   </p>
+
+  <p>
+    <h2>Useful Resources</h2>
+    <ul>
+      <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Membership-Brochure.pdf">5780 Membership Brouchure</a></li>
+      <li>5780 Annual Halacha Guide <em>(coming soon)</em></li>
+      <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Candle-Lighting.pdf">5780 Candle Lighting Chart</a></li>
+    </ul>
+  </p>
+
   <form id="membership" class="form-horizontal" method="POST"
         data-gdocs="https://docs.google.com/forms/d/16ftKlwV6k5-4x2VeEna-Nzq2ahOO62Cy43cCaKuzw3o/formResponse">
   <div class="row">
