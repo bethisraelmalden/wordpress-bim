@@ -132,9 +132,9 @@ get_header(); ?>
         </div>
     </div>
     <div class="col-sm-6">
-      <h2>Useful Resources</h2>
+      <h2 class="text-center">Useful Resources</h2>
       <ul>
-        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Membership-Brochure.pdf">5780 Membership Brouchure</a></li>
+        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Membership-Brochure.pdf">5780 Membership Brochure</a></li>
         <li>5780 Annual Halacha Guide <em>(coming soon)</em></li>
         <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Candle-Lighting.pdf">5780 Candle Lighting Chart</a></li>
       </ul>
