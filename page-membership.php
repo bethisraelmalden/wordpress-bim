@@ -207,9 +207,7 @@ get_header(); ?>
                  data-paypal-item="Book of Remembrance Shipping"
                  data-paypal-amount="5.00" class="form-control" />
         </div>
-        <div class="col-sm-4 help-text">
-          Will be shipped after Yom Kippur.
-        </div>
+        <div class="col-sm-4 help-text">Shipped after Yom Kippur.</div>
       </div>
 
       <div class="form-group">
@@ -226,7 +224,7 @@ get_header(); ?>
       </div>
 
       <div class="form-group">
-        <div class="col-sm-3">
+        <div class="col-sm-8">
           <textarea id="book_names"
                  data-gdocs="entry.697830986"
                  class="form-control"></textarea>
