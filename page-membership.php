@@ -135,7 +135,7 @@ get_header(); ?>
       <h2 class="text-center">Useful Resources</h2>
       <ul>
         <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Membership-Brochure.pdf">5780 Membership Brochure</a></li>
-        <li>5780 Annual Halacha Guide <em>(coming soon)</em></li>
+        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Annual-Halacha-Guide.pdf">5780 Annual Halacha Guide</a></li>
         <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Candle-Lighting.pdf">5780 Candle Lighting Chart</a></li>
       </ul>
       <hr />
@@ -197,10 +197,47 @@ get_header(); ?>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
 
+      <h2 class="text-center">Book of Remembrance</h2>
+      <hr />
+      <div class="form-group">
+        <label for="book_ship" class="col-sm-5 control-label text-right">Number of Copies to Ship ($5/book)</label>
+        <div class="col-sm-3">
+          <input id="book_ship" type="number" value="0" min="0" step="1"
+                 data-gdocs="entry.1297259862"
+                 data-paypal-item="Book of Remembrance Shipping"
+                 data-paypal-amount="5.00" class="form-control" />
+        </div>
+        <div class="col-sm-4 help-text">
+          Will be shipped after Yom Kippur.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="book_count" class="col-sm-5 control-label text-right">Number of Names ($5/name)</label>
+        <div class="col-sm-3">
+          <input id="book_count" type="number" value="0" min="0" step="1"
+                 data-gdocs="entry.113194349"
+                 data-paypal-item="Book of Remembrance Names"
+                 data-paypal-amount="5.00" class="form-control" />
+        </div>
+        <div class="col-sm-4 help-text">
+          List the names below.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-3">
+          <textarea id="book_names"
+                 data-gdocs="entry.697830986"
+                 class="form-control"></textarea>
+        </div>
+        <div class="col-sm-4 help-text">Please list one name per line.</div>
+      </div>
+
       <h2 class="text-center">Additional Sponsorship</h2>
       <hr />
       <div class="form-group">
-        <label for="babysitting" class="col-sm-5 control-label text-right">Specific Sponsorship Levels</label>
+        <label for="sponsorship" class="col-sm-5 control-label text-right">Specific Sponsorship Levels</label>
         <div class="col-sm-3">
           <select id="sponsorship" data-gdocs="entry.1807653483" name="sponsorship" class="form-control chosen">
             <option data-paypal-amount="0" value="No Sponsorship" selected="selected">Select Below</option>
