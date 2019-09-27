@@ -125,9 +125,9 @@ get_header(); ?>
 
         <div class="form-group">
           <div class="col-sm-8 col-sm-offset-4">
-            <input id="payment_method" type="hidden" value="PayPal" data-gdocs="entry.1634675268" />
-            <input type="submit" value="PayPal" class="btn btn-primary" />
-            <input type="submit" value="Cash" class="btn btn-default" />
+            <input id="payment_method" type="hidden" value="Pay Now" data-gdocs="entry.1634675268" />
+            <input type="submit" value="Pay Now" class="btn btn-primary" />
+            <input type="submit" value="Pay Later" class="btn btn-default" />
           </div>
         </div>
     </div>

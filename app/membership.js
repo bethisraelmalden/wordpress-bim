@@ -12,7 +12,7 @@ define(function (require) {
     var
       $membership = $(this),
       $paypal = $('#paypal'),
-      isCash = ('Cash' === $pay.val()),
+      isCash = ('Pay Later' === $pay.val()),
       num = 0,
       pdata = {},
       gdata = {
