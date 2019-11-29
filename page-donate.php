@@ -205,9 +205,9 @@ get_header(); ?>
                 <option data-price="18" value="Week of Breakfast">$18 - Week of Breakfast</option>
                 <option data-price="18" value="School-Year-Kiddush">$18 - End of School Year Kiddush</option>
                 <option data-price="54" value="Seudah Shelishit">$54 - Seudah Shelishit</option>
-                <option data-price="72" value="Kiddush">$72 - Kiddush</option>
-                <option data-price="90" value="Gala Kiddush">$90 - Gala Kiddush</option>
-                <option data-price="120" value="Lavish Kiddush">$120 - Lavish Kiddush</option>
+                <option data-price="80" value="Kiddush">$80 - Kiddush</option>
+                <option data-price="100" value="Gala Kiddush">$100 - Gala Kiddush</option>
+                <option data-price="150" value="Lavish Kiddush">$150 - Lavish Kiddush</option>
                 <option data-price="250" value="Luncheon">$250 - Luncheon</option>
                 <option data-price="500" value="Kiddush Pillar">$500 - Kiddush Pillar</option>
               </optgroup>
