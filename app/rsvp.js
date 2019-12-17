@@ -82,7 +82,7 @@ define(function (require) {
 
   app.submit_gdocs = function (isInterested) {
     var
-      isCash = ('Cash' === app.$pay.val()),
+      isCash = ('Cash' === app.$pay.val() || 'Pay Later' === app.$pay.val()),
       gdata = {
         pageHistory: 0,
         draftResponse: '[,,&quot;-123456789&quot;]',

@@ -16,11 +16,11 @@
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
 <?php else: switch ($_GET['event']):
-  case '2018-chanukah': ?>
+  case '2019-chanukah': ?>
   <h1>Chanukah Bash</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSd-3FzazU6vxA4QLUVBqvPeAP07aNJND-C_olLnujD4kt7CXA/formResponse">
+          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSc1g1XBaS6fIolvJte6v6Oz8dyfFP8-NN0jQk-wOr2Lnb-kQA/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -142,17 +142,17 @@
       <div class="form-group">
         <div class="col-sm-6 col-sm-offset-6">
           <input id="notme" type="hidden" value="0" />
-          <input id="payment_method" type="hidden" value="PayPal"
+          <input id="payment_method" type="hidden" value="Pay Now"
                  data-gdocs="entry.1500179091" />
-          <input type="submit" value="PayPal" class="btn btn-primary" />
-          <input type="submit" value="Cash" class="btn btn-default" />
+          <input type="submit" value="Pay Now" class="btn btn-primary" />
+          <input type="submit" value="Pay Later" class="btn btn-default" />
         </div>
       </div>
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/2018/11/annual-chanukah-bash-5779/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2018/11/2018-12-05-chanukah-232x300.jpg" />
+      <a href="http://bethisraelmalden.org/2019/12/annual-chanukah-bash-5780/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2019/12/2019-12-24-chanukah-232x300.jpg" />
       </a>
     </div>
   </div>
@@ -2296,7 +2296,7 @@
 
   app.submit_gdocs = function (isInterested) {
     var
-      isCash = ('Cash' === app.$pay.val()),
+      isCash = ('Cash' === app.$pay.val() || 'Pay Later' === app.$pay.val()),
       gdata = {
         pageHistory: 0,
         draftResponse: '[,,&quot;-123456789&quot;]',
