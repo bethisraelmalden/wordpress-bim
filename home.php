@@ -18,6 +18,12 @@
   </div>
 
   <div class="row">
+    <div class="col-md-offset-3 col-md-6 text-center">
+
+    </div>
+  </div>
+
+  <div class="row">
     <div class="col-md-3">
       <?php
       $catBulletin = get_cat_ID('Bulletin');
@@ -42,70 +48,13 @@
       </div>
     </div>
     <div class="col-md-9">
-    <?php
-    //$sticky = get_option('sticky_posts');
-    $args = array(
-      'posts_per_page' => 5 //,
-      //'ignore_sticky_posts' => 1,
-      //'post__in' => $sticky
-    );
-
-    query_posts("cat=-$catBulletin&showposts=3");
-    if (have_posts()):
-    ?>
-      <div id="recent-posts" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-        <?php
-        $post_count = 0;
-        while(have_posts()) : the_post();
-          $post_count++;
-          $post_url = get_permalink();
-          $post_format = get_post_format();
-          $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
-          $post_audio = ('audio' === $post_format ? bim_get_audio(get_the_content()) : '');
-        ?>
-          <div class="<?php echo 'item' . (1 === $post_count ? ' active' : ''); ?>">
-            <?php if ($post_image): ?>
-            <a href="<?php echo $post_url; ?>"><img src="<?php echo $post_image;?>" /></a>
-              <?php if (has_excerpt()): ?>
-            <div class="carousel-caption has-image">
-              <h3 class="text-center"><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h3>
-              <?php the_excerpt(); ?>
-            </div>
-              <?php endif; ?>
-            <?php else: ?>
-            <a href="<?php echo $post_url; ?>"><img src="<?php echo get_template_directory_uri();?>/img/bim-building.jpg" /></a>
-            <div class="carousel-caption no-image">
-              <h3><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h3>
-              <?php if ($post_audio): ?>
-              <audio preload="none" controls="controls"
-               type="<?php echo bim_get_mimetype($post_audio); ?>"
-               src="<?php echo $post_audio; ?>"></audio>
-              <?php endif; ?>
-              <?php the_excerpt(); ?>
-            </div>
-            <?php endif; ?>
-          </div>
-
-        <?php endwhile; ?>
-        </div>
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <?php for($i =0; $i < $post_count; $i++): ?>
-          <li data-target="#recent-posts" data-slide-to="<?php echo $i; ?>" class="<?php echo (0 === $i ? 'active' : ''); ?>"></li>
-          <?php endfor; ?>
-        </ol>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#recent-posts" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a><a class="right carousel-control" href="#recent-posts" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/9byIDLGftKI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
       </div>
-    <?php endif; ?>
-
+      <div class="text-center">
+        <br />
+        <a href="https://www.charidy.com/BIM" class="btn btn-lg btn-success">Learn More</a>
+      </div>
     </div>
   </div>
 </div>
