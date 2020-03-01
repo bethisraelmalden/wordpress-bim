@@ -48,13 +48,53 @@
       </div>
     </div>
     <div class="col-md-9">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/9byIDLGftKI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-      </div>
-      <div class="text-center">
-        <br />
-        <a href="https://www.charidy.com/BIM" class="btn btn-lg btn-success">Learn More</a>
-      </div>
+    <?php
+    //$sticky = get_option('sticky_posts');
+    $args = array(
+      'posts_per_page' => 5 //,
+      //'ignore_sticky_posts' => 1,
+      //'post__in' => $sticky
+    );
+
+    query_posts("cat=-$catBulletin&showposts=3");
+    if (have_posts()):
+    ?>
+    <div id="recent-posts">
+      <?php
+        $post_count = 0;
+        while(have_posts()) : the_post();
+          $post_count++;
+          $post_url = get_permalink();
+          $post_format = get_post_format();
+          $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
+          $post_audio = ('audio' === $post_format ? bim_get_audio(get_the_content()) : '');
+        ?>
+        <div class="media">
+          <div class="media-left">
+            <a href="<?php echo $post_url; ?>">
+              <?php if ($post_audio): ?>
+              <audio class="media-object" preload="none" controls="controls"
+                type="<?php echo bim_get_mimetype($post_audio); ?>"
+                src="<?php echo $post_audio; ?>"></audio>
+
+              <?php else if ($post_image): ?>
+              <img class="media-object" src="<?php echo $post_image; ?>" alt="" />
+
+              <?php else: ?>
+              <img class="media-object" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="" />
+              <?php endif; ?>
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">
+              <a href="<?php echo $post_url; ?>"><?php the_title(); ?></a>
+            </h4>
+            <?php the_excerpt(); ?>
+          </div>
+        </div>
+      <?php endwhile; ?>
+    </div>
+    <?php endif; ?>
     </div>
   </div>
 </div>
