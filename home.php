@@ -73,7 +73,7 @@
         <div class="col-xs-12">
           <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-3">
           <a href="<?php echo $post_url; ?>">
             <?php if ($post_image): ?>
             <img class="img-responsive" src="<?php echo $post_image; ?>" alt="" />
@@ -83,7 +83,7 @@
             <?php endif; ?>
           </a>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-8">
           <?php if ($post_audio): ?>
             <audio class="media-object" preload="none" controls="controls"
               type="<?php echo bim_get_mimetype($post_audio); ?>"
