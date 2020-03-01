@@ -75,20 +75,22 @@
         </div>
         <div class="col-sm-6">
           <a href="<?php echo $post_url; ?>">
-            <?php if ($post_audio): ?>
-            <audio class="media-object" preload="none" controls="controls"
-              type="<?php echo bim_get_mimetype($post_audio); ?>"
-              src="<?php echo $post_audio; ?>"></audio>
-
-            <?php elseif ($post_image): ?>
-            <img class="media-object" src="<?php echo $post_image; ?>" alt="" />
+            <?php if ($post_image): ?>
+            <img class="img-responsive" src="<?php echo $post_image; ?>" alt="" />
 
             <?php else: ?>
-            <img class="media-object" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="" />
+            <img class="img-responsive" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="" />
             <?php endif; ?>
           </a>
         </div>
-        <div class="col-sm-6"><?php the_excerpt(); ?></div>
+        <div class="col-sm-6">
+          <?php if ($post_audio): ?>
+            <audio class="media-object" preload="none" controls="controls"
+              type="<?php echo bim_get_mimetype($post_audio); ?>"
+              src="<?php echo $post_audio; ?>"></audio>
+          <?php endif; ?>
+          <?php the_excerpt(); ?>
+        </div>
       </div>
       <?php endwhile; ?>
     </div>
