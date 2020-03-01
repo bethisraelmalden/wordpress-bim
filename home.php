@@ -56,7 +56,7 @@
       //'post__in' => $sticky
     );
 
-    query_posts("cat=-$catBulletin&showposts=3");
+    query_posts("cat=-$catBulletin&showposts=5");
     if (have_posts()):
     ?>
     <div id="recent-posts">
@@ -68,30 +68,28 @@
           $post_format = get_post_format();
           $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
           $post_audio = ('audio' === $post_format ? bim_get_audio(get_the_content()) : '');
-        ?>
-        <div class="media">
-          <div class="media-left">
-            <a href="<?php echo $post_url; ?>">
-              <?php if ($post_audio): ?>
-              <audio class="media-object" preload="none" controls="controls"
-                type="<?php echo bim_get_mimetype($post_audio); ?>"
-                src="<?php echo $post_audio; ?>"></audio>
-
-              <?php elseif ($post_image): ?>
-              <img class="media-object" src="<?php echo $post_image; ?>" alt="" />
-
-              <?php else: ?>
-              <img class="media-object" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="" />
-              <?php endif; ?>
-            </a>
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">
-              <a href="<?php echo $post_url; ?>"><?php the_title(); ?></a>
-            </h4>
-            <?php the_excerpt(); ?>
-          </div>
+      ?>
+      <div class="row">
+        <div class="col-xs-12">
+          <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
         </div>
+        <div class="col-sm-6">
+          <a href="<?php echo $post_url; ?>">
+            <?php if ($post_audio): ?>
+            <audio class="media-object" preload="none" controls="controls"
+              type="<?php echo bim_get_mimetype($post_audio); ?>"
+              src="<?php echo $post_audio; ?>"></audio>
+
+            <?php elseif ($post_image): ?>
+            <img class="media-object" src="<?php echo $post_image; ?>" alt="" />
+
+            <?php else: ?>
+            <img class="media-object" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="" />
+            <?php endif; ?>
+          </a>
+        </div>
+        <div class="col-sm-6"><?php the_excerpt(); ?></div>
+      </div>
       <?php endwhile; ?>
     </div>
     <?php endif; ?>
