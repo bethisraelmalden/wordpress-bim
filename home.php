@@ -77,7 +77,7 @@
                 type="<?php echo bim_get_mimetype($post_audio); ?>"
                 src="<?php echo $post_audio; ?>"></audio>
 
-              <?php else if ($post_image): ?>
+              <?php elseif ($post_image): ?>
               <img class="media-object" src="<?php echo $post_image; ?>" alt="" />
 
               <?php else: ?>
