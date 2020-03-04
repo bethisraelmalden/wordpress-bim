@@ -69,6 +69,7 @@
           $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
           $post_audio = ('audio' === $post_format ? bim_get_audio(get_the_content()) : '');
       ?>
+      <?php if($post_count > 1): ?><hr/><?php endif; ?>
       <div class="row">
         <div class="col-sm-3">
           <a href="<?php echo $post_url; ?>">
