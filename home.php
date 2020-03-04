@@ -89,7 +89,7 @@
               type="<?php echo bim_get_mimetype($post_audio); ?>"
               src="<?php echo $post_audio; ?>"></audio>
           <?php endif; ?>
-          <?php the_excerpt(); ?>
+          <?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
         </div>
       </div>
       <?php endwhile; ?>
