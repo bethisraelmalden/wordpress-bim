@@ -70,9 +70,6 @@
           $post_audio = ('audio' === $post_format ? bim_get_audio(get_the_content()) : '');
       ?>
       <div class="row">
-        <div class="col-xs-12">
-          <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
-        </div>
         <div class="col-sm-3">
           <a href="<?php echo $post_url; ?>">
             <?php if ($post_image): ?>
@@ -84,12 +81,13 @@
           </a>
         </div>
         <div class="col-sm-8">
+          <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
           <?php if ($post_audio): ?>
             <audio class="media-object" preload="none" controls="controls"
               type="<?php echo bim_get_mimetype($post_audio); ?>"
               src="<?php echo $post_audio; ?>"></audio>
           <?php endif; ?>
-          <?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
+          <?php the_excerpt(); ?>
         </div>
       </div>
       <?php endwhile; ?>
