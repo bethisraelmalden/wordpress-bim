@@ -5,7 +5,7 @@
   add_filter('the_permalink', 'append_query_string');
 
   if ('' == $_GET['event']) {
-    $_GET['event'] = '2019-siyum';
+    $_GET['event'] = '2020-purim';
     // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
     // exit();
   }
@@ -270,11 +270,11 @@
     </div>
   </div>
 
-<?php break; case '2019-purim': ?>
+<?php break; case '2020-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSf0zcrAuv2cIVX4mVp7eiVcEM-PSmqx1j9scaF_DVRNTCSPhw/formResponse"
+          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdVBXP08_B3PGZmLpnbaAbuu6UG62zxy4CsJ0SBLSgCEj0wew/formResponse"
           >
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
@@ -410,16 +410,16 @@
           <!-- input type="hidden" value="0" data-gdocs="entry.1829509625" /-->
           <input id="payment_method" type="hidden" value="PayPal"
                  data-gdocs="entry.273947779" />
-          <input type="submit" value="PayPal" class="btn btn-primary" />
-          <input type="submit" value="Cash" class="btn btn-default" />
+          <input type="submit" value="Pay Now" class="btn btn-primary" />
+          <input type="submit" value="Pay Later" class="btn btn-default" />
           <!--p class="help-block">Pay by February 28th for a 5% discount.</p-->
         </div>
       </div>
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
-      <a href="http://bethisraelmalden.org/2019/03/purim-seudah-5779/">
-        <img src="http://bethisraelmalden.org/wp-content/uploads/2019/03/2019-03-13-purim-232x300.jpg" />
+      <a href="http://bethisraelmalden.org/2020/03/purim-seudah-5780/">
+        <img src="http://bethisraelmalden.org/wp-content/uploads/2020/03/2020-03-10-purim-232x300.jpg" />
       </a>
     </div>
   </div>
