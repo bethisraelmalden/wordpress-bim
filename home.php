@@ -18,10 +18,13 @@
   </div>
 
   <div class="row">
-    <div class="col-md-offset-3 col-md-6 text-center">
-
+    <div class="col-xs-12 center-align">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rwrnj58-F7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
+  <hr />
 
   <div class="row">
     <div class="col-md-3">
