@@ -29,6 +29,13 @@
   }
 }
 
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
 .single-row {
   margin-left: 15px;
   margin-right: 15px;
@@ -175,47 +182,17 @@
     .day { font-size: 20px; }
   }
 
-  #recent-posts {
-    .carousel-caption.has-image {
-      text-align: left;
-      background-color: #000;
-      opacity: 0.95;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 2em 1em 4.5em 1em;
-
-      h3 { margin-top: 0; }
-    }
-
-    .carousel-caption.no-image {
-      top: 25%;
-      bottom: 50%;
-      background-color: #ddd;
-      opacity: 0.9;
-      border-radius: 0.5em;
-
-      h3, p { text-shadow: none; }
-      p { color: #000; }
-    }
+  h4 {
+    display: inline-block;
+    max-width: 100%;
+    .text-overflow();
   }
 
-
-
-  //.schedule {
-  //  h2 { font-size: 1.5em; }
-  //  h3 { font-size: 1.2em; }
-  //  ul { padding-left: 1em; }
-  //
-  //  .upcoming-events,
-  //  .page-numbers,
-  //  .kiddush { display: none; }
-  //  .sidebar {
-  //    margin-left: 0.2em;
-  //    float: right;
-  //    width: 45%;
-  //  }
-  //}
+  .recent-post {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+  }
 
   .event {
     overflow: auto;

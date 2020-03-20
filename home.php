@@ -27,11 +27,11 @@
 
   <br />
   <div class="row">
-    <div class="col-xs-6">
+    <div class="col-sm-6 text-center">
       <a href="/live#previous" class="btn btn-lg btn-primary">View Previous Livestreams</a>
     </div>
 
-    <div class="col-xs-6 text-right">
+    <div class="col-sm-6 text-center">
       <big>Subscribe for future livestreams</big><br />
       <script src="https://apis.google.com/js/platform.js"></script>
       <div class="g-ytsubscribe" data-channelid="UCmifAaxDDUILnFheV4VFnHw" data-layout="full" data-count="default"></div>
@@ -63,56 +63,66 @@
         </ul>
       </div>
     </div>
-    <div class="col-md-9">
-    <?php
-    //$sticky = get_option('sticky_posts');
-    $args = array(
-      'posts_per_page' => 5 //,
-      //'ignore_sticky_posts' => 1,
-      //'post__in' => $sticky
-    );
 
-    query_posts("cat=-$catBulletin&showposts=5");
-    if (have_posts()):
-    ?>
-    <div id="recent-posts">
+    <div class="col-md-9">
+      <div class="row">
       <?php
+        query_posts("cat=-$catBulletin&showposts=6");
+
         $post_count = 0;
         while(have_posts()) : the_post();
           $post_count++;
           $post_url = get_permalink();
           $post_format = get_post_format();
           $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
-          $post_audio = ('audio' === $post_format ? bim_get_audio(get_the_content()) : '');
+          $post_content = get_the_content();
+          $post_audio = ('audio' === $post_format ? bim_get_audio($post_content) : '');
+          $post_video = bim_get_video($post_content);
       ?>
-      <?php if($post_count > 1): ?><hr/><?php endif; ?>
-      <div class="row">
-        <div class="col-sm-3">
-          <a href="<?php echo $post_url; ?>">
-            <?php if ($post_image): ?>
-            <img class="img-responsive" src="<?php echo $post_image; ?>" alt="" />
 
-            <?php else: ?>
-            <img class="img-responsive" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="" />
-            <?php endif; ?>
-          </a>
-        </div>
-        <div class="col-sm-8">
+      <?php if($post_video): // video ?>
+        <div class="col-sm-6 recent-post">
           <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
-          <?php if ($post_audio): ?>
-            <audio class="media-object" preload="none" controls="controls"
-              type="<?php echo bim_get_mimetype($post_audio); ?>"
-              src="<?php echo $post_audio; ?>"></audio>
-          <?php endif; ?>
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"
+                src="<?php  echo str_replace("watch?v=", "embed/", $post_video); ?>"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+      <?php elseif ($post_audio): // audio ?>
+        <div class="col-sm-6 recent-post">
+          <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
+          <audio class="media-object" preload="none" controls="controls"
+            type="<?php echo bim_get_mimetype($post_audio); ?>"
+            src="<?php echo $post_audio; ?>"></audio>
           <?php the_excerpt(); ?>
         </div>
+
+      <?php else: // non-video ?>
+        <div class="col-sm-12 recent-post">
+          <div class="row">
+            <div class="col-sm-3">
+            <?php if ($post_image): ?>
+              <img class="img-responsive" src="<?php echo $post_image; ?>" alt="Post Thumbnail" />
+            <?php else: ?>
+              <img class="img-responsive" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="Congregation Beth Israel" />
+            <?php endif; ?>
+            </div>
+
+            <div class="col-sm-9">
+              <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
+              <?php the_excerpt(); ?>
+            </div>
+          </div>
+        </div>
+
+        <?php endif; // end post content?>
+      <?php endwhile; // end post ?>
       </div>
-      <?php endwhile; ?>
-    </div>
-    <?php endif; ?>
-    </div>
-  </div>
-</div>
+    </div><?php // end recent posts ?>
+  </div><?php // end bottom half ?>
+</div><?php // end home page ?>
 
 <script src="<?php echo get_template_directory_uri(); ?>/lib/requirejs-2.1.9/require.js"></script>
 <script>

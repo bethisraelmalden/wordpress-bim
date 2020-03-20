@@ -56,6 +56,13 @@ function bim_get_hebrew_date($t=null) {
   return "$hebDay $hebMonthName $hebYear";
 }//end function
 
+function bim_get_video($s) {
+  $result = '';
+  $pattern = '@https?://www.youtube.com([^"\']*)@i';
+  if(preg_match($pattern, $s, $matches)) { $result = $matches[0]; }
+  return $result;
+}
+
 function bim_get_audio($s) {
   $result = '';
   $pattern = '@(https?|ftp)://([^"\']*)\.mp3@i';
