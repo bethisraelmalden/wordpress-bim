@@ -78,6 +78,8 @@
           $post_content = get_the_content();
           $post_audio = ('audio' === $post_format ? bim_get_audio($post_content) : '');
           $post_video = bim_get_video($post_content);
+          $post_embed = str_replace("watch?v=", "embed/", $post_video);
+          $post_embed = str_replace("youtu.be/", "www.youtube.com/embed/", $post_embed);
       ?>
 
       <?php if($post_video): // video ?>
@@ -85,7 +87,7 @@
           <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
           <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item"
-                src="<?php  echo str_replace("watch?v=", "embed/", $post_video); ?>"
+                src="<?php  echo $post_embed; ?>"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>

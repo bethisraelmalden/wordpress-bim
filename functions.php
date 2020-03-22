@@ -58,7 +58,7 @@ function bim_get_hebrew_date($t=null) {
 
 function bim_get_video($s) {
   $result = '';
-  $pattern = '@https?://www.youtube.com([^"\']*)@i';
+  $pattern = '@https?://(www.youtube.com|youtu.be)([^"\']*)@i';
   if(preg_match($pattern, $s, $matches)) { $result = $matches[0]; }
   return $result;
 }
