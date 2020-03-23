@@ -551,12 +551,12 @@
     </div>
   </div>
 
-<?php break; case 'x2019-pesach': ?>
+<?php break; case '2020-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
-        data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLScMvxgx7JUhxMCnBgiYjQqpjp6bZZ6cgtnmYherPfdPmqQL4w/formResponse">
+        data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfnImWTH0v0At8V0mSWA3mxc1AJYobiXQYi70s_r4v1WtGBmg/formResponse">
     <div class="row">
       <div class="col-sm-5 col-sm-offset-2">
-        <h1>Passover <small>5778</small></h1>
+        <h1>Passover <small>5780</small></h1>
         <h2>Sale of Chametz</h2>
         <p class="text-justify">
           Any <em>chametz</em> owned by a Jew during Passover week is
@@ -567,14 +567,17 @@
         </p>
         <p class="text-justify">
           This contract must be completed by
-          <strong>8am on Friday, April 19th</strong>.
+          <strong>7:30am on Wednesday, April 8th</strong>.
           If you miss the deadline, call the Rabbi at
-          <a href="tel:+17812231471">781-223-1471</a> <!--by 8pm March 29th-->.
+          <a href="tel:+17812231471">781-223-1471</a>.
         </p>
         <p>
-          <strong>It is preferable to authorize the Rabbi to sell your chametz
-          in-person.</strong> If it is difficult to do so, please use this form.
+          Although it is preferable to authorize the Rabbi to sell your chametz in-person <strong>that will not be an option this year in order to prevent the spread of the coronavirus</strong>. You can fill out the form below or call the Rabbi to make arrangements.
         </p>
+        <ul>
+          <li>Please do not call the syagogue number. Call to speak or leave a message with the Rabbi at  at <a href="tel:+17812231471">781-223-1471</a>.</li>
+          <li>Please do not mail in the form. Fill out this form or call the Rabbi.</li>
+        </ul>
 
         <h3>Power of Attorney Form</h3>
         <p class="text-justify">
@@ -653,6 +656,9 @@
         Tzedaka that has been practised by Jewish communities around the world
         for centuries, please donate here or write a check out to Congregation Beth Israel, and write "Ma’ot Chitin" in the memo line.
         </p>
+        <p>
+          <strong>Special message</strong>: Please bear in mind that the devastating effect of the coronavirus on the economy has put many people into serious financial distress. Please open your hearts as best as you can. May the kindness we show others arouse the Almighty's mercy upon the world.
+        </p>
         <div class="form-group">
           <div class="col-sm-8">
             <input id="maot-name" name="maot-name" class="form-control"
@@ -684,29 +690,39 @@
         </div>
 
         <hr />
+        <div class="text-center">
+          Wishing you a healthy, kosher, and joyous Pesach!<br />
+          Rabbi Yitzchak and Tova Rabinowitz
+        </div>
+
+        <hr />
         <div class="form-group text-center">
           <div class="col-sm-12 text-center">
             <input id="notme" type="hidden" value="0" />
-            <input id="payment_method" type="hidden" value="PayPal"
+            <input id="payment_method" type="hidden" value="Pay Now"
                    data-gdocs="entry.1112114755" />
-            <input type="submit" value="PayPal" class="btn btn-lg btn-primary" />
-            <input type="submit" value="Cash" class="btn btn-lg btn-default" />
+            <input type="submit" value="Pay Now" class="btn btn-lg btn-primary" />
+            <input type="submit" value="Pay Later" class="btn btn-lg btn-default" />
           </div>
         </div>
       </div>
       <div class="col-sm-3">
         <div class="well pull-right">
-          <strong>Passover 5779 Downloads</strong>
+          <strong>Passover 5780 Downloads</strong>
           <p>All the guides, in one place.</p>
           <ul class="list-unstyled">
             <li>
               <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2018/08/5779-Annual-Halacha-Guide.pdf">Halacha Guidebook</a>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Annual-Halacha-Guide.pdf">Halacha Guidebook</a>
             </li>
             <li>
               <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2019/04/5779-passover-supplement.pdf">Product Supplement</a>
+              <em>Product Supplement (coming soon)</em>
             </li>
+            <!-- <li>
+              <i class="glyphicon glyphicon-download"></i>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2019/04/5779-passover-supplement.pdf">Product Supplement</a>
+            </li> -->
 <!--             <li>
               <i class="glyphicon glyphicon-download"></i>
               <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-sefirah.pdf">Sefirat HaOmer Chart</a>
