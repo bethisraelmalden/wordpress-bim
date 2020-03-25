@@ -21,7 +21,7 @@
       while(have_posts()) : the_post();
         $post_count++;
         $post_url = get_permalink();
-        $post_title = get_title();
+        $post_title = get_the_title();
         $post_format = get_post_format();
         $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
         $post_content = get_the_content();
