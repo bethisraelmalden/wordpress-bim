@@ -21,6 +21,7 @@
       while(have_posts()) : the_post();
         $post_count++;
         $post_url = get_permalink();
+        $post_title = get_post_title();
         $post_format = get_post_format();
         $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
         $post_content = get_the_content();
@@ -31,7 +32,7 @@
     ?>
     <?php if($post_video): // video ?>
       <div class="col-sm-4 recent-post">
-        <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
+        <h4><a href="<?php echo $post_url; ?>" title="<?php echo $post_title; ?>"><?php echo $post_title; ?></a></h4>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item"
               src="<?php  echo $post_embed; ?>"
@@ -41,7 +42,7 @@
 
     <?php elseif ($post_audio): // audio ?>
       <div class="col-sm-4 recent-post">
-        <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
+        <h4><a href="<?php echo $post_url; ?>" title="<?php echo $post_title; ?>"><?php echo $post_title; ?></a></h4>
         <audio class="media-object" preload="none" controls="controls"
           type="<?php echo bim_get_mimetype($post_audio); ?>"
           src="<?php echo $post_audio; ?>"></audio>
