@@ -55,7 +55,7 @@
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=UUmifAaxDDUILnFheV4VFnHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
  -->
-  <a href="https://www.youtube.com/playlist?list=UUmifAaxDDUILnFheV4VFnHw" class="btn btn-primary btn-lg">View More</a>
+  <a href="https://www.youtube.com/channel/UCmifAaxDDUILnFheV4VFnHw" class="btn btn-primary btn-lg">View More</a>
 </div>
 
 <?php
