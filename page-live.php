@@ -14,8 +14,8 @@
   <h3>Previous Livestreams<a name="previous">&nbsp;</a><h3>
   <div class="row">
     <?php
-      $catTorah = get_cat_ID('Torah');
-      query_posts("cat=$catBulletin&showposts=6");
+      $catLive = get_cat_ID('Livestream');
+      query_posts("cat=$catLive&showposts=9");
 
       $post_count = 0;
       while(have_posts()) : the_post();
@@ -51,10 +51,6 @@
     <?php endwhile; // end post ?>
   </div>
 
-<!--   <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/videoseries?list=UUmifAaxDDUILnFheV4VFnHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
- -->
   <a href="https://www.youtube.com/channel/UCmifAaxDDUILnFheV4VFnHw" class="btn btn-primary btn-lg">View More</a>
 </div>
 
