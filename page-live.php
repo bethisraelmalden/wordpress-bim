@@ -30,7 +30,7 @@
         $post_embed = str_replace("youtu.be/", "www.youtube.com/embed/", $post_embed);
     ?>
     <?php if($post_video): // video ?>
-      <div class="col-sm-6 recent-post">
+      <div class="col-sm-4 recent-post">
         <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item"
@@ -40,7 +40,7 @@
       </div>
 
     <?php elseif ($post_audio): // audio ?>
-      <div class="col-sm-6 recent-post">
+      <div class="col-sm-4 recent-post">
         <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
         <audio class="media-object" preload="none" controls="controls"
           type="<?php echo bim_get_mimetype($post_audio); ?>"
