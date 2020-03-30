@@ -715,14 +715,14 @@
               <i class="glyphicon glyphicon-download"></i>
               <a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Annual-Halacha-Guide.pdf">Halacha Guidebook</a>
             </li>
-            <li>
+<!--             <li>
               <i class="glyphicon glyphicon-download"></i>
               <em>Product Supplement (coming soon)</em>
-            </li>
-            <!-- <li>
-              <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2019/04/5779-passover-supplement.pdf">Product Supplement</a>
             </li> -->
+            <li>
+              <i class="glyphicon glyphicon-download"></i>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2020/03/Passover-5780-2020-Supplement.pdf">Product Supplement</a>
+            </li>
 <!--             <li>
               <i class="glyphicon glyphicon-download"></i>
               <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-sefirah.pdf">Sefirat HaOmer Chart</a>
