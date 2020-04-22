@@ -183,6 +183,8 @@ get_header(); ?>
                 <option data-price="0" value="Mishna Neshama Siyum">Mishna Neshama Siyum</option>
                 <option data-price="0" value="Aliyah Pledge">Aliyah Pledge</option>
                 <option data-price="0" value="School Bus">School Bus</option>
+                <option data-price="0" value="Yizkor">Yizkor</option>
+                <option data-price="0" value="Yahrzeit">Yahrzeit</option>
               </optgroup>
               <!--optgroup label="SEED Program">
                 <option data-price="18" value="Chai (SEED)">$18 - Chai (SEED)</option>
