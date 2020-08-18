@@ -134,6 +134,7 @@ get_header(); ?>
     <div class="col-sm-6">
       <h2 class="text-center">Useful Resources</h2>
       <ul>
+        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2020/08/2020-08-30-Congregation-Beth-Israel-By-Laws.pdf">Shul Bylaws</a></li>
         <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Membership-Brochure.pdf">5780 Membership Brochure</a></li>
         <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Annual-Halacha-Guide.pdf">5780 Annual Halacha Guide</a></li>
         <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Candle-Lighting.pdf">5780 Candle Lighting Chart</a></li>
