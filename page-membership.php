@@ -39,11 +39,10 @@ get_header(); ?>
           <label for="level" class="col-sm-4 control-label">Level</label>
           <div class="col-sm-8">
             <select id="level" data-gdocs="entry.1242533523" name="level" class="form-control chosen">
-              <option data-paypal-amount="5000" value="Pillar" selected="selected">$5,000 - Pillar (4 complimentary seats)</option>
-              <option data-paypal-amount="3600" value="Partner">$3,600 - Partner (4 complimentary seats)</option>
-              <option data-paypal-amount="2500" value="Benefactor">$2,500 - Benefactor (4 complimentary seats)</option>
-              <option data-paypal-amount="1800" value="Supporter">$1,800 - Supporter (2 complimentary seats)</option>
-              <option data-paypal-amount="1200" value="Sustaining">$1,200 - Sustaining (2 complimentary seats)</option>
+              <option data-paypal-amount="3600" value="Pillar" selected="selected">$3,600 - Pillar (4 complimentary seats)</option>
+              <option data-paypal-amount="2500" value="Partner">$2,500 - Partner (4 complimentary seats)</option>
+              <option data-paypal-amount="1800" value="Benefactor">$1,800 - Benefactor (4 complimentary seats)</option>
+              <option data-paypal-amount="1000" value="Sustaining">$1,000 - Sustaining (2 complimentary seats)</option>
               <option data-paypal-amount="600" value="Standard Family">$600 - Standard Family</option>
               <option data-paypal-amount="400" value="Standard Single">$400 - Standard Single </option>
               <option data-paypal-amount="360" value="Associate Family">$360 - Associate Family</option>
@@ -135,59 +134,53 @@ get_header(); ?>
       <h2 class="text-center">Useful Resources</h2>
       <ul>
         <li><a href="http://bethisraelmalden.org/wp-content/uploads/2020/08/2020-08-30-Congregation-Beth-Israel-By-Laws.pdf">Shul Bylaws</a></li>
-        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Membership-Brochure.pdf">5780 Membership Brochure</a></li>
-        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Annual-Halacha-Guide.pdf">5780 Annual Halacha Guide</a></li>
-        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Candle-Lighting.pdf">5780 Candle Lighting Chart</a></li>
+        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2020/09/5781-BIM-Brochure.pdf">5781 Membership Brochure</a></li>
+        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2020/09/5781-BIM-Halacha-Guide.pdf">5781 Annual Halacha Guide</a></li>
+        <li><a href="http://bethisraelmalden.org/wp-content/uploads/2020/09/5781-Candle-Lighting.pdf">5781 Candle Lighting Chart</a></li>
       </ul>
       <hr />
 
       <h2 class="text-center">High Holiday Seating</h2>
       <div class="form-group">
-        <label for="member_adult" class="col-sm-5 control-label text-right">Member Adult ($72)</label>
+        <label for="member_adult_male" class="col-sm-5 control-label text-right">Member Adult Male ($72)</label>
         <div class="col-sm-3">
-          <input id="member_adult" type="number" value="0" min="0" step="1"
+          <input id="member_adult_male" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.333865748"
-                 data-paypal-item="Member Adult Seat"
+                 data-paypal-item="Member Adult Seat (Male)"
                  data-paypal-amount="72.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
       <div class="form-group">
-        <label for="member_child" class="col-sm-5 control-label text-right">Member Child ($54)</label>
+        <label for="member_adult_female" class="col-sm-5 control-label text-right">Member Adult Female ($72)</label>
         <div class="col-sm-3">
-          <input id="member_child" type="number" value="0" min="0" step="1"
+          <input id="member_adult_female" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.1870149190"
-                 data-paypal-item="Child Member Seat"
-                 data-paypal-amount="54.00" class="form-control" />
-        </div>
-        <div class="col-sm-4 help-text">
-          Under 13. Includes complimentary babysitting.
+                 data-paypal-item="Adult Member Seat (Female)"
+                 data-paypal-amount="72.00" class="form-control" />
         </div>
       </div>
       <div class="form-group">
-        <label for="nonmember_adult" class="col-sm-5 control-label text-right">Non-Member Adult ($125)</label>
+        <label for="nonmember_adult_male" class="col-sm-5 control-label text-right">Non-Member Adult Male ($125)</label>
         <div class="col-sm-3">
-          <input id="nonmember_adult" type="number" value="0" min="0" step="1"
+          <input id="nonmember_adult_male" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.646547736"
-                 data-paypal-item="Non-Member Adult Seat"
+                 data-paypal-item="Non-Member Adult Seat (Male)"
                  data-paypal-amount="125.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
       <div class="form-group">
-        <label for="nonmember_child" class="col-sm-5 control-label text-right">Non-Member Child ($72)</label>
+        <label for="nonmember_adult_female" class="col-sm-5 control-label text-right">Non-Member Adult Female ($72)</label>
         <div class="col-sm-3">
-          <input id="nonmember_child" type="number" value="0" min="0" step="1"
+          <input id="nonmember_adult_female" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.1729958570"
-                 data-paypal-item="Non-Member Child Seat"
-                 data-paypal-amount="72.00" class="form-control" />
-        </div>
-        <div class="col-sm-4 help-text">
-          Under 13. Includes complimentary babysitting.
+                 data-paypal-item="Non-Member Adult Seat (Female)"
+                 data-paypal-amount="125.00" class="form-control" />
         </div>
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group">
         <label for="babysitting" class="col-sm-5 control-label text-right">Babysitting ($10/day/child)</label>
         <div class="col-sm-3">
           <input id="babysitting" type="number" value="0" min="0" step="1"
@@ -196,7 +189,7 @@ get_header(); ?>
                  data-paypal-amount="10.00" class="form-control" />
         </div>
         <div class="col-sm-4 help-text">&nbsp;</div>
-      </div>
+      </div> -->
 
       <h2 class="text-center">Book of Remembrance</h2>
       <hr />
@@ -242,11 +235,11 @@ get_header(); ?>
             <option data-paypal-amount="0" value="No Sponsorship" selected="selected">Select Below</option>
             <option data-paypal-amount="2500.00" value="Annual Learning Sponsor">$2,500 - Annual Learning Sponsor</option>
             <option data-paypal-amount="500.00" value="Monthly Learning Sponsor">$500 - Monthly Learning Sponsor</option>
-            <option data-paypal-amount="1000.00" value="Luncheon Benefactor">$1,000 - Luncheon Benefactor</option>
-            <option data-paypal-amount="625.00" value="Lavish Kiddush Benefactor">$625 - Lavish Kiddush Benefactor</option>
+            <!-- <option data-paypal-amount="1000.00" value="Luncheon Benefactor">$1,000 - Luncheon Benefactor</option>
+            <option data-paypal-amount="700.00" value="Lavish Kiddush Benefactor">$700 - Lavish Kiddush Benefactor</option>
             <option data-paypal-amount="500.00" value="Gala Kiddush Benefactor">$500 - Gala Kiddush Benefactor</option>
             <option data-paypal-amount="420.00" value="Sponsored Kiddush Benefactor">$420 - Sponsored Kiddush Benefactor</option>
-            <option data-paypal-amount="120.00" value="Breakfast Club">$120 - Breakfast Club</option>
+            <option data-paypal-amount="120.00" value="Breakfast Club">$120 - Breakfast Club</option> -->
             <option data-paypal-amount="180.00" value="Week of Learning">$180 - Week of Learning</option>
             <option data-paypal-amount="50.00" value="Day of Learning">$50 - Day of Learning</option>
             <option data-paypal-amount="500.00" value="Library Scholar">$500 - Library Scholar</option>
