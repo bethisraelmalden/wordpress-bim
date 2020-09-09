@@ -171,7 +171,7 @@ get_header(); ?>
         <div class="col-sm-4 help-text">&nbsp;</div>
       </div>
       <div class="form-group">
-        <label for="nonmember_adult_female" class="col-sm-5 control-label text-right">Non-Member Adult Female ($72)</label>
+        <label for="nonmember_adult_female" class="col-sm-5 control-label text-right">Non-Member Adult Female ($125)</label>
         <div class="col-sm-3">
           <input id="nonmember_adult_female" type="number" value="0" min="0" step="1"
                  data-gdocs="entry.1729958570"
