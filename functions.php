@@ -52,7 +52,7 @@ function bim_get_hebrew_date($t=null) {
   if(!$t) { $t = time(); }
   $julian = gregoriantojd(date('m', $t), date('d', $t), date('Y', $t));
   $hebMonthName = jdmonthname($julian, 4);
-  list($hebMonth, $hebDay, $hebYear) = split('/', jdtojewish($julian));
+  list($hebMonth, $hebDay, $hebYear) = explode('/', jdtojewish($julian));
   return "$hebDay $hebMonthName $hebYear";
 }//end function
 
