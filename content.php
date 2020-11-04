@@ -50,4 +50,33 @@
     </div>
     <?php endif; ?>
   </div>
+  <script>
+    var weather_loaded = weather_loaded || false;
+    var $dom = document.querySelector('.weather-forecast');
+    if ($dom && !weather_loaded) {
+      weather_loaded = true;
+
+      var html = '';
+      var url = 'https://bethisraelmalden.org/api/weather/forecast.php';
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          var i = 0;
+          data.forecast.forEach(info => {
+            i += 1;
+            if (i > 3) { return; }
+
+            html += `
+<div style="font-family: sans-serif; width: 8rem; text-align: center; border: 1px solid #ccc; float: left">
+  <strong>${info['when']}</strong><br />
+  <img src="${info['icon']}"/><br />
+  ${info['what']} <br />
+  High: ${info['high']}°F <br />
+  Low: ${info['low']}°F<br />
+</div>`;
+          });
+          $dom.innerHTML = html;
+        });
+    }
+  </script>
 </article>

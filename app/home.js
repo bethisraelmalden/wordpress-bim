@@ -5,8 +5,8 @@ define(function (require) {
     app = require('app/app'),
     moment = require('moment'),
     url = {
-      eruv: 'http://bethisraelmalden.org/api/eruv/status.php?callback=?',
-      calendar: 'http://bethisraelmalden.org/api/calendar/upcoming.php?callback=?'
+      eruv: 'https://bethisraelmalden.org/api/eruv/status.php?callback=?',
+      calendar: 'https://bethisraelmalden.org/api/calendar/upcoming.php?callback=?'
     };
 
   $.getJSON(url.calendar).done(function(data) {
@@ -43,7 +43,7 @@ define(function (require) {
       status = text.slice(0, text.indexOf(' '));
 
     $('.eruv-status .loading').remove();
-      
+
     if(dtNow.diff(dtPost, 'days') > 1) { // No Update
       $('#eruv-status').text('');
       $('#eruv-info').html(
