@@ -18,28 +18,6 @@
   </div>
 
   <div class="row">
-    <div class="col-xs-12 center-align">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/live_stream?channel=UCmifAaxDDUILnFheV4VFnHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-  <br />
-  <div class="row">
-    <div class="col-sm-6 text-center">
-      <a href="/live#previous" class="btn btn-lg btn-primary">View Previous Livestreams</a>
-    </div>
-
-    <div class="col-sm-6 text-center">
-      <big>Subscribe for future livestreams</big><br />
-      <script src="https://apis.google.com/js/platform.js"></script>
-      <div class="g-ytsubscribe" data-channelid="UCmifAaxDDUILnFheV4VFnHw" data-layout="full" data-count="default"></div>
-    </div>
-  </div>
-  <hr />
-
-  <div class="row">
     <div class="col-md-3">
       <?php
       $catBulletin = get_cat_ID('Bulletin');
@@ -72,9 +50,11 @@
         $post_count = 0;
         while(have_posts()) : the_post();
           $post_count++;
+          $post_id = get_the_ID();
+          $post_is_sticky = is_sticky($post_id);
           $post_url = get_permalink();
           $post_format = get_post_format();
-          $post_image = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
+          $post_image = wp_get_attachment_url(get_post_thumbnail_id($post_id));
           $post_content = get_the_content();
           $post_audio = ('audio' === $post_format ? bim_get_audio($post_content) : '');
           $post_video = bim_get_video($post_content);
@@ -104,15 +84,15 @@
       <?php else: // non-video ?>
         <div class="col-sm-12 recent-post">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-<?php echo ($post_is_sticky ? "12": "3")?>">
             <?php if ($post_image): ?>
-              <img class="img-responsive" src="<?php echo $post_image; ?>" alt="Post Thumbnail" />
+              <a href="<?php echo $post_url; ?>"><img class="img-responsive" src="<?php echo $post_image; ?>" alt="Post Thumbnail" /></a>
             <?php else: ?>
-              <img class="img-responsive" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="Congregation Beth Israel" />
+              <a href="<?php echo $post_url; ?>"><img class="img-responsive" src="<?php echo get_template_directory_uri()?>/img/bim-building.jpg" alt="Congregation Beth Israel" /></a>
             <?php endif; ?>
             </div>
 
-            <div class="col-sm-9">
+            <div class="col-sm-<?php echo ($post_is_sticky ? "12": "9")?>">
               <h4><a href="<?php echo $post_url; ?>"><?php the_title(); ?></a></h4>
               <?php the_excerpt(); ?>
             </div>
