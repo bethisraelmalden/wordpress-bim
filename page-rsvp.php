@@ -205,7 +205,7 @@
       <div class="form-group">
         <label>
             <input type="checkbox" value="Coming"
-                   data-gdocs="entry.1500179091" /> Yes, I'd like to attend the Virtual Concert.
+                   data-gdocs="entry.1033105750" /> Yes, I'd like to attend the Virtual Concert.
           </label>
       </div>
 
@@ -267,7 +267,7 @@
     </form>
     <div class="col-sm-4 text-center">
       <a href="https://bethisraelmalden.org/2020/11/virtual-chanukah-concert/">
-        <img src="https://bethisraelmalden.org/wp-content/uploads/2020/11/Fall-series-banner-RSG.png" />
+        <img src="https://bethisraelmalden.org/wp-content/uploads/2020/11/Rabbi-Green-1-v-2-300x300.png" />
       </a>
     </div>
   </div>
