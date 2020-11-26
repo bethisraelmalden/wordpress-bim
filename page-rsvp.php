@@ -5,7 +5,7 @@
   add_filter('the_permalink', 'append_query_string');
 
   if ('' == $_GET['event']) {
-    $_GET['event'] = '2020-purim';
+    $_GET['event'] = '2020-fall-concert';
     // header('Location: https://docs.google.com/forms/d/1WXZSvUmzeWxTAMxa25L-BD0CqfFHgGKuf2WRZpJJ-kc/viewform');
     // exit();
   }
@@ -15,8 +15,8 @@
 <div id="content" class="container">
 <?php if ($_GET['thankyou']): ?>
   <h1>Your response has been recorded. Thank you!</h1>
-<?php else: switch ($_GET['event']):
-  case '2019-chanukah': ?>
+<?php else: switch ($_GET['event']): ?>
+<?php case 'x2019-chanukah': ?>
   <h1>Chanukah Bash</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -157,7 +157,121 @@
     </div>
   </div>
 
-<?php break; case '2019-shevat': ?>
+<?php case '2020-fall-concert': ?>
+  <h1>Virtual Chanukah Concert</h1>
+  <div class="row">
+    <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
+          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeg1wB1YCQpobQCzL8Nuwzm1sMEcFc88rLnVQZmfntFGi4wPw/formResponse">
+      <div class="form-group">
+        <label for="first_name" class="col-sm-6 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input id="first_name" type="text" name="first_name"
+                 value="<?php echo $_GET['fname']?>" class="form-control"
+                 data-gdocs="entry.467309924"
+                 data-paypal="first_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="last_name" class="col-sm-6 control-label">Last Name</label>
+        <div class="col-sm-6">
+          <input id="last_name" type="text" name="last_name"
+                 value="<?php echo $_GET['lname']?>" class="form-control"
+                 data-gdocs="entry.1239178442"
+                 data-paypal="last_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email" class="col-sm-6 control-label">Email</label>
+        <div class="col-sm-6">
+          <input id="email" type="email" name="email"
+                 value="<?php echo $_GET['email']?>" class="form-control"
+                 data-gdocs="entry.1091378211"
+                 data-paypal="email" />
+        </div>
+      </div>
+      <?php if('1' == $_GET['notme']): ?>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="1" />
+          <input id="adults" type="hidden" name="adults"
+                 value="Not Coming" data-gdocs="entry.1033105750" />
+          <input id="payment_method" type="hidden" value=""
+                 data-gdocs="entry.1500179091" />
+          <input type="submit" value="Not Coming" class="btn btn-primary" />
+          <p class="help-block">Please confirm you're not coming.</p>
+        </div>
+      </div>
+      <?php else: ?>
+      <div class="form-group">
+        <label>
+            <input type="checkbox" value="Coming"
+                   data-gdocs="entry.1500179091" /> Yes, I'd like to attend the Virtual Concert.
+          </label>
+      </div>
+
+      <div class="form-group">
+        <label for="sponsorship" class="col-sm-6 control-label">
+          Add a sponsorship?
+        </label>
+        <div class="col-sm-6">
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.1553203501"
+                   data-paypal-item="Chanukah - Fall Series Sponsor"
+                   data-paypal-amount="1000.00" /> Fall Series Sponsor ($1,000)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.1436561775"
+                   data-paypal-item="Chanukah - Concert Sponsor"
+                   data-paypal-amount="500.00" /> Concert Sponsor  ($500)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.327271197"
+                   data-paypal-item="Chanukah - Gold Sponsor"
+                   data-paypal-amount="360.00" /> Gold Sponsor ($360)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.1347645996"
+                   data-paypal-item="Chanukah - Silver Sponsor"
+                   data-paypal-amount="250.00" /> Silver Sponsor ($250)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.11054681"
+                   data-paypal-item="Chanukah - Bronze Sponsor"
+                   data-paypal-amount="180.00" /> Bronze Sponsor ($180)
+          </label><br />
+          <label>
+            <input type="checkbox" value="1"
+                   data-gdocs="entry.111314750"
+                   data-paypal-item="Chanukah - Partner Sponsor"
+                   data-paypal-amount="90.00" /> Partner Sponsor ($90)
+          </label>
+
+          <p class="help-block">Thank you for your generous support.</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-6 col-sm-offset-6">
+          <input id="notme" type="hidden" value="0" />
+          <input id="payment_method" type="hidden" value="Pay Now"
+                 data-gdocs="entry.1500179091" />
+          <input type="submit" value="Pay Now" class="btn btn-primary" />
+          <input type="submit" value="Pay Later" class="btn btn-default" />
+        </div>
+      </div>
+      <?php endif; ?>
+    </form>
+    <div class="col-sm-4 text-center">
+      <a href="https://bethisraelmalden.org/2020/11/virtual-chanukah-concert/">
+        <img src="https://bethisraelmalden.org/wp-content/uploads/2020/11/Fall-series-banner-RSG.png" />
+      </a>
+    </div>
+  </div>
+<?php break; case 'x2019-shevat': ?>
   <h1>Tu B'Shevat Seder</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -270,7 +384,7 @@
     </div>
   </div>
 
-<?php break; case '2020-purim': ?>
+<?php break; case 'x2020-purim': ?>
   <h1>Purim Seudah</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -551,7 +665,7 @@
     </div>
   </div>
 
-<?php break; case '2020-pesach': ?>
+<?php break; case 'x2020-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
         data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfnImWTH0v0At8V0mSWA3mxc1AJYobiXQYi70s_r4v1WtGBmg/formResponse">
     <div class="row">
@@ -823,7 +937,7 @@
     </div>
   </div>
 
-<?php break; case '2019-shavuot': ?>
+<?php break; case 'x2019-shavuot': ?>
   <h1>Shavuoton Dinner</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
@@ -1762,7 +1876,7 @@
     </form>
   </div>
 
-<?php break; case '2019-siyum': ?>
+<?php break; case 'x2019-siyum': ?>
   <div class="page-siyum well">
     <div class="background"></div>
     <div class="text-center">
