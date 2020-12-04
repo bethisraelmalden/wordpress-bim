@@ -268,6 +268,11 @@
           <input type="submit" value="Pay Later" class="btn btn-default" />
         </div>
       </div>
+      <div class="form-group">
+        <div class="alert alert-warning">
+        <strong>Please note:</strong> We will send you login information a day or two before the event.
+        </div>
+      </div>
       <?php endif; ?>
     </form>
     <div class="col-sm-4 text-center">
