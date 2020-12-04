@@ -161,7 +161,7 @@
   <h1>Virtual Chanukah Concert</h1>
   <div class="row">
     <form id="rsvp" class="form-horizontal col-sm-5" method="POST"
-          data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSeg1wB1YCQpobQCzL8Nuwzm1sMEcFc88rLnVQZmfntFGi4wPw/formResponse">
+          data-gdocs="https://docs.google.com/forms/d/e/1FAIpQLSeg1wB1YCQpobQCzL8Nuwzm1sMEcFc88rLnVQZmfntFGi4wPw/formResponse">
       <div class="form-group">
         <label for="first_name" class="col-sm-6 control-label">First Name</label>
         <div class="col-sm-6">
@@ -250,6 +250,10 @@
                    data-paypal-item="Chanukah - Partner Sponsor"
                    data-paypal-amount="90.00" /> Partner Sponsor ($90)
           </label>
+          <label>Other</label>
+            <input type="text" value=""
+                   data-gdocs="entry.1938692856"
+                   data-paypal-item="Chanukah - Other Sponsor" />
 
           <p class="help-block">Thank you for your generous support.</p>
         </div>
