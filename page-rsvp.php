@@ -253,6 +253,7 @@
           <label>Other</label>
             <input type="text" value=""
                    data-gdocs="entry.569141709"
+                   data-paypal-num="1"
                    data-paypal-item="Chanukah - Other Sponsor" />
 
           <p class="help-block">Thank you for your generous support.</p>
