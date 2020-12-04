@@ -249,10 +249,10 @@
                    data-gdocs="entry.111314750"
                    data-paypal-item="Chanukah - Partner Sponsor"
                    data-paypal-amount="90.00" /> Partner Sponsor ($90)
-          </label>
+          </label><br />
           <label>Other</label>
             <input type="text" value=""
-                   data-gdocs="entry.1938692856"
+                   data-gdocs="entry.569141709"
                    data-paypal-item="Chanukah - Other Sponsor" />
 
           <p class="help-block">Thank you for your generous support.</p>
