@@ -264,7 +264,7 @@
         </div>
       </div>
       <div class="form-group">
-        <div class="col-sm-6 col-sm-offset-6">
+        <div class="col-sm-12 text-center">
           <input id="notme" type="hidden" value="0" />
           <input id="payment_method" type="hidden" value="Pay Now"
                  data-gdocs="entry.1500179091" />
