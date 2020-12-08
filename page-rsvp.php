@@ -270,7 +270,7 @@
                  data-gdocs="entry.1500179091" />
           <input type="submit" value="Pay Now" class="btn btn-primary" />
           <input type="submit" value="Pay Later" class="btn btn-default" />
-          <input type="submit" value="Just RSVP (Free)" class="btn btn-default" />
+          <button type="submit" value="RSVP" class="btn btn-default">RSVP Only (Free)</button>
         </div>
       </div>
       <div class="form-group">
@@ -2440,13 +2440,12 @@
   };
 
   app.submit_gdocs = function (isInterested) {
-    var
-      isCash = "Pay Now" !== app.$pay.val();,
-      gdata = {
-        pageHistory: 0,
-        draftResponse: '[,,&quot;-123456789&quot;]',
-        fbzx:'-132456789'
-      };
+    var isCash = "Pay Now" !== app.$pay.val();
+    var gdata = {
+      pageHistory: 0,
+      draftResponse: '[,,&quot;-123456789&quot;]',
+      fbzx:'-132456789'
+    };
 
     app.$rsvp.find('[data-gdocs]').each(function () {
       var $field = $(this);
