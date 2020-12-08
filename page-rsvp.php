@@ -205,7 +205,11 @@
       <div class="form-group">
         <label>
             <input type="checkbox" value="Coming"
-                   data-gdocs="entry.1033105750" /> Yes, I'd like to attend the Virtual Concert.
+                   data-gdocs="entry.1033105750"
+                   data-paypal-item="Chanukah - RSVP"
+                   data-paypal-num="1"
+                   data-paypal-amount="0.00"
+                   /> Yes, I'd like to attend the Virtual Concert (Free).
           </label>
       </div>
 
@@ -266,6 +270,7 @@
                  data-gdocs="entry.1500179091" />
           <input type="submit" value="Pay Now" class="btn btn-primary" />
           <input type="submit" value="Pay Later" class="btn btn-default" />
+          <input type="submit" value="Just RSVP (Free)" class="btn btn-default" />
         </div>
       </div>
       <div class="form-group">
@@ -2436,7 +2441,7 @@
 
   app.submit_gdocs = function (isInterested) {
     var
-      isCash = ('Cash' === app.$pay.val() || 'Pay Later' === app.$pay.val()),
+      isCash = "Pay Now" !== app.$pay.val();,
       gdata = {
         pageHistory: 0,
         draftResponse: '[,,&quot;-123456789&quot;]',
@@ -2471,7 +2476,8 @@
     e.preventDefault(); // nowhere to go
     var notme = $('#notme,[name=notme]:checked').val();
     var isInterested = ('0' === notme || 'Yes' == notme);
-    if (!app.build_paypal(isInterested)) { return false; }
+    var isCash = "Pay Now" !== app.$pay.val();
+    if (!app.build_paypal(isInterested && !isCash)) { return false; }
     if (!app.submit_gdocs(isInterested)) { return false; }
     return false;
   };
