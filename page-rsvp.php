@@ -680,33 +680,44 @@
     </div>
   </div>
 
-<?php break; case 'x2020-pesach': ?>
+<?php break; case '2021-pesach': ?>
   <form id="rsvp" class="form form-horizontal" method="POST"
-        data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfnImWTH0v0At8V0mSWA3mxc1AJYobiXQYi70s_r4v1WtGBmg/formResponse">
+        data-gdocs="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfU5tsCKfMyfSDRowICCEGUuUy4biF20RGsORcu81pnsmr54Q/formResponse">
     <div class="row">
       <div class="col-sm-5 col-sm-offset-2">
-        <h1>Passover <small>5780</small></h1>
+        <h1>Passover <small>5781</small></h1>
         <h2>Sale of Chametz</h2>
         <p class="text-justify">
           Any <em>chametz</em> owned by a Jew during Passover week is
           forbidden for actual use forever. If there is <em>chametz</em> that
-          you do not want to dispose of (eg. bottle of shnapps), you must
+          you do not want to dispose of (eg. bottle of liquor), you must
           arrange for a formal sale of <em>chametz</em> to a non-Jew that
           will go into effect before Passover.
         </p>
         <p class="text-justify">
+        Rabbi Rabinowitz is available to arrange for this important contract
+        following weekday morning and evening services, or by appointment.
+        Please call him at <a href="tel:+17812231471">781-223-1471</a>.
+        If you are unable to come in person you can use the contract below.
+        Write your name and address legibly and give an approximate total
+        value of the <em>chametz</em> items you are selling. Focus on the
+        value of items that we conventionally refer to as real chametz,
+        i.e. breads, pasta, cereals, pastries, oatmeal etc.
+        </p>
+        <p class="text-justify">
+        Please do not mail in the form. Fill out this form or call the Rabbi.
+        </p>
+
+        <p class="text-justify">
           This contract must be completed by
-          <strong>7:30am on Wednesday, April 8th</strong>.
+          <strong>7:30am on Friday, March 26th</strong>.
           If you miss the deadline, call the Rabbi at
-          <a href="tel:+17812231471">781-223-1471</a>.
+          <a href="tel:+17812231471">781-223-1471</a> and leave a message by 9am.
         </p>
-        <p>
-          Although it is preferable to authorize the Rabbi to sell your chametz in-person <strong>that will not be an option this year in order to prevent the spread of the coronavirus</strong>. You can fill out the form below or call the Rabbi to make arrangements.
-        </p>
-        <ul>
+        <!--ul>
           <li>Please do not call the syagogue number. Call to speak or leave a message with the Rabbi at  at <a href="tel:+17812231471">781-223-1471</a>.</li>
           <li>Please do not mail in the form. Fill out this form or call the Rabbi.</li>
-        </ul>
+        </ul-->
 
         <h3>Power of Attorney Form</h3>
         <p class="text-justify">
@@ -837,21 +848,21 @@
       </div>
       <div class="col-sm-3">
         <div class="well pull-right">
-          <strong>Passover 5780 Downloads</strong>
+          <strong>Passover 5781 Downloads</strong>
           <p>All the guides, in one place.</p>
           <ul class="list-unstyled">
             <li>
               <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2019/09/5780-Annual-Halacha-Guide.pdf">Halacha Guidebook</a>
+              <a href="https://bethisraelmalden.org/wp-content/uploads/2020/09/5781-BIM-Halacha-Guide.pdf">Halacha Guidebook</a>
             </li>
-<!--             <li>
-              <i class="glyphicon glyphicon-download"></i>
-              <em>Product Supplement (coming soon)</em>
-            </li> -->
             <li>
               <i class="glyphicon glyphicon-download"></i>
-              <a href="http://bethisraelmalden.org/wp-content/uploads/2020/03/Passover-5780-2020-Supplement.pdf">Product Supplement</a>
+              <em>Product Supplement (coming soon)</em>
             </li>
+            <!-- <li>
+              <i class="glyphicon glyphicon-download"></i>
+              <a href="http://bethisraelmalden.org/wp-content/uploads/2020/03/Passover-5780-2020-Supplement.pdf">Product Supplement</a>
+            </li> -->
 <!--             <li>
               <i class="glyphicon glyphicon-download"></i>
               <a href="http://bethisraelmalden.org/wp-content/uploads/2015/03/5775-sefirah.pdf">Sefirat HaOmer Chart</a>
